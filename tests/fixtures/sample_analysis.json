@@ -1,0 +1,38 @@
+
+{
+  "document_id": "sample_contract_001",
+  "status": "completed",
+  "results": [
+    {
+      "clause_id": "C001",
+      "risk_type": "deposit_return",
+      "risk_status": "potential_risk",
+      "evidence": "임대인은 계약 종료 후 새로운 임차인이 입주한 경우에만 보증금을 반환한다.",
+      "reason": "보증금 반환 조건이 새로운 임차인의 입주 여부에 연결되어 있습니다.",
+      "possible_disadvantage": "새로운 임차인이 입주하지 않을 경우 보증금 반환이 지연될 가능성이 있습니다.",
+      "question": "새로운 임차인이 입주하지 않아도 계약 종료 시 보증금을 반환받을 수 있나요?",
+      "recommended_action": "보증금 반환 시점과 조건을 임대인에게 확인하고 계약서 수정을 요청하세요."
+    },
+    {
+      "clause_id": "C002",
+      "risk_type": "repair_cost",
+      "risk_status": "potential_risk",
+      "evidence": "임차인은 고장의 원인과 관계없이 모든 시설물의 수리비를 부담한다.",
+      "reason": "고장 원인을 구분하지 않고 모든 수리비를 임차인에게 부담시키는 조항입니다.",
+      "possible_disadvantage": "임차인에게 책임이 없는 시설 고장에도 수리비를 부담할 가능성이 있습니다.",
+      "question": "노후화 또는 자연적인 고장으로 발생한 수리비도 임차인이 부담해야 하나요?",
+      "recommended_action": "수리 책임의 범위와 예외 조건을 계약 전에 확인하세요."
+    },
+    {
+      "clause_id": "C003",
+      "risk_type": "termination",
+      "risk_status": "needs_review",
+      "evidence": "임차인은 어떠한 사유로도 계약기간 중 계약을 해지할 수 없다.",
+      "reason": "중도해지를 전면 제한하는 내용이 있으므로 구체적인 계약 조건과 관련 법령을 추가 확인해야 합니다.",
+      "possible_disadvantage": "계약기간 중 불가피하게 퇴거해야 하는 상황에서 분쟁이 발생할 수 있습니다.",
+      "question": "법령에 따른 계약 해지 사유가 발생한 경우에도 이 조항이 적용되나요?",
+      "recommended_action": "해지 제한의 적용 범위와 예외 조건을 확인하세요."
+    }
+  ],
+  "warnings": []
+}
