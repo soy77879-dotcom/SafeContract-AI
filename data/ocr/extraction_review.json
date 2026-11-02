@@ -1,0 +1,4464 @@
+{
+  "document_id": "standard_contract_001",
+  "dataset_role": "ocr_reference_candidate_not_ocr_output",
+  "human_verification_completed": true,
+  "topic_coverage": [
+    {
+      "topic": "deposit_return_conditions",
+      "status": "found",
+      "clause_ids": [
+        "C009"
+      ]
+    },
+    {
+      "topic": "deposit_return_timing",
+      "status": "found",
+      "clause_ids": [
+        "C009"
+      ]
+    },
+    {
+      "topic": "repair_responsibility",
+      "status": "found",
+      "clause_ids": [
+        "C003",
+        "C004"
+      ]
+    },
+    {
+      "topic": "repair_cost_payer",
+      "status": "found",
+      "clause_ids": [
+        "C003",
+        "C004"
+      ]
+    },
+    {
+      "topic": "termination_conditions",
+      "status": "found",
+      "clause_ids": [
+        "C005",
+        "C006",
+        "C007",
+        "C015",
+        "C016"
+      ]
+    },
+    {
+      "topic": "early_termination_fixed_penalty",
+      "status": "not_found",
+      "clause_ids": []
+    },
+    {
+      "topic": "rent",
+      "status": "found",
+      "clause_ids": [
+        "C001"
+      ]
+    },
+    {
+      "topic": "management_fee",
+      "status": "found",
+      "clause_ids": [
+        "C001",
+        "C010"
+      ]
+    },
+    {
+      "topic": "contract_period",
+      "status": "found",
+      "clause_ids": [
+        "C002"
+      ]
+    },
+    {
+      "topic": "move_in_date",
+      "status": "found",
+      "clause_ids": [
+        "C002"
+      ]
+    },
+    {
+      "topic": "renewal",
+      "status": "found",
+      "clause_ids": [
+        "C008"
+      ]
+    },
+    {
+      "topic": "restoration",
+      "status": "found",
+      "clause_ids": [
+        "C009"
+      ]
+    },
+    {
+      "topic": "special_terms",
+      "status": "found",
+      "clause_ids": [
+        "C014",
+        "C015",
+        "C016",
+        "C017",
+        "C018",
+        "C019"
+      ]
+    }
+  ],
+  "coverage_notes": [
+    "중도해지의 정액 위약금은 계약 본문에서 발견하지 못함. 제5~7조의 해제·손해배상·해지와 동일시하지 않음.",
+    "제1~13조 및 인쇄된 특약 6개를 수록. 별지의 법률 안내와 갱신거절통지서는 계약 조항에 혼합하지 않음.",
+    "관리비 및 원상복구는 다른 주제와 중복되어 related_categories로도 표시. category는 개발용 분류."
+  ],
+  "page_scope": [
+    {
+      "page": 1,
+      "role": "contract_body",
+      "included": true
+    },
+    {
+      "page": 2,
+      "role": "contract_body_and_special_terms",
+      "included": true
+    },
+    {
+      "page": 3,
+      "role": "blank_other_terms_and_signature_form",
+      "included": false,
+      "reason": "추가 특약란과 개인정보 기입란은 빈 양식. 서명·보관 문구는 이번 핵심 조항 선별 범위 밖."
+    },
+    {
+      "page": 4,
+      "role": "legal_guidance_annex",
+      "included": false
+    },
+    {
+      "page": 5,
+      "role": "renewal_refusal_notice_template",
+      "included": false
+    }
+  ],
+  "unverified": [],
+  "history": [
+    {
+      "stage": "before_visual_correction",
+      "archived_at": "2026-11-02T13:29:09.821564+00:00",
+      "review_items": [
+        {
+          "clause_id": "C001",
+          "page": 1,
+          "problem_types": [
+            "human_verification_pending",
+            "table_reading_order",
+            "glyph_mismatch",
+            "blank_fields"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 관리비 표가 1·3·5·7, 2·4·6·8 순서로 추출됨. 시각적 행·열 대응 확인 필요. 금액의 원화 기호가 역슬래시로 추출됨. 보정하지 않았으며 금액·날짜 빈칸은 실제 값이 아님.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C002",
+          "page": 1,
+          "problem_types": [
+            "human_verification_pending",
+            "blank_fields"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 입주일·종료일·수리 일정·선택란은 미기입 상태. 빈칸을 채우지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C003",
+          "page": 1,
+          "problem_types": [
+            "human_verification_pending",
+            "blank_fields"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 입주일·종료일·수리 일정·선택란은 미기입 상태. 빈칸을 채우지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C004",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending",
+            "table_reading_order"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 원시 텍스트 끝에 추출된 임대인/임차인 부담 표를 제4조 ③과 ④ 사이에 배치. source_blocks 순서 및 표의 예시 문구를 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C005",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C006",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C007",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C008",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C009",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C010",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C011",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C012",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C013",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C014",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending",
+            "glyph_mismatch"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 원본 글머리표가 Ÿ로 추출됨. 임의 치환하지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C015",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending",
+            "glyph_mismatch"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 원본 글머리표가 Ÿ로 추출됨. 임의 치환하지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C016",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending",
+            "glyph_mismatch"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 원본 글머리표가 Ÿ로 추출됨. 임의 치환하지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C017",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending",
+            "glyph_mismatch"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 원본 글머리표가 Ÿ로 추출됨. 임의 치환하지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C018",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending",
+            "glyph_mismatch"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 원본 글머리표가 Ÿ로 추출됨. 임의 치환하지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "clause_id": "C019",
+          "page": 2,
+          "problem_types": [
+            "human_verification_pending",
+            "glyph_mismatch"
+          ],
+          "reason": "사람의 원본 대조 미완료. 줄바꿈, 숫자, 조항 번호 및 조건 전체를 원본과 확인할 것. 원본 글머리표가 Ÿ로 추출됨. 임의 치환하지 않았음.",
+          "status": "needs_review"
+        },
+        {
+          "page": 5,
+          "clause_id": null,
+          "problem_types": [
+            "printed_page_count_mismatch"
+          ],
+          "reason": "실제 PDF는 5쪽이지만 인쇄 쪽수는 - 5 / 4 - 등으로 표기됨. JSON은 물리적 PDF 페이지 번호 사용.",
+          "status": "needs_review"
+        }
+      ],
+      "assistant_visual_inspection": {
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope": "문서 분류, 빈 양식 확인, 표 배치 및 추출 기호 오류 확인. 사람의 문자 단위 검증을 대체하지 않음."
+      },
+      "automatic_validation": {
+        "passed": [
+          {
+            "check": "json_schema_root",
+            "clause_id": null,
+            "detail": "필수 루트 필드 타입 정상"
+          },
+          {
+            "check": "source_exists",
+            "clause_id": null,
+            "detail": "/Users/sonsoi/SafeContract-AI/data/contracts/original/standard_contract.pdf"
+          },
+          {
+            "check": "actual_page_count",
+            "clause_id": null,
+            "detail": 5
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C001",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C001",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C002",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C002",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C003",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C003",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C004",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C004",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C005",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C005",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C006",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C006",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C007",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C007",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C008",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C008",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C009",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C009",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C010",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C010",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C011",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C011",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C012",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C012",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C013",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C013",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C014",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C014",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C015",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C015",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C016",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C016",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C017",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C017",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C018",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C018",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C019",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C019",
+            "detail": "숫자·조항 번호 토큰 일치"
+          }
+        ],
+        "failed": [],
+        "needs_review": [
+          {
+            "check": "human_verification",
+            "clause_id": "C001",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C002",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C003",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C004",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C005",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C006",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C007",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C008",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C009",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C010",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C011",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C012",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C013",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C014",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C015",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C016",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C017",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C018",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C019",
+            "detail": "사람의 원본 대조 미완료"
+          }
+        ],
+        "unverified": [
+          {
+            "check": "visual_glyph_fidelity",
+            "clause_id": null,
+            "detail": "텍스트 레이어끼리의 일치는 원화·글머리표 등 시각적 기호 정확성을 보장하지 않음"
+          }
+        ],
+        "automatic_match_is_human_verification": false,
+        "summary": {
+          "clause_count": 19,
+          "exact_source_matches": 19,
+          "category_counts": {
+            "rent": 1,
+            "contract_period": 1,
+            "repair_responsibility": 2,
+            "termination": 3,
+            "renewal": 1,
+            "deposit_return": 1,
+            "management_fee": 1,
+            "other": 3,
+            "special_terms": 6
+          },
+          "verified_clauses": 0
+        },
+        "structure_valid": true,
+        "status": "needs_review"
+      },
+      "regression_tests": {
+        "results": [
+          {
+            "test": "valid JSON and 19 exact source matches",
+            "status": "passed"
+          },
+          {
+            "test": "missing required field",
+            "status": "passed"
+          },
+          {
+            "test": "bool page_count rejected",
+            "status": "passed"
+          },
+          {
+            "test": "empty text",
+            "status": "passed"
+          },
+          {
+            "test": "duplicate ID",
+            "status": "passed"
+          },
+          {
+            "test": "out of range page",
+            "status": "passed"
+          },
+          {
+            "test": "wrong actual page",
+            "status": "passed"
+          },
+          {
+            "test": "wrong page count",
+            "status": "passed"
+          },
+          {
+            "test": "wrong filename",
+            "status": "passed"
+          },
+          {
+            "test": "wrong hash",
+            "status": "passed"
+          },
+          {
+            "test": "number omission",
+            "status": "passed"
+          },
+          {
+            "test": "article omission",
+            "status": "passed"
+          },
+          {
+            "test": "whitespace only",
+            "status": "passed"
+          },
+          {
+            "test": "unproven verified status",
+            "status": "passed"
+          },
+          {
+            "test": "removed clause",
+            "status": "passed"
+          },
+          {
+            "test": "wrong block reference",
+            "status": "passed"
+          },
+          {
+            "test": "wrong field type",
+            "status": "passed"
+          },
+          {
+            "test": "empty clauses",
+            "status": "passed"
+          },
+          {
+            "test": "malformed JSON",
+            "status": "passed"
+          },
+          {
+            "test": "missing PDF",
+            "status": "passed"
+          },
+          {
+            "test": "deterministic extraction",
+            "status": "passed"
+          },
+          {
+            "test": "existing output protected",
+            "status": "passed"
+          },
+          {
+            "test": "no text layer stops without OCR",
+            "status": "passed"
+          },
+          {
+            "test": "original bytes preserved: standard_contract_001",
+            "status": "passed"
+          },
+          {
+            "test": "original bytes preserved: housing_lease_commentary_001",
+            "status": "passed"
+          },
+          {
+            "test": "original bytes preserved: dispute_cases_001",
+            "status": "passed"
+          },
+          {
+            "test": "frontend unchanged",
+            "status": "passed"
+          },
+          {
+            "test": "no duplicate source blocks",
+            "status": "passed"
+          }
+        ],
+        "passed": 28,
+        "failed": 0,
+        "scope": "Python API tests with original PDF and temporary malformed fixtures; no OCR or human verification"
+      },
+      "completion_checks": {
+        "pdf_originals_present": 3,
+        "document_types_classified": 3,
+        "source_and_copy_sha256_match": 3,
+        "page_counts": [
+          5,
+          74,
+          101
+        ],
+        "json_files_parse": true,
+        "duplicate_clause_ids": 0,
+        "all_clause_pages_in_range": true,
+        "clause_text_policy": "exact_source_block_text; article 4 blocks assembled in visual order; no glyph correction",
+        "human_verified_clauses": 0,
+        "review_clause_count": 19,
+        "review_item_count": 20,
+        "frontend_sha256_unchanged": true,
+        "branch": "dev/01",
+        "git_commit_push_merge_performed": false
+      }
+    },
+    {
+      "stage": "before_user_human_approval",
+      "archived_at": "2026-11-02T13:50:39.800893+00:00",
+      "automatic_validation": {
+        "passed": [
+          {
+            "check": "json_schema_root",
+            "clause_id": null,
+            "detail": "필수 루트 필드 타입 정상"
+          },
+          {
+            "check": "source_exists",
+            "clause_id": null,
+            "detail": "/Users/sonsoi/SafeContract-AI/data/contracts/original/standard_contract.pdf"
+          },
+          {
+            "check": "actual_page_count",
+            "clause_id": null,
+            "detail": 5
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C001",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C002",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C002",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C003",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C003",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C004",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C004",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C005",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C005",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C006",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C006",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C007",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C007",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C008",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C008",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C009",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C009",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C010",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C010",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C011",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C011",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C012",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C012",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "exact_source_match",
+            "clause_id": "C013",
+            "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C013",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C014",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C015",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C016",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C017",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C018",
+            "detail": "숫자·조항 번호 토큰 일치"
+          },
+          {
+            "check": "numbers_and_article_markers",
+            "clause_id": "C019",
+            "detail": "숫자·조항 번호 토큰 일치"
+          }
+        ],
+        "failed": [],
+        "needs_review": [
+          {
+            "check": "human_verification",
+            "clause_id": "C001",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "text_difference",
+            "clause_id": "C001",
+            "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C002",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C003",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C004",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C005",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C006",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C007",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C008",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C009",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C010",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C011",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C012",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C013",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C014",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "text_difference",
+            "clause_id": "C014",
+            "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C015",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "text_difference",
+            "clause_id": "C015",
+            "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C016",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "text_difference",
+            "clause_id": "C016",
+            "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C017",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "text_difference",
+            "clause_id": "C017",
+            "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C018",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "text_difference",
+            "clause_id": "C018",
+            "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+          },
+          {
+            "check": "human_verification",
+            "clause_id": "C019",
+            "detail": "사람의 원본 대조 미완료"
+          },
+          {
+            "check": "text_difference",
+            "clause_id": "C019",
+            "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+          }
+        ],
+        "unverified": [
+          {
+            "check": "visual_glyph_fidelity",
+            "clause_id": null,
+            "detail": "텍스트 레이어끼리의 일치는 원화·글머리표 등 시각적 기호 정확성을 보장하지 않음"
+          }
+        ],
+        "automatic_match_is_human_verification": false,
+        "summary": {
+          "clause_count": 19,
+          "exact_source_matches": 12,
+          "category_counts": {
+            "rent": 1,
+            "contract_period": 1,
+            "repair_responsibility": 2,
+            "termination": 3,
+            "renewal": 1,
+            "deposit_return": 1,
+            "management_fee": 1,
+            "other": 3,
+            "special_terms": 6
+          },
+          "verified_clauses": 0
+        },
+        "structure_valid": true,
+        "status": "needs_review"
+      },
+      "completion_checks": {
+        "branch": "dev/01",
+        "pdfs_unchanged": true,
+        "frontend_unchanged": true,
+        "clauses_visually_compared_by_ai": 19,
+        "human_verified_clauses": 0,
+        "needs_review_clauses": 19,
+        "changed_clauses": 7,
+        "changed_characters": 19,
+        "all_pages_correct": true,
+        "all_numbers_unchanged": true,
+        "ground_truth_finalized": false
+      }
+    },
+    {
+      "stage": "before_final_pagination_and_normalization_review",
+      "archived_at": "2026-11-02T23:03:36.326501+09:00",
+      "approval_exclusions": [
+        {
+          "item": "PDF 5쪽의 인쇄 쪽수 불일치 검토",
+          "status": "needs_review",
+          "reason": "19개 조항의 원문 일치 승인 범위 밖"
+        },
+        {
+          "item": "공식 웹 첨부파일과 로컬 PDF 바이트 동일성",
+          "status": "not_verified",
+          "reason": "사용자 승인 없음"
+        },
+        {
+          "item": "OCR 평가용 공백·밑줄·가운데점 Unicode 정규화 정책",
+          "status": "needs_review",
+          "reason": "텍스트 일치 승인과 별개 정책 결정; 사용자 승인 없음"
+        }
+      ],
+      "unverified": [
+        "공식 웹 첨부파일과 로컬 파일의 바이트 동일성"
+      ]
+    }
+  ],
+  "character_corrections": [
+    {
+      "correction_id": "G001",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 140,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        314.5199890136719,
+        400.07818603515625,
+        324.63262939453125,
+        411.1181945800781
+      ],
+      "context_before": "             원정(\\                        ",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G002",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 201,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        223.67999267578125,
+        419.5181884765625,
+        233.79263305664062,
+        430.5581970214844
+      ],
+      "context_before": "             원정(\\               )은 계약시에 지",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G003",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 283,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        223.67999267578125,
+        439.07818603515625,
+        233.79263305664062,
+        450.1181945800781
+      ],
+      "context_before": "             원정(\\               )은       ",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G004",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 373,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        223.67999267578125,
+        458.5181884765625,
+        233.79263305664062,
+        469.5581970214844
+      ],
+      "context_before": "             원정(\\               )은       ",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G005",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 560,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        332.1597900390625,
+        497.63726806640625,
+        342.93194580078125,
+        509.51666259765625
+      ],
+      "context_before": "             원정(\\                        ",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G006",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 631,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        281.7602233886719,
+        536.1417846679688,
+        291.65301513671875,
+        547.0611572265625
+      ],
+      "context_before": "\n1. 일반관리비  금\n원정(\\       ) \n3. 수도료\n  금\n원정(",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G007",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 656,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        281.7602233886719,
+        552.581787109375,
+        291.65301513671875,
+        563.5011596679688
+      ],
+      "context_before": " \n3. 수도료\n  금\n원정(\\       ) \n5. 난방비\n  금\n원정(",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G008",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 681,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        281.7602233886719,
+        569.1417846679688,
+        291.65301513671875,
+        580.0611572265625
+      ],
+      "context_before": " \n5. 난방비\n  금\n원정(\\       ) \n7. TV 사용료  금\n ",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G009",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 710,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        281.7602233886719,
+        585.7018432617188,
+        291.65301513671875,
+        596.6212158203125
+      ],
+      "context_before": " TV 사용료  금\n \n원정(\\       ) \n2. 전기료\n   금\n원정",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G010",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 736,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        522.72021484375,
+        536.1417846679688,
+        532.613037109375,
+        547.0611572265625
+      ],
+      "context_before": "\n2. 전기료\n   금\n원정(\\       ) \n4. 가스사용료   금\n원",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G011",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 763,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        522.72021484375,
+        552.581787109375,
+        532.613037109375,
+        563.5011596679688
+      ],
+      "context_before": "4. 가스사용료   금\n원정(\\       ) \n6. 인터넷사용료  금\n원",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G012",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 790,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        522.72021484375,
+        569.1417846679688,
+        532.613037109375,
+        580.0611572265625
+      ],
+      "context_before": "6. 인터넷사용료  금\n원정(\\       ) \n8. 기타관리비   금\n원",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G013",
+      "clause_id": "C001",
+      "page": 1,
+      "offset_in_original_text": 817,
+      "before": "\\",
+      "after": "₩",
+      "before_codepoint": "U+005C",
+      "after_codepoint": "U+20A9",
+      "reason": "PDF 확대 렌더에서 원화 기호 확인; 텍스트 레이어의 역슬래시 매핑 오류",
+      "source_glyph_bbox": [
+        522.72021484375,
+        585.7018432617188,
+        532.613037109375,
+        596.6212158203125
+      ],
+      "context_before": "8. 기타관리비   금\n원정(\\       ) \n(정액이아닌경우)\n관리비의",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G014",
+      "clause_id": "C014",
+      "page": 2,
+      "offset_in_original_text": 0,
+      "before": "Ÿ",
+      "after": "•",
+      "before_codepoint": "U+0178",
+      "after_codepoint": "U+2022",
+      "reason": "PDF 확대 렌더에서 검은 원형 글머리표 확인; 텍스트 레이어의 Ÿ 매핑 오류",
+      "source_glyph_bbox": [
+        37.68000030517578,
+        605.4541625976562,
+        42.231719970703125,
+        615.4141845703125
+      ],
+      "context_before": "Ÿ 주택을 인도받은 임차인은 _______년 ",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G015",
+      "clause_id": "C015",
+      "page": 2,
+      "offset_in_original_text": 0,
+      "before": "Ÿ",
+      "after": "•",
+      "before_codepoint": "U+0178",
+      "after_codepoint": "U+2022",
+      "reason": "PDF 확대 렌더에서 검은 원형 글머리표 확인; 텍스트 레이어의 Ÿ 매핑 오류",
+      "source_glyph_bbox": [
+        37.68000030517578,
+        634.3741455078125,
+        42.231719970703125,
+        644.3341674804688
+      ],
+      "context_before": "Ÿ 임대인이 위 특약에 위반하여 임차주택에 저",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G016",
+      "clause_id": "C016",
+      "page": 2,
+      "offset_in_original_text": 0,
+      "before": "Ÿ",
+      "after": "•",
+      "before_codepoint": "U+0178",
+      "after_codepoint": "U+2022",
+      "reason": "PDF 확대 렌더에서 검은 원형 글머리표 확인; 텍스트 레이어의 Ÿ 매핑 오류",
+      "source_glyph_bbox": [
+        37.68000030517578,
+        663.4141235351562,
+        42.231719970703125,
+        673.3741455078125
+      ],
+      "context_before": "Ÿ 임대차계약을 체결한 임차인은 임대차계약 체",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G017",
+      "clause_id": "C017",
+      "page": 2,
+      "offset_in_original_text": 0,
+      "before": "Ÿ",
+      "after": "•",
+      "before_codepoint": "U+0178",
+      "after_codepoint": "U+2022",
+      "reason": "PDF 확대 렌더에서 검은 원형 글머리표 확인; 텍스트 레이어의 Ÿ 매핑 오류",
+      "source_glyph_bbox": [
+        37.68000030517578,
+        716.4541625976562,
+        42.231719970703125,
+        726.4141845703125
+      ],
+      "context_before": "Ÿ 주택임대차계약과 관련하여 분쟁이 있는 경우",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G018",
+      "clause_id": "C018",
+      "page": 2,
+      "offset_in_original_text": 0,
+      "before": "Ÿ",
+      "after": "•",
+      "before_codepoint": "U+0178",
+      "after_codepoint": "U+2022",
+      "reason": "PDF 확대 렌더에서 검은 원형 글머리표 확인; 텍스트 레이어의 Ÿ 매핑 오류",
+      "source_glyph_bbox": [
+        37.68000030517578,
+        761.4541625976562,
+        42.231719970703125,
+        771.4141845703125
+      ],
+      "context_before": "Ÿ 주택의 철거 또는 재건축에 관한 구체적 계",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    },
+    {
+      "correction_id": "G019",
+      "clause_id": "C019",
+      "page": 2,
+      "offset_in_original_text": 0,
+      "before": "Ÿ",
+      "after": "•",
+      "before_codepoint": "U+0178",
+      "after_codepoint": "U+2022",
+      "reason": "PDF 확대 렌더에서 검은 원형 글머리표 확인; 텍스트 레이어의 Ÿ 매핑 오류",
+      "source_glyph_bbox": [
+        37.68000030517578,
+        777.4141235351562,
+        42.231719970703125,
+        787.3741455078125
+      ],
+      "context_before": "Ÿ 상세주소가 없는 경우 임차인의 상세주소부여",
+      "reviewer_type": "ai_assistant",
+      "human_approved": false,
+      "evidence": {
+        "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+        "render_scale": 2.5,
+        "coordinate_system": "PDF points, top-left origin"
+      },
+      "unicode_policy": "보이는 원화 기호는 U+20A9, 원형 글머리표는 U+2022로 전사. 원래 PDF의 의도된 Unicode 코드포인트까지 입증한 것은 아님."
+    }
+  ],
+  "assistant_visual_inspection": {
+    "reviewed_at": "2026-11-02T13:29:09.821564+00:00",
+    "reviewer_type": "ai_assistant",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "clause_crops_compared": 19,
+    "render_method": "PyMuPDF 1.26.5; full pages 1.5x, clause crops 2.5x",
+    "scope": "본문 13개 조항 및 특약 6개의 시각 대조. 사람의 확인이 아님.",
+    "observations": [
+      {
+        "clause_id": "C001",
+        "page": 1,
+        "source_blocks": [
+          {
+            "index": 26,
+            "bbox": [
+              36.0,
+              353.9091796875,
+              578.7960815429688,
+              379.9704284667969
+            ]
+          },
+          {
+            "index": 27,
+            "bbox": [
+              46.07999801635742,
+              382.01043701171875,
+              253.9564666748047,
+              392.5704345703125
+            ]
+          },
+          {
+            "index": 28,
+            "bbox": [
+              44.87999725341797,
+              400.07818603515625,
+              460.739990234375,
+              411.1181945800781
+            ]
+          },
+          {
+            "index": 29,
+            "bbox": [
+              44.87999725341797,
+              419.5181884765625,
+              541.6359252929688,
+              430.5581970214844
+            ]
+          },
+          {
+            "index": 30,
+            "bbox": [
+              44.87999725341797,
+              439.07818603515625,
+              546.7960205078125,
+              450.1181945800781
+            ]
+          },
+          {
+            "index": 31,
+            "bbox": [
+              44.87999725341797,
+              458.5181884765625,
+              537.7208251953125,
+              469.5581970214844
+            ]
+          },
+          {
+            "index": 32,
+            "bbox": [
+              41.63999938964844,
+              478.07818603515625,
+              551.2200317382812,
+              489.1181945800781
+            ]
+          },
+          {
+            "index": 33,
+            "bbox": [
+              44.87999725341797,
+              560.7581787109375,
+              84.47999572753906,
+              571.7982177734375
+            ]
+          },
+          {
+            "index": 34,
+            "bbox": [
+              106.19999694824219,
+              497.63726806640625,
+              488.8500061035156,
+              509.51666259765625
+            ]
+          },
+          {
+            "index": 35,
+            "bbox": [
+              106.19999694824219,
+              515.6372680664062,
+              297.72039794921875,
+              527.5166625976562
+            ]
+          },
+          {
+            "index": 36,
+            "bbox": [
+              106.19999694824219,
+              536.1417846679688,
+              336.71673583984375,
+              547.0611572265625
+            ]
+          },
+          {
+            "index": 37,
+            "bbox": [
+              106.19999694824219,
+              552.581787109375,
+              336.71673583984375,
+              563.5011596679688
+            ]
+          },
+          {
+            "index": 38,
+            "bbox": [
+              106.19999694824219,
+              569.1417846679688,
+              336.71673583984375,
+              580.0611572265625
+            ]
+          },
+          {
+            "index": 39,
+            "bbox": [
+              106.19999694824219,
+              585.7018432617188,
+              336.71673583984375,
+              596.6212158203125
+            ]
+          },
+          {
+            "index": 40,
+            "bbox": [
+              347.1600036621094,
+              536.1417846679688,
+              577.7965698242188,
+              547.0611572265625
+            ]
+          },
+          {
+            "index": 41,
+            "bbox": [
+              347.1600036621094,
+              552.581787109375,
+              577.7965698242188,
+              563.5011596679688
+            ]
+          },
+          {
+            "index": 42,
+            "bbox": [
+              347.1600036621094,
+              569.1417846679688,
+              577.7965698242188,
+              580.0611572265625
+            ]
+          },
+          {
+            "index": 43,
+            "bbox": [
+              347.1600036621094,
+              585.7018432617188,
+              577.7965698242188,
+              596.6212158203125
+            ]
+          },
+          {
+            "index": 44,
+            "bbox": [
+              106.19999694824219,
+              605.2578125,
+              195.60353088378906,
+              617.0201416015625
+            ]
+          },
+          {
+            "index": 45,
+            "bbox": [
+              106.19999694824219,
+              623.1572875976562,
+              485.489990234375,
+              635.0366821289062
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "1",
+          "10",
+          "1",
+          "3",
+          "5",
+          "7",
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correction_ids": [
+          "G001",
+          "G002",
+          "G003",
+          "G004",
+          "G005",
+          "G006",
+          "G007",
+          "G008",
+          "G009",
+          "G010",
+          "G011",
+          "G012",
+          "G013"
+        ],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "원화 13곳과 관리비 표의 항목-금액 대응 확인. 읽기 순서 1·3·5·7→2·4·6·8 유지. 금액은 빈칸이며 10만원은 안내 기준 문구.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요."
+        ]
+      },
+      {
+        "clause_id": "C002",
+        "page": 1,
+        "source_blocks": [
+          {
+            "index": 2,
+            "bbox": [
+              26.74550437927246,
+              648.1796264648438,
+              571.52685546875,
+              658.7310180664062
+            ]
+          },
+          {
+            "index": 3,
+            "bbox": [
+              37.77952575683594,
+              659.6347045898438,
+              500.2848815917969,
+              670.6657104492188
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "2"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+          "가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요."
+        ]
+      },
+      {
+        "clause_id": "C003",
+        "page": 1,
+        "source_blocks": [
+          {
+            "index": 4,
+            "bbox": [
+              26.74550437927246,
+              676.7084350585938,
+              571.5259399414062,
+              687.2598266601562
+            ]
+          },
+          {
+            "index": 5,
+            "bbox": [
+              37.77952575683594,
+              688.335693359375,
+              83.15141296386719,
+              698.8870849609375
+            ]
+          },
+          {
+            "index": 6,
+            "bbox": [
+              47.63999938964844,
+              711.7704467773438,
+              537.1199951171875,
+              722.8104858398438
+            ]
+          },
+          {
+            "index": 7,
+            "bbox": [
+              47.63999938964844,
+              731.6904907226562,
+              544.0800170898438,
+              742.73046875
+            ]
+          },
+          {
+            "index": 8,
+            "bbox": [
+              33.36000061035156,
+              750.7704467773438,
+              135.36029052734375,
+              773.9304809570312
+            ]
+          },
+          {
+            "index": 9,
+            "bbox": [
+              145.55999755859375,
+              750.2904663085938,
+              542.6400146484375,
+              773.450439453125
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "3"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요."
+        ]
+      },
+      {
+        "clause_id": "C004",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 1,
+            "bbox": [
+              26.760000228881836,
+              24.53044891357422,
+              571.8364868164062,
+              35.090450286865234
+            ]
+          },
+          {
+            "index": 2,
+            "bbox": [
+              26.760000228881836,
+              36.05044937133789,
+              568.319580078125,
+              61.13045120239258
+            ]
+          },
+          {
+            "index": 3,
+            "bbox": [
+              26.760000228881836,
+              62.09044647216797,
+              571.8364868164062,
+              87.17044830322266
+            ]
+          },
+          {
+            "index": 4,
+            "bbox": [
+              37.79999923706055,
+              88.25045013427734,
+              450.2764587402344,
+              98.8104476928711
+            ]
+          },
+          {
+            "index": 41,
+            "bbox": [
+              46.79999923706055,
+              105.05265808105469,
+              574.59814453125,
+              119.72576904296875
+            ]
+          },
+          {
+            "index": 42,
+            "bbox": [
+              126.47999572753906,
+              116.69265747070312,
+              502.8381042480469,
+              125.57344055175781
+            ]
+          },
+          {
+            "index": 43,
+            "bbox": [
+              46.79999923706055,
+              129.53265380859375,
+              574.5977783203125,
+              144.3257598876953
+            ]
+          },
+          {
+            "index": 44,
+            "bbox": [
+              126.5999984741211,
+              141.2926483154297,
+              503.8061828613281,
+              150.17344665527344
+            ]
+          },
+          {
+            "index": 5,
+            "bbox": [
+              26.760000228881836,
+              157.1304473876953,
+              541.1163940429688,
+              167.69044494628906
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "4",
+          "①",
+          "②",
+          "③",
+          "623",
+          "623",
+          "④"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "③ 아래의 임대인/임차인 부담 표와 ④ 순서를 확인. 회색 예시도 원본 문구로 포함되어 있음.",
+          "가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요."
+        ]
+      },
+      {
+        "clause_id": "C005",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 6,
+            "bbox": [
+              26.760000228881836,
+              174.65045166015625,
+              570.87646484375,
+              185.21044921875
+            ]
+          },
+          {
+            "index": 7,
+            "bbox": [
+              36.84000015258789,
+              186.17044067382812,
+              394.95648193359375,
+              196.73043823242188
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "5"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요."
+        ]
+      },
+      {
+        "clause_id": "C006",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 8,
+            "bbox": [
+              26.760000228881836,
+              203.69044494628906,
+              570.8756713867188,
+              214.2504425048828
+            ]
+          },
+          {
+            "index": 9,
+            "bbox": [
+              37.439998626708984,
+              215.21044921875,
+              570.7556762695312,
+              237.4104461669922
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "6"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요."
+        ]
+      },
+      {
+        "clause_id": "C007",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 10,
+            "bbox": [
+              26.760000228881836,
+              244.3704376220703,
+              570.87646484375,
+              254.93043518066406
+            ]
+          },
+          {
+            "index": 11,
+            "bbox": [
+              37.439998626708984,
+              255.89044189453125,
+              280.35638427734375,
+              266.450439453125
+            ]
+          },
+          {
+            "index": 12,
+            "bbox": [
+              26.760000228881836,
+              273.4104309082031,
+              552.9959716796875,
+              283.9704284667969
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "7",
+          "①",
+          "②",
+          "2",
+          "4",
+          "1"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요."
+        ]
+      },
+      {
+        "clause_id": "C008",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 13,
+            "bbox": [
+              26.760000228881836,
+              290.9304504394531,
+              570.8768310546875,
+              301.4904479980469
+            ]
+          },
+          {
+            "index": 14,
+            "bbox": [
+              37.79999923706055,
+              302.450439453125,
+              570.8762817382812,
+              324.76800537109375
+            ]
+          },
+          {
+            "index": 15,
+            "bbox": [
+              26.760000228881836,
+              331.6104431152344,
+              567.4795532226562,
+              342.1704406738281
+            ]
+          },
+          {
+            "index": 16,
+            "bbox": [
+              37.79999923706055,
+              343.13043212890625,
+              570.8756713867188,
+              365.21044921875
+            ]
+          },
+          {
+            "index": 17,
+            "bbox": [
+              26.760000228881836,
+              372.1704406738281,
+              404.31646728515625,
+              382.7304382324219
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "8",
+          "①",
+          "6",
+          "2",
+          "6",
+          "3",
+          "1",
+          "2",
+          "②",
+          "6",
+          "3",
+          "1",
+          "8",
+          "3",
+          "③",
+          "2",
+          "6",
+          "3",
+          "6"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요."
+        ]
+      },
+      {
+        "clause_id": "C009",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 18,
+            "bbox": [
+              26.760000228881836,
+              389.6904296875,
+              567.4802856445312,
+              400.25042724609375
+            ]
+          },
+          {
+            "index": 19,
+            "bbox": [
+              37.79999923706055,
+              401.3304443359375,
+              570.87646484375,
+              423.4104309082031
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "9"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요."
+        ]
+      },
+      {
+        "clause_id": "C010",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 20,
+            "bbox": [
+              26.760000228881836,
+              430.3704528808594,
+              436.23638916015625,
+              440.9304504394531
+            ]
+          },
+          {
+            "index": 21,
+            "bbox": [
+              26.760000228881836,
+              447.89044189453125,
+              570.8764038085938,
+              458.450439453125
+            ]
+          },
+          {
+            "index": 22,
+            "bbox": [
+              37.79999923706055,
+              459.4104309082031,
+              535.7164916992188,
+              469.9704284667969
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "10",
+          "①",
+          "②"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요."
+        ]
+      },
+      {
+        "clause_id": "C011",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 23,
+            "bbox": [
+              26.760000228881836,
+              476.9304504394531,
+              570.8756713867188,
+              487.4904479980469
+            ]
+          },
+          {
+            "index": 24,
+            "bbox": [
+              36.959999084472656,
+              488.5704345703125,
+              417.0359802246094,
+              499.13043212890625
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "11"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요."
+        ]
+      },
+      {
+        "clause_id": "C012",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 25,
+            "bbox": [
+              26.760000228881836,
+              506.0904235839844,
+              570.876220703125,
+              516.6504516601562
+            ]
+          },
+          {
+            "index": 26,
+            "bbox": [
+              37.79999923706055,
+              517.6104736328125,
+              570.87646484375,
+              539.6904907226562
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "12"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+          "가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요."
+        ]
+      },
+      {
+        "clause_id": "C013",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 27,
+            "bbox": [
+              26.760000228881836,
+              546.6504516601562,
+              567.4783325195312,
+              557.21044921875
+            ]
+          },
+          {
+            "index": 28,
+            "bbox": [
+              37.79999923706055,
+              558.1704711914062,
+              545.3164672851562,
+              568.73046875
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "13"
+        ],
+        "correction_ids": [],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+          "가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요."
+        ]
+      },
+      {
+        "clause_id": "C014",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 30,
+            "bbox": [
+              37.68000030517578,
+              604.7657470703125,
+              563.2371215820312,
+              615.4141845703125
+            ]
+          },
+          {
+            "index": 31,
+            "bbox": [
+              47.39999771118164,
+              616.7657470703125,
+              498.7966613769531,
+              626.7257690429688
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [],
+        "correction_ids": [
+          "G014"
+        ],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+          "원형 글머리표를 •로 전사한 변경 확인."
+        ]
+      },
+      {
+        "clause_id": "C015",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 32,
+            "bbox": [
+              37.68000030517578,
+              633.6857299804688,
+              563.2371215820312,
+              644.3341674804688
+            ]
+          },
+          {
+            "index": 33,
+            "bbox": [
+              48.36000061035156,
+              645.6857299804688,
+              509.7166748046875,
+              655.645751953125
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [],
+        "correction_ids": [
+          "G015"
+        ],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "원형 글머리표를 •로 전사한 변경 확인."
+        ]
+      },
+      {
+        "clause_id": "C016",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 34,
+            "bbox": [
+              37.68000030517578,
+              662.7257080078125,
+              563.2361450195312,
+              673.3741455078125
+            ]
+          },
+          {
+            "index": 35,
+            "bbox": [
+              47.52000045776367,
+              674.7257080078125,
+              563.3562622070312,
+              708.6857299804688
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "3",
+          "6",
+          "3",
+          "5"
+        ],
+        "correction_ids": [
+          "G016"
+        ],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+          "가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요.",
+          "원형 글머리표를 •로 전사한 변경 확인."
+        ]
+      },
+      {
+        "clause_id": "C017",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 36,
+            "bbox": [
+              37.68000030517578,
+              715.7657470703125,
+              559.9199829101562,
+              726.4141845703125
+            ]
+          },
+          {
+            "index": 37,
+            "bbox": [
+              47.63999938964844,
+              727.7657470703125,
+              345.85498046875,
+              737.7257690429688
+            ]
+          },
+          {
+            "index": 38,
+            "bbox": [
+              37.68000030517578,
+              744.6857299804688,
+              555.316650390625,
+              754.645751953125
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [
+          "60",
+          "90"
+        ],
+        "correction_ids": [
+          "G017"
+        ],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "원형 글머리표를 •로 전사한 변경 확인.",
+          "특약 문장 아래 ※ 안내의 60일·90일 포함 범위 확인."
+        ]
+      },
+      {
+        "clause_id": "C018",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 39,
+            "bbox": [
+              37.68000030517578,
+              760.7657470703125,
+              559.9349975585938,
+              771.4141845703125
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [],
+        "correction_ids": [
+          "G018"
+        ],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+          "원형 글머리표를 •로 전사한 변경 확인."
+        ]
+      },
+      {
+        "clause_id": "C019",
+        "page": 2,
+        "source_blocks": [
+          {
+            "index": 40,
+            "bbox": [
+              37.68000030517578,
+              776.7257080078125,
+              512.5349731445312,
+              787.3741455078125
+            ]
+          }
+        ],
+        "assistant_comparison": "본문·숫자·조항 번호·조건을 확대 렌더와 대조함. 명확한 문자 오류 외 문장 변경 없음.",
+        "numbers_observed": [],
+        "correction_ids": [
+          "G019"
+        ],
+        "status": "needs_review",
+        "human_checks": [
+          "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+          "원형 글머리표를 •로 전사한 변경 확인."
+        ]
+      }
+    ]
+  },
+  "review_items": [
+    {
+      "clause_id": "C001",
+      "page": 1,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 원화 13곳과 관리비 표의 항목-금액 대응 확인. 읽기 순서 1·3·5·7→2·4·6·8 유지. 금액은 빈칸이며 10만원은 안내 기준 문구. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C002",
+      "page": 1,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요. 가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C003",
+      "page": 1,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C004",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. ③ 아래의 임대인/임차인 부담 표와 ④ 순서를 확인. 회색 예시도 원본 문구로 포함되어 있음. 가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C005",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C006",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C007",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C008",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C009",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C010",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C011",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C012",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요. 가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C013",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요. 가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C014",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요. 원형 글머리표를 •로 전사한 변경 확인.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C015",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 원형 글머리표를 •로 전사한 변경 확인.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C016",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요. 가운데점 계열 ·/‧/․/･는 유사한 모양만으로 Unicode를 단정할 수 없어 기존 문자 유지. 평가용 정규화 규칙 확인 필요. 원형 글머리표를 •로 전사한 변경 확인.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C017",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 원형 글머리표를 •로 전사한 변경 확인. 특약 문장 아래 ※ 안내의 60일·90일 포함 범위 확인.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C018",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 빈칸·밑줄은 미기입 영역. 공백 개수/밑줄 길이를 OCR 정답의 문자로 평가할지 규칙 확정 필요. 원형 글머리표를 •로 전사한 변경 확인.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "clause_id": "C019",
+      "page": 2,
+      "problem_types": [
+        "human_verification_pending"
+      ],
+      "reason": "사람이 PDF와 문장 전체를 대조한 후 검토자·검토일·결과 기록 필요. 원형 글머리표를 •로 전사한 변경 확인.",
+      "status": "verified",
+      "resolution": {
+        "reviewer": "사용자(이 대화의 요청자)",
+        "recorded_at": "2026-11-02T13:50:39.800893+00:00",
+        "result": "사용자의 직접 원문 대조 및 일치 승인 반영",
+        "scope_note": "기존 reason은 과거 확인 요청 기록. OCR 공백·밑줄·Unicode 정규화 정책 승인은 포함하지 않음."
+      }
+    },
+    {
+      "page": 5,
+      "clause_id": null,
+      "problem_types": [
+        "printed_page_count_mismatch"
+      ],
+      "reason": "실제 5쪽이지만 인쇄 표기는 5 / 4. 물리적 PDF 페이지 번호 사용을 사람 검토 시 확인.",
+      "status": "resolved",
+      "resolution": {
+        "resolved_at": "2026-11-02T23:03:36.326501+09:00",
+        "reviewer_type": "ai_assistant",
+        "result": "전체 5페이지와 하단 쪽수를 시각 확인. 5쪽의 인쇄 표기는 - 5 / 4 -. 인쇄 분모 불일치를 기록하고 실제 페이지 번호 유지. PDF 수정 없음."
+      }
+    }
+  ],
+  "human_review_list": "data/ocr/human_review.md",
+  "automatic_validation": {
+    "passed": [
+      {
+        "check": "json_schema_root",
+        "clause_id": null,
+        "detail": "필수 루트 필드 타입 정상"
+      },
+      {
+        "check": "source_exists",
+        "clause_id": null,
+        "detail": "/Users/sonsoi/SafeContract-AI/data/contracts/original/standard_contract.pdf"
+      },
+      {
+        "check": "actual_page_count",
+        "clause_id": null,
+        "detail": 5
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C001",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C002",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C002",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C003",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C003",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C004",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C004",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C005",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C005",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C006",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C006",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C007",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C007",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C008",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C008",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C009",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C009",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C010",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C010",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C011",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C011",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C012",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C012",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C013",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C013",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C014",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C015",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C016",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C017",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C018",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C019",
+        "detail": "숫자·조항 번호 토큰 일치"
+      }
+    ],
+    "failed": [],
+    "needs_review": [
+      {
+        "check": "text_difference",
+        "clause_id": "C001",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C014",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C015",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C016",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C017",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C018",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C019",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      }
+    ],
+    "unverified": [
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C001",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C002",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C003",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C004",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C005",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C006",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C007",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C008",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C009",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C010",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C011",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C012",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C013",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C014",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C015",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C016",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C017",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C018",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C019",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "visual_glyph_fidelity",
+        "clause_id": null,
+        "detail": "텍스트 레이어끼리의 일치는 원화·글머리표 등 시각적 기호 정확성을 보장하지 않음"
+      }
+    ],
+    "automatic_match_is_human_verification": false,
+    "summary": {
+      "clause_count": 19,
+      "exact_source_matches": 12,
+      "category_counts": {
+        "rent": 1,
+        "contract_period": 1,
+        "repair_responsibility": 2,
+        "termination": 3,
+        "renewal": 1,
+        "deposit_return": 1,
+        "management_fee": 1,
+        "other": 3,
+        "special_terms": 6
+      },
+      "verified_clauses": 19
+    },
+    "structure_valid": true,
+    "status": "needs_review"
+  },
+  "visual_correction_validation": {
+    "checks": [
+      {
+        "test": "19 clauses retained",
+        "status": "passed"
+      },
+      {
+        "test": "unique clause IDs",
+        "status": "passed"
+      },
+      {
+        "test": "all remain needs_review",
+        "status": "passed"
+      },
+      {
+        "test": "C001 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C001 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C001 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C001 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C002 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C002 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C002 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C002 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C003 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C003 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C003 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C003 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C004 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C004 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C004 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C004 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C005 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C005 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C005 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C005 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C006 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C006 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C006 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C006 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C007 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C007 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C007 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C007 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C008 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C008 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C008 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C008 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C009 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C009 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C009 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C009 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C010 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C010 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C010 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C010 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C011 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C011 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C011 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C011 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C012 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C012 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C012 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C012 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C013 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C013 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C013 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C013 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C014 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C014 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C014 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C014 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C015 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C015 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C015 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C015 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C016 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C016 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C016 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C016 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C017 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C017 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C017 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C017 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C018 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C018 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C018 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C018 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "C019 only logged corrections",
+        "status": "passed"
+      },
+      {
+        "test": "C019 page and source blocks preserved",
+        "status": "passed"
+      },
+      {
+        "test": "C019 original text recoverable",
+        "status": "passed"
+      },
+      {
+        "test": "C019 numbers unchanged",
+        "status": "passed"
+      },
+      {
+        "test": "19 character corrections",
+        "status": "passed"
+      },
+      {
+        "test": "7 corrected clauses",
+        "status": "passed"
+      },
+      {
+        "test": "validator no hard failures",
+        "status": "passed"
+      },
+      {
+        "test": "12 raw-layer exact matches",
+        "status": "passed"
+      },
+      {
+        "test": "7 raw-layer differences explained",
+        "status": "passed"
+      },
+      {
+        "test": "unchanged: frontend/index.html",
+        "status": "passed"
+      },
+      {
+        "test": "unchanged: frontend/style.css",
+        "status": "passed"
+      },
+      {
+        "test": "unchanged: frontend/app.js",
+        "status": "passed"
+      },
+      {
+        "test": "unchanged: data/contracts/original/standard_contract.pdf",
+        "status": "passed"
+      },
+      {
+        "test": "unchanged: data/cases/dispute_cases.pdf",
+        "status": "passed"
+      },
+      {
+        "test": "unchanged: data/legal/housing_lease_act.pdf",
+        "status": "passed"
+      },
+      {
+        "test": "unchanged: data/metadata/document_manifest.json",
+        "status": "passed"
+      },
+      {
+        "test": "19 human review sections",
+        "status": "passed"
+      }
+    ],
+    "passed": 92,
+    "failed": 0,
+    "raw_layer_exact_matches": 12,
+    "logged_visual_correction_matches": 7,
+    "unexplained_text_changes": 0,
+    "note": "기존 검증기는 보정 전 텍스트 레이어를 비교하므로 의도된 7개 조항의 변경을 text_difference로 표시함. 변경 이력 재적용 검사는 별도이며 사람이 검증했다는 의미가 아님."
+  },
+  "completion_checks": {
+    "branch": "dev/01",
+    "pdfs_unchanged": true,
+    "frontend_unchanged": true,
+    "clauses_visually_compared_by_ai": 19,
+    "human_verified_clauses": 19,
+    "needs_review_clauses": 0,
+    "changed_clauses": 7,
+    "changed_characters": 19,
+    "all_pages_correct": true,
+    "all_numbers_unchanged": true,
+    "ground_truth_finalized": true,
+    "ground_truth_scope": "C001~C019 current text only",
+    "human_approval_recorded_at": "2026-11-02T13:50:39.800893+00:00"
+  },
+  "human_verification": {
+    "approval": {
+      "reviewer": "사용자(이 대화의 요청자)",
+      "reviewed_at": "2026-11-02T13:50:39.800893+00:00",
+      "method": "사용자가 원본 PDF와 human_review.md를 직접 비교하여 C001~C019 모두 정확히 일치함을 확인했다고 대화에서 명시적으로 승인함.",
+      "timestamp_semantics": "사용자 승인 반영 시각; 실제 대조 수행 시각은 미제공",
+      "actual_comparison_date": null,
+      "approval_scope": "C001~C019의 현재 텍스트와 원본 PDF 일치",
+      "evidence": "내가 원본 PDF와 human_review.md를 직접 비교하여 C001부터 C019까지 19개 조항 모두 정확히 일치함을 확인했어."
+    },
+    "clause_ids": [
+      "C001",
+      "C002",
+      "C003",
+      "C004",
+      "C005",
+      "C006",
+      "C007",
+      "C008",
+      "C009",
+      "C010",
+      "C011",
+      "C012",
+      "C013",
+      "C014",
+      "C015",
+      "C016",
+      "C017",
+      "C018",
+      "C019"
+    ],
+    "verified_clauses": 19,
+    "needs_review_clauses": 0
+  },
+  "approval_exclusions": [
+    {
+      "item": "PDF 5쪽의 인쇄 쪽수 불일치 검토",
+      "status": "resolved",
+      "reason": "이번 작업에서 전체 5쪽과 하단 확대 렌더 대조 완료. pagination_review 참조."
+    },
+    {
+      "item": "공식 웹 첨부파일과 로컬 PDF 바이트 동일성",
+      "status": "resolved",
+      "reason": "이전 작업의 document_manifest.json official_download_identity_verification에 두 파일 SHA-256 재계산 일치 기록. 공식 다운로드 출처는 사용자 확인에 근거."
+    },
+    {
+      "item": "OCR 평가용 공백·밑줄·가운데점 Unicode 정규화 정책",
+      "status": "resolved",
+      "reason": "현재 사용자 요청 기준으로 normalization_policy.md v1 정의 및 단위 테스트 완료. 공백 allowlist 외 모든 문자는 보존."
+    }
+  ],
+  "human_approval_integrity_validation": {
+    "passed": 58,
+    "failed": 0,
+    "checks": [
+      {
+        "check": "branch dev/01",
+        "status": "passed"
+      },
+      {
+        "check": "19 unique clause IDs",
+        "status": "passed"
+      },
+      {
+        "check": "19 verified and 0 needs_review",
+        "status": "passed"
+      },
+      {
+        "check": "C001 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C001 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C002 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C002 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C003 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C003 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C004 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C004 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C005 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C005 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C006 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C006 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C007 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C007 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C008 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C008 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C009 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C009 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C010 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C010 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C011 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C011 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C012 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C012 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C013 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C013 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C014 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C014 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C015 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C015 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C016 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C016 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C017 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C017 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C018 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C018 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "C019 only approval fields changed",
+        "status": "passed"
+      },
+      {
+        "check": "C019 user evidence present",
+        "status": "passed"
+      },
+      {
+        "check": "character correction history unchanged",
+        "status": "passed"
+      },
+      {
+        "check": "existing historical records unchanged",
+        "status": "passed"
+      },
+      {
+        "check": "non-clause review items unchanged",
+        "status": "passed"
+      },
+      {
+        "check": "19 review items verified",
+        "status": "passed"
+      },
+      {
+        "check": "markdown text blocks unchanged",
+        "status": "passed"
+      },
+      {
+        "check": "19 markdown clause approvals",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged data/contracts/original/standard_contract.pdf",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged data/cases/dispute_cases.pdf",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged data/legal/housing_lease_act.pdf",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged frontend/index.html",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged frontend/style.css",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged frontend/app.js",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged scripts/extract_contract_text.py",
+        "status": "passed"
+      },
+      {
+        "check": "protected bytes unchanged scripts/validate_contract_json.py",
+        "status": "passed"
+      },
+      {
+        "check": "validation has no failures",
+        "status": "passed"
+      },
+      {
+        "check": "validator sees 19 verified",
+        "status": "passed"
+      },
+      {
+        "check": "raw layer differences remain 7 recorded symbol corrections",
+        "status": "passed"
+      }
+    ],
+    "verified_clauses": 19,
+    "needs_review_clauses": 0,
+    "note": "검증기의 needs_review는 원시 PDF 텍스트 레이어와 승인된 기호 보정의 차이 7건. 조항 verification_status와 구분."
+  },
+  "pagination_review": {
+    "checked_at": "2026-11-02T23:03:36.326501+09:00",
+    "reviewer_type": "ai_assistant",
+    "method": "PyMuPDF 1.26.5 전체 페이지 1.3배 및 하단 쪽수 3배 렌더를 시각 대조",
+    "physical_page_count": 5,
+    "pages": [
+      {
+        "physical_page": 1,
+        "printed_page_label": "- 1 / 4 -",
+        "printed_page_number": 1,
+        "printed_total_pages": 4,
+        "number_matches_physical_page": true,
+        "printed_total_matches_physical_count": false,
+        "location": "하단 중앙"
+      },
+      {
+        "physical_page": 2,
+        "printed_page_label": "- 2 / 4 -",
+        "printed_page_number": 2,
+        "printed_total_pages": 4,
+        "number_matches_physical_page": true,
+        "printed_total_matches_physical_count": false,
+        "location": "하단 중앙"
+      },
+      {
+        "physical_page": 3,
+        "printed_page_label": "- 3 / 4 -",
+        "printed_page_number": 3,
+        "printed_total_pages": 4,
+        "number_matches_physical_page": true,
+        "printed_total_matches_physical_count": false,
+        "location": "하단 중앙"
+      },
+      {
+        "physical_page": 4,
+        "printed_page_label": "- 4 / 4 -",
+        "printed_page_number": 4,
+        "printed_total_pages": 4,
+        "number_matches_physical_page": true,
+        "printed_total_matches_physical_count": false,
+        "location": "하단 중앙"
+      },
+      {
+        "physical_page": 5,
+        "printed_page_label": "- 5 / 4 -",
+        "printed_page_number": 5,
+        "printed_total_pages": 4,
+        "number_matches_physical_page": true,
+        "printed_total_matches_physical_count": false,
+        "location": "하단 중앙"
+      }
+    ],
+    "result": "모든 페이지에 인쇄 쪽수 존재. 순번 1~5는 물리적 페이지와 일치하나 분모 4는 실제 총 5페이지와 불일치. 5페이지는 - 5 / 4 -로 인쇄되어 있음. 원본을 고치지 않고 물리적 페이지 번호를 사용한다.",
+    "pdf_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+    "human_verification_claimed": false
+  },
+  "normalization_policy": {
+    "version": "safecontract-ocr-normalization-v1",
+    "status": "defined_and_tested",
+    "defined_at": "2026-11-02T23:03:36.326501+09:00",
+    "document": "data/ocr/normalization_policy.md",
+    "implementation": "scripts/ocr_evaluation.py",
+    "tests": "tests/test_ocr_evaluation.py",
+    "source": "현재 사용자 요청의 10개 기준",
+    "ground_truth_modified": false,
+    "actual_ocr_benchmark_performed": false
+  },
+  "d8_final_validation": {
+    "checked_at": "2026-11-02T23:03:36.326501+09:00",
+    "branch": "dev/01",
+    "existing_validator": {
+      "passed": [
+        {
+          "check": "json_schema_root",
+          "clause_id": null,
+          "detail": "필수 루트 필드 타입 정상"
+        },
+        {
+          "check": "source_exists",
+          "clause_id": null,
+          "detail": "/Users/sonsoi/SafeContract-AI/data/contracts/original/standard_contract.pdf"
+        },
+        {
+          "check": "actual_page_count",
+          "clause_id": null,
+          "detail": 5
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C001",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C002",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C002",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C003",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C003",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C004",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C004",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C005",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C005",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C006",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C006",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C007",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C007",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C008",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C008",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C009",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C009",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C010",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C010",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C011",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C011",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C012",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C012",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "exact_source_match",
+          "clause_id": "C013",
+          "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C013",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C014",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C015",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C016",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C017",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C018",
+          "detail": "숫자·조항 번호 토큰 일치"
+        },
+        {
+          "check": "numbers_and_article_markers",
+          "clause_id": "C019",
+          "detail": "숫자·조항 번호 토큰 일치"
+        }
+      ],
+      "failed": [],
+      "needs_review": [
+        {
+          "check": "text_difference",
+          "clause_id": "C001",
+          "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+        },
+        {
+          "check": "text_difference",
+          "clause_id": "C014",
+          "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+        },
+        {
+          "check": "text_difference",
+          "clause_id": "C015",
+          "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+        },
+        {
+          "check": "text_difference",
+          "clause_id": "C016",
+          "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+        },
+        {
+          "check": "text_difference",
+          "clause_id": "C017",
+          "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+        },
+        {
+          "check": "text_difference",
+          "clause_id": "C018",
+          "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+        },
+        {
+          "check": "text_difference",
+          "clause_id": "C019",
+          "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+        }
+      ],
+      "unverified": [
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C001",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C002",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C003",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C004",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C005",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C006",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C007",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C008",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C009",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C010",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C011",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C012",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C013",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C014",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C015",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C016",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C017",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C018",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "human_verification_authenticity",
+          "clause_id": "C019",
+          "detail": "검토 기록의 진위는 자동 검증 불가"
+        },
+        {
+          "check": "visual_glyph_fidelity",
+          "clause_id": null,
+          "detail": "텍스트 레이어끼리의 일치는 원화·글머리표 등 시각적 기호 정확성을 보장하지 않음"
+        }
+      ],
+      "automatic_match_is_human_verification": false,
+      "summary": {
+        "clause_count": 19,
+        "exact_source_matches": 12,
+        "category_counts": {
+          "rent": 1,
+          "contract_period": 1,
+          "repair_responsibility": 2,
+          "termination": 3,
+          "renewal": 1,
+          "deposit_return": 1,
+          "management_fee": 1,
+          "other": 3,
+          "special_terms": 6
+        },
+        "verified_clauses": 19
+      },
+      "structure_valid": true,
+      "status": "needs_review"
+    },
+    "normalization_tests": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p 'test_ocr_evaluation.py' -v",
+      "passed": 19,
+      "failed": 0
+    },
+    "preservation": {
+      "protected_file_hashes_match": 10,
+      "sample_contract_json_byte_identical": true,
+      "all_existing_pdfs_byte_identical": true,
+      "frontend_byte_identical": true,
+      "character_corrections_unchanged": true,
+      "previous_history_entries_unchanged": true
+    },
+    "verified_clauses": 19,
+    "needs_review_clauses": 0,
+    "limitations": [
+      "실제 OCR 엔진 결과에 대한 CER 측정은 수행하지 않음. 테스트는 인공 문자열로 함수 동작 검증.",
+      "기존 원문 대조 검증기는 승인된 기호 보정 7건을 원시 PDF 텍스트와의 차이로 계속 표시함.",
+      "사용자의 사람 검토 진위는 자동 검증할 수 없으며 대화의 명시적 승인에 근거함.",
+      "해설집·사례집의 공식 웹 다운로드 파일과 바이트 동일성은 이번 범위 밖이며 미검증."
+    ]
+  }
+}
