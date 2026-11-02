@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SafeContract AI</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>SafeContract AI</h1>
+    <p>계약서 이미지를 선택하고 확인하세요.</p>
+    <form id="file-form" novalidate>
+      <label for="contract-image">계약서 이미지</label>
+      <p id="file-help">JPG, JPEG, PNG · 파일당 최대 10MiB. 이미지는 서버로 전송되지 않습니다.</p>
+      <input id="contract-image" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" aria-describedby="file-help">
+      <p id="file-name">선택한 파일 없음</p>
+      <button type="submit">파일 확인</button>
+    </form>
+    <p id="status" role="status" aria-live="polite">계약서 이미지를 선택해 주세요.</p>
+    <section aria-labelledby="preview-title">
+      <h2 id="preview-title">이미지 미리보기</h2>
+      <img id="preview" alt="선택한 계약서 이미지 미리보기" hidden>
+    </section>
+  </main>
+</body>
+</html>
