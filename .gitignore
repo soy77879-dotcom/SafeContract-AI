@@ -1,0 +1,27 @@
+
+# Python 가상환경 및 캐시
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Windows 시스템 파일
+desktop.ini
+Thumbs.db
+
+# 환경변수 및 API 키
+.env
+.env.*
+!.env.example
+
+# 개인정보 및 임시 데이터
+uploads/
+temp/
+tmp/
+private_data/
+
+# VS Code 설정
+.vscode/
+
+# macOS 시스템 파일
+.DS_Store
