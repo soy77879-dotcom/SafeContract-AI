@@ -5,23 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SafeContract AI</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./masking.js" defer></script>
+  <script src="./privacy.js" defer></script>
+  <script src="./privacy_guard.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
   <main>
     <h1>SafeContract AI</h1>
-    <p>계약서 이미지를 선택하고 확인하세요.</p>
+    <p>계약서의 개인정보를 직접 가린 뒤 새 이미지를 만드세요.</p>
     <form id="file-form" novalidate>
       <label for="contract-image">계약서 이미지</label>
-      <p id="file-help">JPG, JPEG, PNG · 파일당 최대 10MiB. 이미지는 서버로 전송되지 않습니다.</p>
+      <p id="file-help">JPG, JPEG, PNG · 파일당 최대 10MiB. 원본은 전송하지 않습니다. 검사 요청 시 새 마스킹 PNG만 로컬 OCR 서버로 전달됩니다.</p>
       <input id="contract-image" type="file" accept=".jpg,.jpeg,.png,image/jpeg,image/png" aria-describedby="file-help">
       <p id="file-name">선택한 파일 없음</p>
       <button type="submit">파일 확인</button>
     </form>
     <p id="status" role="status" aria-live="polite">계약서 이미지를 선택해 주세요.</p>
     <section aria-labelledby="preview-title">
-      <h2 id="preview-title">이미지 미리보기</h2>
+      <h2 id="preview-title">원본 미리보기 · 전송 불가</h2>
       <img id="preview" alt="선택한 계약서 이미지 미리보기" hidden>
+    </section>
+    <section id="workspace" aria-labelledby="mask-title" hidden>
+      <h2 id="mask-title">수동 픽셀 마스킹</h2>
+      <p>이름·주민등록번호·전화번호·상세 주소·계좌번호를 확인하세요. 분석에 필요한 조항·금액·조건은 가능한 한 보존하세요.</p>
+      <p id="draw-help">이미지 위에서 마우스 또는 손가락으로 드래그하세요. 손을 떼면 해당 영역이 검게 채워집니다. 자동 개인정보 탐지는 아닙니다.</p>
+      <label for="zoom">보기 배율 <output id="zoom-value">100%</output></label>
+      <input id="zoom" type="range" min="50" max="200" step="25" value="100">
+      <div id="canvas-viewport"><div id="canvas-stage"><canvas id="mask-canvas" aria-label="마스킹할 계약서 이미지" aria-describedby="draw-help"></canvas><div id="selection" hidden></div></div></div>
+      <p id="mask-count">가린 영역 0개 · 개인정보 재탐지 미완료</p>
+      <div class="actions"><button id="cancel-selection" type="button">현재 선택 취소</button><button id="undo" type="button" disabled>마지막 영역 취소</button><button id="reset" type="button" disabled>전체 초기화</button></div>
+      <label class="confirm"><input id="manual-confirm" type="checkbox" disabled>현재 이미지에서 가릴 영역을 직접 확인했습니다.</label>
+      <p class="notice">수동 마스킹만으로 개인정보 보호가 보장되지 않습니다. OCR 재탐지 후에도 외부 LLM 전송은 차단 상태입니다. 검사는 로컬 서버에서 수행됩니다.</p>
+      <button id="export" type="button" disabled>마스킹 PNG 생성</button>
+    </section>
+    <section id="result" hidden>
+      <h2>새 마스킹 이미지</h2>
+      <img id="masked-preview" alt="검은 픽셀로 가린 새 이미지">
+      <a id="download" download="masked-contract.png">마스킹 PNG 내려받기</a>
+      <button id="privacy-scan" type="button" disabled>로컬 OCR 개인정보 재탐지</button>
+      <p id="privacy-status" role="status" aria-live="polite">개인정보 재탐지 대기 · 외부 전송 차단</p>
+      <ul id="privacy-findings"></ul>
     </section>
   </main>
 </body>

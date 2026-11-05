@@ -1,45 +1,21 @@
-# Python environments and bytecode
 .venv/
+.venv-backend/
 venv/
+tmp/
+temp/
+uploads/
 __pycache__/
 *.pyc
 *.pyo
-
-# Environment variables and credentials
 .env
 .env.*
 *.pem
 *.key
 *.p12
 *.pfx
-*.jks
-*.keystore
-id_rsa
-id_rsa.*
-id_ed25519
-id_ed25519.*
-id_ecdsa
-id_ecdsa.*
-credentials.json
-credentials-*.json
-service-account*.json
-service_account*.json
-secrets.json
-secrets.*
-
-# Temporary files and local uploads
-uploads/
-tmp/
-temp/
-*.tmp
-*.temp
-*.swp
-*.swo
-*~
-
-# Operating system metadata
+*.log
 .DS_Store
 desktop.ini
-
-# Official PDFs stay local
-data/**/*.pdf
+data/contracts/original/standard_contract.pdf
+data/legal/housing_lease_act.pdf
+data/cases/dispute_cases.pdf
