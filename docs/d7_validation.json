@@ -1,0 +1,390 @@
+{
+  "validated_at": "2026-11-05T09:59:24.783981+00:00",
+  "branch": "dev/01",
+  "tests": {
+    "existing_passed": 19,
+    "added_passed": 11,
+    "total_passed": 30,
+    "failed": 0,
+    "command": ".venv/bin/python -m unittest discover -s tests -p \"test_ocr*.py\" -v",
+    "output": "test_blank_underscores_preserved (test_ocr_evaluation.EvaluationTests) ... ok\ntest_bullet_not_y_diaeresis (test_ocr_evaluation.EvaluationTests) ... ok\ntest_cer_can_exceed_one (test_ocr_evaluation.EvaluationTests) ... ok\ntest_corpus_boundaries_preserved (test_ocr_evaluation.EvaluationTests) ... ok\ntest_corpus_empty_reference_insertions_counted (test_ocr_evaluation.EvaluationTests) ... ok\ntest_corpus_ids_and_empty_input (test_ocr_evaluation.EvaluationTests) ... ok\ntest_corpus_micro_not_average (test_ocr_evaluation.EvaluationTests) ... ok\ntest_empty_reference (test_ocr_evaluation.EvaluationTests) ... ok\ntest_explicit_whitespace (test_ocr_evaluation.EvaluationTests) ... ok\ntest_insertion_deletion_substitution (test_ocr_evaluation.EvaluationTests) ... ok\ntest_invalid_inputs (test_ocr_evaluation.EvaluationTests) ... ok\ntest_known_levenshtein (test_ocr_evaluation.EvaluationTests) ... ok\ntest_missing_ocr_text_is_deletion (test_ocr_evaluation.EvaluationTests) ... ok\ntest_no_unicode_or_width_normalization (test_ocr_evaluation.EvaluationTests) ... ok\ntest_numeric_and_negation_differences_survive (test_ocr_evaluation.EvaluationTests) ... ok\ntest_raw_and_normalized_separate (test_ocr_evaluation.EvaluationTests) ... ok\ntest_symmetric_normalization_idempotent (test_ocr_evaluation.EvaluationTests) ... ok\ntest_unlisted_unicode_is_preserved (test_ocr_evaluation.EvaluationTests) ... ok\ntest_won_not_backslash (test_ocr_evaluation.EvaluationTests) ... ok\ntest_ambiguity_reported (test_ocr_experiments.ExperimentTests) ... ok\ntest_coordinate_scaling (test_ocr_experiments.ExperimentTests) ... ok\ntest_critical_number_and_negation (test_ocr_experiments.ExperimentTests) ... ok\ntest_duplicates_not_silently_removed (test_ocr_experiments.ExperimentTests) ... ok\ntest_no_text_correction_or_confidence_filter (test_ocr_experiments.ExperimentTests) ... ok\ntest_output_overwrite_refused (test_ocr_experiments.ExperimentTests) ... ok\ntest_page_scope_and_verified (test_ocr_experiments.ExperimentTests) ... ok\ntest_preprocessing_does_not_modify_source (test_ocr_experiments.ExperimentTests) ... ok\ntest_scope_exclusions_recorded (test_ocr_experiments.ExperimentTests) ... ok\ntest_table_left_label_before_right_text (test_ocr_experiments.ExperimentTests) ... ok\ntest_vertically_centered_table_label (test_ocr_experiments.ExperimentTests) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 0.064s\n\nOK\n"
+  },
+  "protected_files": {
+    "checked_count": 22,
+    "changed": [],
+    "sha256": {
+      "scripts/extract_contract_text.py": "97c2253856818f320c3344681c2e5c37e5cb166b6bec87f6a20d626333bc07f8",
+      "scripts/validate_contract_json.py": "d171f6ff2a011af16d32d25f962758f855f51029a835d0b04ceb505d83e721e1",
+      "scripts/ocr_evaluation.py": "07564bdd73796b21dfb08f1bee456c06f904dfcef9f0843e0a149baffba6af2a",
+      "tests/test_ocr_evaluation.py": "5093e17dc5f44c59a063d88e80ed15b9b63a6128289e7bb9b97e737d24d59d8c",
+      "tests/fixtures/sample_ocr.json": "cca8ff9cddd976e73b2bc8236901fd98d52625333b8cbbd5cbbcbe39290ff86a",
+      "tests/fixtures/sample_analysis.json": "ad8af02b9e6fc62184c3424217dcbdb683a56ef43b2900ac44a1378c3368559a",
+      "frontend/index.html": "134fc7ccaf9ae0c38ad29910656624f934453d30a7ae66910bcb7abf4d463113",
+      "frontend/style.css": "556bbaa1a5686cff9d44d170569c76f9d7ecda2c28f44fe92ca76358695f1e99",
+      "frontend/app.js": "08309850500695af463ef18740f4f133e1c743c94726b6f3e2260b8fa7869a5d",
+      "backend/requirements.txt": "d23ed08dc1a5795a40272916708ea6683492b31e695bbd888787e758b149ee1e",
+      "backend/schemas.py": "91e1e222ab26498fc9ae126308baca31719dc77ea1082df733d6a1197cb2c197",
+      "backend/main.py": "93ad80a2da154a0cc0fa890f50d14a4f84d22ad02cf0f1526278a76b10852027",
+      "data/contracts/original/standard_contract.pdf": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+      "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+      "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+      "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+      "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+      "data/cases/dispute_cases.pdf": "c557cc8811247c8e81405ff44d8ebf13d59a49c9692554feb58246333c5d0743",
+      "data/legal/housing_lease_act.pdf": "45a8e4b335fb0a0d0e0641ade69b7873fde11fde1673f5e4cdd813e0ef1226c6",
+      "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26",
+      "API_SPEC.md": "e014e0d4e23e8610d04809aaa387a50fc8e5f15209c2c8082bcbe923b66418f7",
+      ".gitignore": "600b79c435bbf9fc2d8428858838b22f8bd9bbd3475c654a00f62f57ecff477c"
+    }
+  },
+  "ground_truth_status_counts": {
+    "verified": 19
+  },
+  "input_matches_pdf_page2_render_pixels": true,
+  "contract_validator": {
+    "passed": [
+      {
+        "check": "json_schema_root",
+        "clause_id": null,
+        "detail": "필수 루트 필드 타입 정상"
+      },
+      {
+        "check": "source_exists",
+        "clause_id": null,
+        "detail": "/Users/sonsoi/SafeContract-AI/data/contracts/original/standard_contract.pdf"
+      },
+      {
+        "check": "actual_page_count",
+        "clause_id": null,
+        "detail": 5
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C001",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C002",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C002",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C003",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C003",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C004",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C004",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C005",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C005",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C006",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C006",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C007",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C007",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C008",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C008",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C009",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C009",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C010",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C010",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C011",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C011",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C012",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C012",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "exact_source_match",
+        "clause_id": "C013",
+        "detail": "선별한 원본 블록 전체와 문자 단위 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C013",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C014",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C015",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C016",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C017",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C018",
+        "detail": "숫자·조항 번호 토큰 일치"
+      },
+      {
+        "check": "numbers_and_article_markers",
+        "clause_id": "C019",
+        "detail": "숫자·조항 번호 토큰 일치"
+      }
+    ],
+    "failed": [],
+    "needs_review": [
+      {
+        "check": "text_difference",
+        "clause_id": "C001",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C014",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C015",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C016",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C017",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C018",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      },
+      {
+        "check": "text_difference",
+        "clause_id": "C019",
+        "detail": "원본 선별 범위와 불일치; 사람이 대조해야 함"
+      }
+    ],
+    "unverified": [
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C001",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C002",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C003",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C004",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C005",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C006",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C007",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C008",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C009",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C010",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C011",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C012",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C013",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C014",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C015",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C016",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C017",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C018",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "human_verification_authenticity",
+        "clause_id": "C019",
+        "detail": "검토 기록의 진위는 자동 검증 불가"
+      },
+      {
+        "check": "visual_glyph_fidelity",
+        "clause_id": null,
+        "detail": "텍스트 레이어끼리의 일치는 원화·글머리표 등 시각적 기호 정확성을 보장하지 않음"
+      }
+    ],
+    "automatic_match_is_human_verification": false,
+    "summary": {
+      "clause_count": 19,
+      "exact_source_matches": 12,
+      "category_counts": {
+        "rent": 1,
+        "contract_period": 1,
+        "repair_responsibility": 2,
+        "termination": 3,
+        "renewal": 1,
+        "deposit_return": 1,
+        "management_fee": 1,
+        "other": 3,
+        "special_terms": 6
+      },
+      "verified_clauses": 19
+    },
+    "structure_valid": true,
+    "status": "needs_review"
+  },
+  "ocr_experiments": {
+    "completed": 8,
+    "failed": 0,
+    "evaluation": "tmp/ocr_experiments/d7_run01/evaluation_v2.json",
+    "alignment_version": "pdf-regions-v2-row-height-0.65"
+  },
+  "not_executed": [
+    "alternate OCR model download/comparison",
+    "deskew/orientation correction on upright input",
+    "held-out contract validation",
+    "production API integration"
+  ],
+  "git_mutations_performed": false
+}

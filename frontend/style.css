@@ -39,3 +39,29 @@ p { overflow-wrap: anywhere; }
   h1 { font-size: 1.6rem; }
   button { width: 100%; }
 }
+
+[hidden] { display: none !important; }
+button:disabled { background: #64748b; cursor: not-allowed; }
+#preview { max-height: 200px; object-fit: contain; }
+#masked-preview { max-width: 100%; height: auto; border: 2px solid #1d4ed8; }
+#canvas-viewport { width: 100%; overflow: auto; background: #e2e8f0; margin-top: 12px; }
+#canvas-stage { position: relative; width: max-content; }
+#mask-canvas { display: block; height: auto; touch-action: none; cursor: crosshair; }
+#selection { position: absolute; pointer-events: none; border: 2px dashed #2563eb; background: rgb(37 99 235 / 15%); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.actions button { padding: 8px 12px; }
+.confirm { display: flex; gap: 8px; align-items: start; margin-top: 20px; }
+.confirm input { width: auto; margin-top: 7px; }
+.notice { color: #475569; font-size: .9rem; }
+#download { display: inline-block; margin-top: 12px; font-weight: 700; }
+
+#clause-review { margin-top: 40px; }
+.clause-card { border-top: 1px solid #bfdbfe; padding: 20px 0; }
+.clause-compare { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.clause-card pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; max-height: 320px; overflow: auto; background: #f1f5f9; padding: 10px; }
+.clause-card textarea { box-sizing: border-box; width: 100%; min-height: 200px; padding: 10px; font: inherit; resize: vertical; }
+.clause-card h4 { margin-top: 0; }
+.clause-card details { margin-bottom: 12px; }
+.clause-status, .diff-status { color: #334155; }
+#review-meter { width: 100%; margin-bottom: 16px; }
+@media (max-width: 600px) { .clause-compare { grid-template-columns: minmax(0, 1fr); } }
