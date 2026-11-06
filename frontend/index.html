@@ -9,6 +9,9 @@
   <script src="./privacy.js" defer></script>
   <script src="./privacy_guard.js" defer></script>
   <script src="./app.js" defer></script>
+  <script src="./clause_review.js" defer></script>
+  <script src="./server_review.js" defer></script>
+  <script src="./review_ui.js" defer></script>
 </head>
 <body>
   <main>
@@ -46,6 +49,22 @@
       <button id="privacy-scan" type="button" disabled>로컬 OCR 개인정보 재탐지</button>
       <p id="privacy-status" role="status" aria-live="polite">개인정보 재탐지 대기 · 외부 전송 차단</p>
       <ul id="privacy-findings"></ul>
+      <button id="server-ocr" type="button">서버 OCR 실행 · 조항 불러오기</button>
+      <p id="server-ocr-status" role="status">개발용 서버 연결 대기</p>
+    </section>
+    <section id="clause-review" aria-labelledby="review-title">
+      <h2 id="review-title">OCR 조항 수정·검토</h2>
+      <p>로컬 OCR 검토 JSON을 열어 원문과 수정본을 비교하세요. 현재 선택 이미지와 자동 연결되지는 않습니다. 문서 ID와 페이지를 확인하세요.</p>
+      <p class="notice">검토 완료는 사용자가 문구를 확인했다는 뜻이며 법률적 안전 또는 서버 승인이 아닙니다. 수정 시 개인정보 검사 상태를 초기화합니다. 새로고침하면 저장하지 않은 수정은 사라집니다.</p>
+      <label for="review-file">OCR 검토 파일 열기 (JSON · 최대 5MiB)</label>
+      <input id="review-file" type="file" accept=".json,application/json">
+      <p id="review-status" role="status" aria-live="polite">파일을 열어 조항별 검토를 시작하세요. 외부 전송은 차단됩니다.</p>
+      <p id="review-document"></p>
+      <p id="review-progress" aria-live="polite">사용자 확인 0/0개 · 서버 승인 없음</p>
+      <progress id="review-meter" aria-label="조항 검토 진행률" max="1" value="0"></progress>
+      <button id="save-review" type="button" disabled>수정본 JSON을 내 기기에 저장</button>
+      <div class="actions"><button id="server-save" type="button" disabled>수정본 서버 저장</button><button id="server-reload" type="button" disabled>서버 저장본 다시 불러오기</button></div>
+      <div id="clause-list"></div>
     </section>
   </main>
 </body>

@@ -54,3 +54,14 @@ button:disabled { background: #64748b; cursor: not-allowed; }
 .confirm input { width: auto; margin-top: 7px; }
 .notice { color: #475569; font-size: .9rem; }
 #download { display: inline-block; margin-top: 12px; font-weight: 700; }
+
+#clause-review { margin-top: 40px; }
+.clause-card { border-top: 1px solid #bfdbfe; padding: 20px 0; }
+.clause-compare { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.clause-card pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; max-height: 320px; overflow: auto; background: #f1f5f9; padding: 10px; }
+.clause-card textarea { box-sizing: border-box; width: 100%; min-height: 200px; padding: 10px; font: inherit; resize: vertical; }
+.clause-card h4 { margin-top: 0; }
+.clause-card details { margin-bottom: 12px; }
+.clause-status, .diff-status { color: #334155; }
+#review-meter { width: 100%; margin-bottom: 16px; }
+@media (max-width: 600px) { .clause-compare { grid-template-columns: minmax(0, 1fr); } }

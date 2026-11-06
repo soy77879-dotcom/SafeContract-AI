@@ -23,6 +23,7 @@
     $('#download').removeAttribute('href');
   }
   function update() {
+    window.dispatchEvent(new Event('safecontract:image-change'));
     clearOutput(); $('#manual-confirm').checked=editor.confirmed;
     $('#mask-count').textContent=`가린 영역 ${editor.count}개 · 개인정보 재탐지 미완료`;
     $('#undo').disabled=!editor.count; $('#reset').disabled=!editor.count;
@@ -98,6 +99,7 @@
     getRedetectionInput:() => editor.redetectionInput(),
     prepareOCRUpload:() => editor.ocrFormData(editor.output),
     getPrivacyScanState:()=>privacy.state,
+    invalidatePrivacyForTextEdit:()=>privacy.reset(),
     externalLLMAllowed:false
   });
   window.addEventListener('pagehide',() => { loadSequence++;cancelDrag();editor.clear(); if(originalUrl)URL.revokeObjectURL(originalUrl);clearOutput(); });

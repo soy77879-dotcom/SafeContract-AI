@@ -72,7 +72,7 @@
     redetectionInput(file = this.#file) {
       if (!file || file !== this.#file || file === this.#original || !this.#confirmed || !this.count) throw new Error('현재 생성된 마스킹 파일만 사용할 수 있습니다.');
       return Object.freeze({file, maskingRevision:this.#revision, manualMaskCount:this.count,
-        privacyScanStatus:'pending', needsPrivacyReview:true, externalLLMAllowed:false});
+        maskRegions:structuredClone(this.#rectangles), privacyScanStatus:'pending', needsPrivacyReview:true, externalLLMAllowed:false});
     }
     ocrFormData(file) {
       const input = this.redetectionInput(file);
