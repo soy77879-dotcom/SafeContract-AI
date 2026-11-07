@@ -18,6 +18,11 @@ from integrations.adapter import MAX_FILE, ROOT, validate_upload
 from integrations.privacy_detection import result, TYPES
 from integrations.transfer_guard import TransferGate, blocked
 
+OCR_PYTHON = ROOT / (
+    ".venv-ocr/Scripts/python.exe"
+    if os.name == "nt"
+    else ".venv/bin/python"
+)
 
 class PrivacyProcess:
     def __init__(self, timeout=900):
@@ -30,14 +35,22 @@ class PrivacyProcess:
             with tempfile.TemporaryDirectory(prefix='safecontract_privacy_') as folder:
                 image, output = Path(folder)/'masked.png', Path(folder)/'result.json'
                 image.write_bytes(data)
-                proc = subprocess.Popen([str(ROOT/'.venv/bin/python'), str(ROOT/'integrations/privacy_worker.py'), str(image), str(output)],
+                proc = subprocess.Popen([str(OCR_PYTHON), str(ROOT/'integrations/privacy_worker.py'), str(image), str(output)],
                     cwd=ROOT, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
                     start_new_session=True, env=dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK='True'))
-                try: proc.wait(timeout=self.timeout)
+                try:
+                    proc.wait(timeout=self.timeout)
                 except subprocess.TimeoutExpired:
-                    try: os.killpg(proc.pid, signal.SIGKILL)
-                    except ProcessLookupError: pass
-                    proc.wait(); return result('failed')
+                    try:
+                        if os.name == "nt":
+                            proc.kill()
+                        else:
+                            os.killpg(proc.pid, signal.SIGKILL)
+                    except ProcessLookupError:
+                        pass
+
+                    proc.wait()
+                    return result("failed")
                 if proc.returncode or not output.is_file() or output.stat().st_size > 4*1024*1024: return result('failed')
                 return sanitize(json.loads(output.read_text(encoding='utf-8')))
         except Exception: return result('failed')

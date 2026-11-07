@@ -6,6 +6,7 @@ import subprocess
 import tempfile
 import threading
 import time
+import os
 from pathlib import Path
 from urllib.parse import urlsplit
 from fastapi import APIRouter, FastAPI, Request
@@ -17,12 +18,17 @@ from integrations.adapter import AdapterError, OCRProcess, ROOT, MAX_FILE, valid
 from integrations.privacy_service import PrivacyProcess, create_app as privacy_app
 from integrations.review_store import ReviewStore, reject, sha
 
+OCR_PYTHON = ROOT / (
+    ".venv-ocr/Scripts/python.exe"
+    if os.name == "nt"
+    else ".venv/bin/python"
+)
 
 def verify_mask(data,regions):
     with tempfile.TemporaryDirectory(prefix='safecontract_mask_') as folder:
         image,meta,out=(Path(folder)/name for name in ('input.png','regions.json','masked.png'))
         image.write_bytes(data);meta.write_text(json.dumps(regions))
-        try:r=subprocess.run([str(ROOT/'.venv/bin/python'),str(ROOT/'integrations/mask_verify_worker.py'),str(image),str(meta),str(out)],
+        try:r=subprocess.run([str(OCR_PYTHON),str(ROOT/'integrations/mask_verify_worker.py'),str(image),str(meta),str(out)],
             stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=15)
         except Exception:reject('PRIVACY_CHECK_FAILED')
         if r.returncode or not out.is_file() or out.stat().st_size>MAX_FILE:reject('PRIVACY_CHECK_FAILED')
