@@ -3,6 +3,7 @@ import unittest
 from pathlib import Path
 
 from scripts.risk_evaluation import (
+    evaluate_risk_report,
     evaluate_status,
     load_evaluation_inputs,
     validate_inputs,
@@ -172,6 +173,94 @@ class RiskEvaluationTests(unittest.TestCase):
                 self.assertAlmostEqual(
                     metrics["recall"], expected
                 )
+
+
+    def test_report_groups_mock_cases_by_risk_type(self):
+        folder = (
+            Path(__file__).resolve().parents[1]
+            / "data" / "metadata" / "mock"
+        )
+        gold, predictions = load_evaluation_inputs(
+            folder / "gold_mock.json",
+            folder / "predictions_mock.json",
+        )
+
+        result = evaluate_risk_report(gold, predictions)
+        groups = result["by_risk_type"]
+
+        self.assertEqual(result["total_cases"], 4)
+        self.assertAlmostEqual(result["macro_f1"], 0.5)
+
+        self.assertEqual(
+            groups["deposit_return"]["total_cases"], 2
+        )
+        self.assertEqual(
+            groups["repair_cost"]["total_cases"], 1
+        )
+        self.assertEqual(
+            groups["contract_termination"]["total_cases"], 1
+        )
+
+        self.assertAlmostEqual(
+            groups["deposit_return"]["metrics"]["macro_f1"],
+            0.0,
+        )
+        self.assertAlmostEqual(
+            groups["repair_cost"]["metrics"]["macro_f1"],
+            0.25,
+        )
+        self.assertAlmostEqual(
+            groups["contract_termination"]["metrics"]["macro_f1"],
+            0.25,
+        )
+
+    def test_confusion_matrix_rows_are_gold_columns_predictions(self):
+        gold, predictions = self._four_label_cases(
+            ["ok", "potential_risk", "risk", "unknown"]
+        )
+
+        result = evaluate_risk_report(gold, predictions)
+        matrix = result["confusion_matrix"]
+
+        self.assertEqual(matrix["risk"]["ok"], 1)
+        self.assertEqual(matrix["ok"]["risk"], 1)
+        self.assertEqual(
+            sum(sum(row.values()) for row in matrix.values()),
+            4,
+        )
+
+        # 이 테스트의 사례는 모두 deposit_return 유형이다.
+        group_matrix = result["by_risk_type"][
+            "deposit_return"
+        ]["metrics"]["confusion_matrix"]
+
+        self.assertEqual(group_matrix, matrix)
+
+    def test_absent_risk_type_is_not_evaluated(self):
+        result = evaluate_risk_report(
+            self.gold, self.predictions
+        )
+
+        group = result["by_risk_type"]["repair_cost"]
+
+        self.assertEqual(group["status"], "not_evaluated")
+        self.assertEqual(group["total_cases"], 0)
+        self.assertIsNone(group["metrics"])
+
+    def test_report_is_repeatable_without_changing_inputs(self):
+        gold, predictions = self._four_label_cases(
+            ["risk", "potential_risk", "ok", "unknown"]
+        )
+        originals = copy.deepcopy((gold, predictions))
+
+        first = evaluate_risk_report(gold, predictions)
+        second = evaluate_risk_report(
+            list(reversed(gold)),
+            list(reversed(predictions)),
+        )
+
+        self.assertEqual(first, second)
+        self.assertEqual((gold, predictions), originals)
 
 if __name__ == "__main__":
     unittest.main()

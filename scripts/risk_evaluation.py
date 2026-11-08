@@ -184,6 +184,48 @@ def load_evaluation_inputs(gold_path, prediction_path):
 
     return gold_cases, predictions
 
+def evaluate_risk_report(gold_cases, predictions):
+    """전체 및 위험 유형별 상태 분류 성능을 계산한다."""
+    gold_by_id, prediction_by_id = validate_inputs(
+        gold_cases, predictions
+    )
+
+    result = evaluate_status(gold_cases, predictions)
+    result["by_risk_type"] = {}
+
+    for risk_type in RISK_TYPES:
+        selected_ids = [
+            case_id
+            for case_id, case in gold_by_id.items()
+            if case["risk_type"] == risk_type
+        ]
+
+        if not selected_ids:
+            result["by_risk_type"][risk_type] = {
+                "status": "not_evaluated",
+                "total_cases": 0,
+                "metrics": None,
+            }
+            continue
+
+        selected_gold = [
+            gold_by_id[case_id] for case_id in selected_ids
+        ]
+        selected_predictions = [
+            prediction_by_id[case_id]
+            for case_id in selected_ids
+        ]
+
+        result["by_risk_type"][risk_type] = {
+            "status": "evaluated",
+            "total_cases": len(selected_ids),
+            "metrics": evaluate_status(
+                selected_gold, selected_predictions
+            ),
+        }
+
+    return result
+
 def main():
     import argparse
     import json
@@ -199,7 +241,7 @@ def main():
         gold, predictions = load_evaluation_inputs(
             args.gold, args.predictions
         )
-        result = evaluate_status(gold, predictions)
+        result = evaluate_risk_report(gold, predictions)
     except (OSError, ValueError) as error:
         parser.exit(2, f"평가 실행 실패: {error}\n")
 
