@@ -106,3 +106,14 @@
 - 사례가 없는 유형은 not_evaluated, 건수 0, metrics null로 표시한다.
 - 위험 유형 자체를 맞히는 분류 정확도와는 구분한다.
 - Mock 점수는 평가기 검증용이며 실제 엔진 성능이 아니다.
+
+## 10. 오류 사례 자동 추출
+- error_analysis에 정답·오류 건수와 분류별 사례를 기록한다.
+- false_positives: 정답 ok → 예측 risk 또는 potential_risk
+- false_negatives: 정답 risk 또는 potential_risk → 예측 ok
+- unknown_related: 정답과 예측이 다르고 어느 한쪽이 unknown
+- risk_label_confusions: risk와 potential_risk 사이의 오분류
+- 각 오류 사례에는 case_id, risk_type, text, gold_label,
+  pred_label, label_reason을 포함한다.
+- 사례는 case_id 순으로 출력하며 입력 데이터를 변경하지 않는다.
+- unknown 관련 오류도 전체 상태 분류 지표에는 반영한다.

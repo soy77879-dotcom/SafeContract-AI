@@ -184,6 +184,64 @@ def load_evaluation_inputs(gold_path, prediction_path):
 
     return gold_cases, predictions
 
+def extract_error_cases(gold_cases, predictions):
+    """오분류 사례를 네 종류로 나누어 원문과 함께 반환한다."""
+    gold_by_id, prediction_by_id = validate_inputs(
+        gold_cases, predictions
+    )
+
+    positive_labels = {"risk", "potential_risk"}
+    categories = (
+        "false_positives",
+        "false_negatives",
+        "unknown_related",
+        "risk_label_confusions",
+    )
+    cases = {category: [] for category in categories}
+    correct_count = 0
+
+    # 입력 배열 순서와 관계없이 같은 순서로 출력한다.
+    for case_id in sorted(gold_by_id):
+        gold = gold_by_id[case_id]
+        prediction = prediction_by_id[case_id]
+        actual = gold["gold_label"]
+        predicted = prediction["pred_label"]
+
+        if actual == predicted:
+            correct_count += 1
+            continue
+
+        if actual == "ok" and predicted in positive_labels:
+            category = "false_positives"
+        elif actual in positive_labels and predicted == "ok":
+            category = "false_negatives"
+        elif "unknown" in (actual, predicted):
+            category = "unknown_related"
+        else:
+            category = "risk_label_confusions"
+
+        cases[category].append({
+            "case_id": case_id,
+            "risk_type": gold["risk_type"],
+            "text": gold["text"],
+            "gold_label": actual,
+            "pred_label": predicted,
+            "label_reason": gold["label_reason"],
+        })
+
+    counts = {
+        category: len(items)
+        for category, items in cases.items()
+    }
+
+    return {
+        "total_cases": len(gold_by_id),
+        "correct_count": correct_count,
+        "error_count": sum(counts.values()),
+        "counts": counts,
+        "cases": cases,
+    }
+
 def evaluate_risk_report(gold_cases, predictions):
     """전체 및 위험 유형별 상태 분류 성능을 계산한다."""
     gold_by_id, prediction_by_id = validate_inputs(
@@ -223,6 +281,10 @@ def evaluate_risk_report(gold_cases, predictions):
                 selected_gold, selected_predictions
             ),
         }
+
+    result["error_analysis"] = extract_error_cases(
+        gold_cases, predictions
+    )
 
     return result
 

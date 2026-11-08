@@ -5,6 +5,7 @@ from pathlib import Path
 from scripts.risk_evaluation import (
     evaluate_risk_report,
     evaluate_status,
+    extract_error_cases,
     load_evaluation_inputs,
     validate_inputs,
 )
@@ -255,6 +256,87 @@ class RiskEvaluationTests(unittest.TestCase):
 
         first = evaluate_risk_report(gold, predictions)
         second = evaluate_risk_report(
+            list(reversed(gold)),
+            list(reversed(predictions)),
+        )
+
+        self.assertEqual(first, second)
+        self.assertEqual((gold, predictions), originals)
+
+
+    def test_mock_errors_identify_expected_cases(self):
+        folder = (
+            Path(__file__).resolve().parents[1]
+            / "data" / "metadata" / "mock"
+        )
+        gold, predictions = load_evaluation_inputs(
+            folder / "gold_mock.json",
+            folder / "predictions_mock.json",
+        )
+
+        result = evaluate_risk_report(gold, predictions)
+        errors = result["error_analysis"]
+
+        self.assertEqual(errors["correct_count"], 2)
+        self.assertEqual(errors["error_count"], 2)
+        self.assertEqual(errors["counts"]["false_positives"], 1)
+        self.assertEqual(errors["counts"]["false_negatives"], 1)
+
+        self.assertEqual(
+            errors["cases"]["false_positives"][0]["case_id"],
+            "A2-M003",
+        )
+        self.assertEqual(
+            errors["cases"]["false_negatives"][0]["case_id"],
+            "A2-M001",
+        )
+
+    def test_correct_predictions_have_no_error_cases(self):
+        gold, predictions = self._four_label_cases(
+            ["risk", "potential_risk", "ok", "unknown"]
+        )
+
+        errors = extract_error_cases(gold, predictions)
+
+        self.assertEqual(errors["correct_count"], 4)
+        self.assertEqual(errors["error_count"], 0)
+        self.assertTrue(
+            all(not items for items in errors["cases"].values())
+        )
+
+    def test_unknown_errors_are_separate(self):
+        gold, predictions = self._four_label_cases(
+            ["unknown", "potential_risk", "ok", "risk"]
+        )
+
+        errors = extract_error_cases(gold, predictions)
+
+        self.assertEqual(errors["counts"]["unknown_related"], 2)
+        self.assertEqual(errors["counts"]["false_positives"], 0)
+        self.assertEqual(errors["counts"]["false_negatives"], 0)
+
+    def test_risk_label_confusions_are_separate(self):
+        gold, predictions = self._four_label_cases(
+            ["potential_risk", "risk", "ok", "unknown"]
+        )
+
+        errors = extract_error_cases(gold, predictions)
+
+        self.assertEqual(
+            errors["counts"]["risk_label_confusions"], 2
+        )
+        self.assertEqual(errors["error_count"], 2)
+        self.assertEqual(errors["counts"]["false_positives"], 0)
+        self.assertEqual(errors["counts"]["false_negatives"], 0)
+
+    def test_error_extraction_is_repeatable_and_keeps_inputs(self):
+        gold, predictions = self._four_label_cases(
+            ["ok", "potential_risk", "risk", "unknown"]
+        )
+        originals = copy.deepcopy((gold, predictions))
+
+        first = extract_error_cases(gold, predictions)
+        second = extract_error_cases(
             list(reversed(gold)),
             list(reversed(predictions)),
         )
