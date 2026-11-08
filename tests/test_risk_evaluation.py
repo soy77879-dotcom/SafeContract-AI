@@ -1,8 +1,10 @@
 import copy
 import unittest
+from pathlib import Path
 
 from scripts.risk_evaluation import (
     evaluate_status,
+    load_evaluation_inputs,
     validate_inputs,
 )
 
@@ -138,6 +140,38 @@ class RiskEvaluationTests(unittest.TestCase):
         )
         # unknown만 정답이므로 네 상태 평균은 1 / 4
         self.assertAlmostEqual(result["macro_f1"], 0.25)
+
+    def test_mock_files_produce_expected_metrics(self):
+        root = Path(__file__).resolve().parents[1]
+        folder = root / "data" / "metadata" / "mock"
+
+        gold, predictions = load_evaluation_inputs(
+            folder / "gold_mock.json",
+            folder / "predictions_mock.json",
+        )
+        result = evaluate_status(gold, predictions)
+
+        self.assertEqual(result["total_cases"], 4)
+        self.assertAlmostEqual(result["macro_f1"], 0.5)
+
+        expected_f1 = {
+            "risk": 0.0,
+            "potential_risk": 1.0,
+            "ok": 0.0,
+            "unknown": 1.0,
+        }
+
+        for label, expected in expected_f1.items():
+            with self.subTest(label=label):
+                metrics = result["per_label"][label]
+                self.assertEqual(metrics["support"], 1)
+                self.assertAlmostEqual(metrics["f1"], expected)
+                self.assertAlmostEqual(
+                    metrics["precision"], expected
+                )
+                self.assertAlmostEqual(
+                    metrics["recall"], expected
+                )
 
 if __name__ == "__main__":
     unittest.main()

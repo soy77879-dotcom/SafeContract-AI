@@ -183,3 +183,28 @@ def load_evaluation_inputs(gold_path, prediction_path):
     validate_inputs(gold_cases, predictions)
 
     return gold_cases, predictions
+
+def main():
+    import argparse
+    import json
+
+    parser = argparse.ArgumentParser(
+        description="A-2 개발용 위험 상태 성능 평가"
+    )
+    parser.add_argument("--gold", required=True)
+    parser.add_argument("--predictions", required=True)
+    args = parser.parse_args()
+
+    try:
+        gold, predictions = load_evaluation_inputs(
+            args.gold, args.predictions
+        )
+        result = evaluate_status(gold, predictions)
+    except (OSError, ValueError) as error:
+        parser.exit(2, f"평가 실행 실패: {error}\n")
+
+    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()
