@@ -291,23 +291,49 @@ def evaluate_risk_report(gold_cases, predictions):
 def main():
     import argparse
     import json
+    from collections import Counter
+    from pathlib import Path
+
+    from scripts.evaluation_output import save_evaluation_outputs
 
     parser = argparse.ArgumentParser(
         description="A-2 개발용 위험 상태 성능 평가"
     )
     parser.add_argument("--gold", required=True)
     parser.add_argument("--predictions", required=True)
+    parser.add_argument("--output-dir")
     args = parser.parse_args()
+
+    saved = None
 
     try:
         gold, predictions = load_evaluation_inputs(
             args.gold, args.predictions
         )
         result = evaluate_risk_report(gold, predictions)
+
+        result["input_summary"] = {
+            "gold_file": str(Path(args.gold).resolve()),
+            "prediction_file": str(Path(args.predictions).resolve()),
+            "gold_review_status_counts": dict(
+                Counter(case["review_status"] for case in gold)
+            ),
+        }
+
+        if args.output_dir:
+            saved = save_evaluation_outputs(
+                result, args.output_dir
+            )
+
     except (OSError, ValueError) as error:
         parser.exit(2, f"평가 실행 실패: {error}\n")
 
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    if saved is None:
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+    else:
+        print("평가 결과 JSON:", saved["result_json"])
+        print("오류 분석 보고서:", saved["error_report"])
+        print("개발 검증용 평가 결과 저장 완료")
 
 
 if __name__ == "__main__":
