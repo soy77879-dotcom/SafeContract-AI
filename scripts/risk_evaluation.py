@@ -167,3 +167,19 @@ def evaluate_status(gold_cases, predictions):
         "macro_f1": macro_f1,
         "confusion_matrix": confusion,
     }
+
+def load_evaluation_inputs(gold_path, prediction_path):
+    """JSON 파일을 읽고 기존 입력 검증을 수행한다."""
+    import json
+    from pathlib import Path
+
+    gold_cases = json.loads(
+        Path(gold_path).read_text(encoding="utf-8-sig")
+    )
+    predictions = json.loads(
+        Path(prediction_path).read_text(encoding="utf-8-sig")
+    )
+
+    validate_inputs(gold_cases, predictions)
+
+    return gold_cases, predictions

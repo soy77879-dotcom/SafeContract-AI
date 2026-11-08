@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "A2-M001",
+    "text": "임대인은 사유 없이 보증금 전액을 공제할 수 있다.",
+    "risk_type": "deposit_return",
+    "gold_label": "risk",
+    "label_reason": "평가기 계산 검증용 가상 정답이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "A2-M002",
+    "text": "보일러 교체 비용은 사용 연수와 관계없이 임차인이 부담한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "potential_risk",
+    "label_reason": "평가기 계산 검증용 가상 정답이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "A2-M003",
+    "text": "임대인은 계약 종료일에 주택을 인도받음과 동시에 보증금을 반환한다.",
+    "risk_type": "deposit_return",
+    "gold_label": "ok",
+    "label_reason": "평가기 계산 검증용 가상 정답이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "A2-M004",
+    "text": "중도 해지 위약금은 별첨에 따른다.",
+    "risk_type": "contract_termination",
+    "gold_label": "unknown",
+    "label_reason": "평가기 계산 검증용 가상 정답이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  }
+]

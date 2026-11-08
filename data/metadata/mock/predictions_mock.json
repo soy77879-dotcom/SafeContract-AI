@@ -1,0 +1,22 @@
+[
+  {
+    "case_id": "A2-M001",
+    "risk_type": "deposit_return",
+    "pred_label": "ok"
+  },
+  {
+    "case_id": "A2-M002",
+    "risk_type": "repair_cost",
+    "pred_label": "potential_risk"
+  },
+  {
+    "case_id": "A2-M003",
+    "risk_type": "deposit_return",
+    "pred_label": "risk"
+  },
+  {
+    "case_id": "A2-M004",
+    "risk_type": "contract_termination",
+    "pred_label": "unknown"
+  }
+]
