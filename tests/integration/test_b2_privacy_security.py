@@ -3,6 +3,7 @@
 
 import json
 import subprocess
+import sys
 import tempfile
 import unittest
 from io import BytesIO
@@ -13,8 +14,9 @@ from PIL import Image
 from integrations.transfer_guard import TransferGate
 
 
+# Windows / macOS 공통 실행 환경
 ROOT = Path(__file__).resolve().parents[2]
-PYTHON = ROOT / ".venv-b2" / "Scripts" / "python.exe"
+PYTHON = Path(sys.executable)
 WORKER = ROOT / "integrations" / "mask_verify_worker.py"
 
 
@@ -43,7 +45,10 @@ class TestMaskVerification(unittest.TestCase):
             output_path = folder / "output.png"
 
             image_path.write_bytes(image_bytes)
-            regions_path.write_text(json.dumps(regions), encoding="utf-8")
+            regions_path.write_text(
+                json.dumps(regions),
+                encoding="utf-8",
+            )
 
             result = subprocess.run(
                 [
@@ -72,7 +77,10 @@ class TestMaskVerification(unittest.TestCase):
             {"x": 10, "y": 10, "width": 40, "height": 20}
         ]
 
-        code, output = self.run_worker(make_image(True), regions)
+        code, output = self.run_worker(
+            make_image(True),
+            regions,
+        )
 
         self.assertEqual(code, 0)
         self.assertIsNotNone(output)
@@ -89,7 +97,10 @@ class TestMaskVerification(unittest.TestCase):
             {"x": 10, "y": 10, "width": 40, "height": 20}
         ]
 
-        code, output = self.run_worker(make_image(False), regions)
+        code, output = self.run_worker(
+            make_image(False),
+            regions,
+        )
 
         self.assertNotEqual(code, 0)
         self.assertIsNone(output)
@@ -100,7 +111,10 @@ class TestMaskVerification(unittest.TestCase):
             {"x": 90, "y": 90, "width": 30, "height": 30}
         ]
 
-        code, output = self.run_worker(make_image(True), regions)
+        code, output = self.run_worker(
+            make_image(True),
+            regions,
+        )
 
         self.assertNotEqual(code, 0)
         self.assertIsNone(output)
@@ -117,7 +131,10 @@ class TestTransferGuard(unittest.TestCase):
             return {
                 "masked_image": self.image,
                 "ocr_lines": [
-                    {"text": self.text, "confidence": 1.0}
+                    {
+                        "text": self.text,
+                        "confidence": 1.0,
+                    }
                 ],
             }
 
@@ -131,14 +148,18 @@ class TestTransferGuard(unittest.TestCase):
             revision=1,
             source=b"original-document",
         )
+
         self.assertIsNotNone(receipt)
         return receipt
 
     def test_without_approval_rejected(self):
         """승인 기록 없이 전송하면 차단한다."""
         result = self.gate.dispatch_mock(
-            "test-user", "invalid-receipt",
-            self.image, 1, self.text,
+            "test-user",
+            "invalid-receipt",
+            self.image,
+            1,
+            self.text,
         )
 
         self.assertFalse(result["allowed"])
@@ -149,8 +170,11 @@ class TestTransferGuard(unittest.TestCase):
         receipt = self.prepare_receipt()
 
         result = self.gate.dispatch_mock(
-            "test-user", receipt["receipt_id"],
-            self.image, 1, self.text,
+            "test-user",
+            receipt["receipt_id"],
+            self.image,
+            1,
+            self.text,
         )
 
         self.assertFalse(result["allowed"])
@@ -167,11 +191,15 @@ class TestTransferGuard(unittest.TestCase):
             receipt["image_sha256"],
             receipt["text_sha256"],
         )
+
         self.assertTrue(reviewed)
 
         result = self.gate.dispatch_mock(
-            "test-user", receipt["receipt_id"],
-            self.image, 1, self.text,
+            "test-user",
+            receipt["receipt_id"],
+            self.image,
+            1,
+            self.text,
         )
 
         self.assertTrue(result["allowed"])
@@ -190,13 +218,19 @@ class TestTransferGuard(unittest.TestCase):
         )
 
         first = self.gate.dispatch_mock(
-            "test-user", receipt["receipt_id"],
-            self.image, 1, self.text,
+            "test-user",
+            receipt["receipt_id"],
+            self.image,
+            1,
+            self.text,
         )
 
         second = self.gate.dispatch_mock(
-            "test-user", receipt["receipt_id"],
-            self.image, 1, self.text,
+            "test-user",
+            receipt["receipt_id"],
+            self.image,
+            1,
+            self.text,
         )
 
         self.assertTrue(first["allowed"])
@@ -220,10 +254,19 @@ class TestPrivacyExposure(unittest.TestCase):
             side_effect=OSError(secret),
         ):
             with self.assertRaises(AdapterError) as caught:
-                worker([("masked-contract.png", "image/png", make_image(True))])
+                worker([
+                    (
+                        "masked-contract.png",
+                        "image/png",
+                        make_image(True),
+                    )
+                ])
 
         self.assertNotIn(secret, caught.exception.message)
-        self.assertEqual(caught.exception.code, "OCR_UNAVAILABLE")
+        self.assertEqual(
+            caught.exception.code,
+            "OCR_UNAVAILABLE",
+        )
 
     def test_unregistered_image_does_not_reach_ocr(self):
         """마스킹 등록 없이 OCR Worker가 호출되지 않는다."""
@@ -244,6 +287,7 @@ class TestPrivacyExposure(unittest.TestCase):
             client=("127.0.0.1", 50000),
         ) as client:
             session = client.get("/api/session")
+
             response = client.post(
                 "/api/ocr",
                 headers={
@@ -296,6 +340,7 @@ class TestPrivacyExposure(unittest.TestCase):
             client=("127.0.0.1", 50000),
         ) as client:
             session = client.get("/api/session")
+
             response = client.post(
                 "/api/analyze",
                 headers={

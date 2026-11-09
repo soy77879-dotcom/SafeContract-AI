@@ -10,6 +10,7 @@ from PIL import Image
 
 from backend.schemas import OCRResponse
 from integrations.review_app import create_app
+from integrations.review_store import ReviewStore, sha
 
 
 def make_png():
@@ -21,20 +22,16 @@ def make_png():
     return buffer.getvalue()
 
 
-class FakeStore:
-    """OCR 결과를 API 응답으로 반환하는 테스트용 저장소."""
+class FakeStore(ReviewStore):
+    """실제 저장소 검증을 유지하며 전달된 서버 증빙을 관찰한다."""
 
-    def register(self, owner, structured, image_hash, privacy):
-        return {
-            "document_id": structured["document_id"],
-            "clauses": [
-                {
-                    "clause_id": "C001",
-                    "page": 1,
-                    "text": "Mock OCR clause",
-                }
-            ],
-        }
+    def register(self, owner, structured, image_hash, privacy, *,
+                 masked_images=None, masked_hashes=None):
+        self.received_hashes = masked_hashes
+        return super().register(
+            owner, structured, image_hash, privacy,
+            masked_images=masked_images, masked_hashes=masked_hashes,
+        )
 
 
 class TestFastAPIIO(unittest.TestCase):
@@ -50,13 +47,19 @@ class TestFastAPIIO(unittest.TestCase):
 
         def fake_ocr(uploads):
             self.calls.append(uploads)
-            return {"document_id": "mock-document"}
+            return {
+                "document_id": "mock-document",
+                "clauses": [{"clause_id": "C001", "pages": [1],
+                             "raw_text": "Mock OCR clause", "source_lines": []}],
+                "ocr_pages": [{"page": 1, "lines": []}],
+            }
 
+        self.store = FakeStore()
         self.app = create_app(
             ocr=fake_ocr,
             privacy=fake_privacy,
             masker=fake_mask,
-            store=FakeStore(),
+            store=self.store,
         )
 
         self.client = TestClient(
@@ -67,6 +70,7 @@ class TestFastAPIIO(unittest.TestCase):
         self.client.__enter__()
 
         self.png = make_png()
+
         response = self.client.get("/api/session")
         self.assertEqual(response.status_code, 200)
 
@@ -117,10 +121,16 @@ class TestFastAPIIO(unittest.TestCase):
                     "image/png",
                 )
             },
-            data={"mask_regions": json.dumps([[]])},
+            data={
+                "mask_regions": json.dumps([[]]),
+            },
         )
 
-        self.assertEqual(registration.status_code, 200)
+        self.assertEqual(
+            registration.status_code,
+            200,
+            msg=f"마스킹 등록 오류: {registration.json()}",
+        )
 
         ticket = registration.json()["mask_ticket"]
 
@@ -139,11 +149,24 @@ class TestFastAPIIO(unittest.TestCase):
             },
         )
 
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(len(self.calls), 1)
+        # HTTP 오류 발생 시 실제 서버 응답을 출력하여 원인 확인
+        self.assertEqual(
+            response.status_code,
+            200,
+            msg=f"OCR 오류 응답: {response.json()}",
+        )
+
+        self.assertEqual(
+            len(self.calls),
+            1,
+            msg="OCR Worker 호출 횟수가 예상과 다릅니다.",
+        )
 
         result = OCRResponse.model_validate(response.json())
 
+        self.assertEqual(self.store.received_hashes, (sha(self.png),))
+        self.assertEqual(self.calls[0][0][2], self.png)
+        self.assertEqual(result.clauses[0].text, "Mock OCR clause")
         self.assertEqual(result.document_id, "mock-document")
         self.assertEqual(len(result.clauses), 1)
         self.assertEqual(result.clauses[0].clause_id, "C001")

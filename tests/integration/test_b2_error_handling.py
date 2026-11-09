@@ -1,9 +1,12 @@
 
 """B-2 5번: 파일 입력 오류 및 예외 처리 검증."""
 
+import os
+import subprocess
 import unittest
 from io import BytesIO
 from unittest.mock import patch, MagicMock
+
 from PIL import Image
 
 from integrations.adapter import AdapterError, validate_upload
@@ -168,18 +171,22 @@ class TestOCRWorkerErrors(unittest.TestCase):
 
     def test_worker_timeout(self):
         """Worker 실행 시간이 초과되면 504 오류를 반환한다."""
-        import subprocess
-
         process = MagicMock()
+        process.pid = 12345
         process.wait.side_effect = [
-            subprocess.TimeoutExpired(cmd="ocr_worker", timeout=1),
+            subprocess.TimeoutExpired(
+                cmd="ocr_worker",
+                timeout=1,
+            ),
             0,
         ]
 
         with patch(
             "integrations.adapter.subprocess.Popen",
             return_value=process,
-        ):
+        ), patch(
+            "integrations.adapter.os.killpg",
+        ) as mock_killpg:
             with self.assertRaises(AdapterError) as caught:
                 self.worker(self.uploads)
 
@@ -188,6 +195,17 @@ class TestOCRWorkerErrors(unittest.TestCase):
             caught.exception.code,
             "OCR_TIMEOUT",
         )
+
+        if os.name == "nt":
+            process.kill.assert_called_once()
+            mock_killpg.assert_not_called()
+        else:
+            mock_killpg.assert_called_once_with(
+                process.pid,
+                __import__("signal").SIGKILL,
+            )
+
+        self.assertEqual(process.wait.call_count, 2)
 
     def test_worker_output_missing(self):
         """Worker 결과 파일이 없으면 500 오류를 반환한다."""

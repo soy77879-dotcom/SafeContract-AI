@@ -70,7 +70,15 @@ def run_local_review_analysis(
         #
         # Document save/invalidate/expiry cannot race this flow
         # from another thread.
-        with store.lock:
+        # Keep the exact evidence live through the final gate's validation, too.
+        # A lock prevents other threads editing, but does not stop time expiring
+        # or trusted same-thread callbacks invalidating the document.
+        with store.lock, store.review_evidence_guard(
+            owner,
+            document_id,
+            binding,
+            store.get_review_evidence(owner, document_id, binding),
+        ):
             ticket = gate.issue_local_ticket(
                 store=store,
                 owner=owner,
@@ -168,4 +176,8 @@ def run_local_review_analysis(
 
     except Exception:
         # Never disclose internal document contents or exceptions.
+        try:
+            gate.invalidate(owner, document_id)
+        except Exception:
+            pass  # Still fail closed; no response leaves this function.
         return fail("unapproved_request")
