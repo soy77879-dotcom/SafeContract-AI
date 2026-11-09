@@ -100,6 +100,19 @@ class ResponseValidationGate(TransferGate):
     """STEP 3 extension: binds exact reviewed AnalyzeRequest to a one-use response ticket."""
     def __init__(self,*args,**kwargs):
         super().__init__(*args,**kwargs);self._responses={}
+    
+    def invalidate(self, owner, document):
+        """Invalidate all pending tickets for this owner's document."""
+        with self._lock:
+            super().invalidate(owner, document)
+
+            self._responses = {
+                ticket: record
+                for ticket, record in self._responses.items()
+                if (record["owner"], record["document"])
+                != (owner, document)
+            }
+
 
     def confirm_analysis_review(self,owner,receipt_id,request,image_hash,text_hash):
         """Only after authenticated human review of clause IDs/pages/text. No HTTP route."""
