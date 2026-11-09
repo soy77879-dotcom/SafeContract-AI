@@ -1,0 +1,1053 @@
+{
+  "split_status": "independent_test_set_not_ready",
+  "branch": "dev/01",
+  "assessment_date": "2026-11-09",
+  "split_method": "기존 30개 전부 개발용 후보로 관리상 분류하되 원본 파일은 변경하지 않음. 무작위 분할이나 문구 변형으로 독립성을 만들지 않음.",
+  "counts": {
+    "existing_gold": 30,
+    "development_only_candidates": 30,
+    "independent_test": 0,
+    "test_file_created": false
+  },
+  "dataset_distribution": {
+    "development": {
+      "deposit_return": {
+        "ok": 3,
+        "risk": 4,
+        "potential_risk": 1,
+        "unknown": 2
+      },
+      "repair_cost": {
+        "ok": 3,
+        "risk": 2,
+        "potential_risk": 3,
+        "unknown": 2
+      },
+      "contract_termination": {
+        "ok": 3,
+        "risk": 2,
+        "potential_risk": 3,
+        "unknown": 2
+      }
+    },
+    "test": {
+      "deposit_return": {
+        "risk": 0,
+        "potential_risk": 0,
+        "ok": 0,
+        "unknown": 0
+      },
+      "repair_cost": {
+        "risk": 0,
+        "potential_risk": 0,
+        "ok": 0,
+        "unknown": 0
+      },
+      "contract_termination": {
+        "risk": 0,
+        "potential_risk": 0,
+        "ok": 0,
+        "unknown": 0
+      }
+    }
+  },
+  "development_usage_audit": {
+    "scanned_files": [
+      "scripts/extract_contract_text.py",
+      "scripts/summarize_ocr_experiments.py",
+      "scripts/ocr_experiments.py",
+      "scripts/run_risk_analysis.py",
+      "scripts/risk_rules.py",
+      "scripts/prepare_clause_review.py",
+      "scripts/structure_ocr.py",
+      "scripts/validate_contract_json.py",
+      "scripts/test_ocr.py",
+      "scripts/ocr_region_review.py",
+      "scripts/ocr_test_evaluation.py",
+      "scripts/ocr_pages.py",
+      "scripts/create_review_http_fixture.py",
+      "scripts/ocr_evaluation.py",
+      "tests/test_ocr_evaluation.py",
+      "tests/test_ocr_auto_evaluation.py",
+      "tests/test_ocr_region_review.py",
+      "tests/test_privacy_detection.py",
+      "tests/test_clause_review.py",
+      "tests/test_ocr_structure.py",
+      "tests/test_ocr_experiments.py",
+      "tests/test_transfer_guard.py",
+      "tests/test_risk_rules.py",
+      "tests/frontend/run_masking_browser.py",
+      "tests/frontend/server_review_ui_checks.js",
+      "tests/frontend/privacy_guard_checks.js",
+      "tests/frontend/clause_review_checks.js",
+      "tests/frontend/privacy_checks.js",
+      "tests/frontend/masking_checks.js",
+      "tests/integration/test_privacy_service.py",
+      "tests/integration/test_api_integration.py",
+      "tests/integration/test_review_http.py",
+      "tests/integration/test_transfer_http.py",
+      "tests/integration/test_response_validation.py",
+      "tests/fixtures/sample_ocr.json",
+      "tests/fixtures/sample_analysis.json",
+      "integrations/transfer_guard.py",
+      "integrations/review_store.py",
+      "integrations/mask_verify_worker.py",
+      "integrations/preview_app.py",
+      "integrations/adapter.py",
+      "integrations/clause_review.py",
+      "integrations/review_app.py",
+      "integrations/privacy_service.py",
+      "integrations/ocr_worker.py",
+      "integrations/response_validation.py",
+      "integrations/privacy_worker.py",
+      "integrations/privacy_detection.py",
+      "backend/schemas.py",
+      "backend/main.py",
+      "frontend/clause_review.js",
+      "frontend/masking.js",
+      "frontend/review_ui.js",
+      "frontend/server_review.js",
+      "frontend/privacy_guard.js",
+      "frontend/privacy.js",
+      "frontend/app.js",
+      "docs/ocr_region_review_report.md",
+      "docs/d6_response_validation_report.md",
+      "docs/d7_api_integration_report.md",
+      "docs/d6_privacy_rescan_report.md",
+      "docs/ocr_structuring_report.md",
+      "docs/d7_risk_rules_report.md",
+      "docs/d7_validation.json",
+      "docs/clause_review_steps_1_2.md",
+      "docs/d6_canvas_masking_report.md",
+      "docs/d7_remaining_fixes.md",
+      "docs/d7_ocr_report.md",
+      "docs/actual_ocr_review_integration.md",
+      "docs/d7_ocr_results.json",
+      "docs/d6_transfer_guard_report.md"
+    ],
+    "direct_dataset_name_or_id_mentions": [],
+    "parse_errors": [],
+    "manual_evidence": [
+      {
+        "case_ids": [
+          "SC-G006"
+        ],
+        "file": "tests/test_risk_rules.py",
+        "test": "DepositTests.test_new_tenant",
+        "reason": "새 임차인 입주를 보증금 반환 조건으로 삼는 동일 시나리오. 표현 차이와 기대 라벨 차이가 있어도 독립성 근거가 되지 않음."
+      },
+      {
+        "case_ids": [
+          "SC-G013"
+        ],
+        "file": "tests/test_risk_rules.py",
+        "test": "RepairTests.test_fault_irrelevant / test_all_costs",
+        "reason": "과실과 관계없는 모든 수리비 전가 시나리오 중복."
+      },
+      {
+        "case_ids": [
+          "SC-G024"
+        ],
+        "file": "tests/test_risk_rules.py",
+        "test": "TerminationTests.test_remaining_rent",
+        "reason": "중도 해지 시 남은 월세 전액 위약금이라는 시나리오 중복."
+      },
+      {
+        "case_ids": [
+          "SC-G001",
+          "SC-G002",
+          "SC-G003"
+        ],
+        "file": "docs/d7_risk_rules_report.md",
+        "reason": "표준계약서 19개 조항의 실제 구조화 OCR를 규칙 분석에 사용한 기록. 동일 원문 문서군은 분할하지 않아야 함."
+      }
+    ],
+    "conclusion": "동일 문서 사용 및 유사 시나리오의 개발 사용 기록 확인. 전체 30개가 직접 엔진 튜닝에 사용됐다고 단정하지 않으며, 파일명 참조 미발견은 미사용 증거가 아니다. 외부 프롬프트·과거 모든 실행·삭제된 파일 이력은 완전 감사하지 못함."
+  },
+  "leakage_checks": {
+    "normalization": "NFC와 공백·줄바꿈 제거만 적용. 기호·숫자·부정 표현 보존. 기존 OCR 평가 정책 미변경.",
+    "similarity_method": "문자열 SequenceMatcher ratio >= 0.70은 사람 검토 후보 탐색 기준이며 의미 동등성·누출 확정 기준이 아님.",
+    "within_gold_pairs": [
+      {
+        "case_ids": [
+          "SC-G001",
+          "SC-G002"
+        ],
+        "exact": false,
+        "normalized_equal": false,
+        "similarity": 0.1798,
+        "same_source_document": true,
+        "assessment": "potential_family_leakage_not_automatic_equivalence"
+      },
+      {
+        "case_ids": [
+          "SC-G001",
+          "SC-G003"
+        ],
+        "exact": false,
+        "normalized_equal": false,
+        "similarity": 0.1811,
+        "same_source_document": true,
+        "assessment": "potential_family_leakage_not_automatic_equivalence"
+      },
+      {
+        "case_ids": [
+          "SC-G002",
+          "SC-G003"
+        ],
+        "exact": false,
+        "normalized_equal": false,
+        "similarity": 0.0853,
+        "same_source_document": true,
+        "assessment": "potential_family_leakage_not_automatic_equivalence"
+      }
+    ],
+    "exact_duplicate_pairs": 0,
+    "normalized_duplicate_pairs": 0,
+    "cross_development_test_status": "not_applicable_no_eligible_test_set",
+    "cross_split_duplicate_count": null,
+    "independence_passed": false,
+    "limitations": "정확·정규화 중복이 없어도 동일 원문 파생·시나리오 변형은 누출 가능. 유사도 임계값 아래 사례도 독립성 보장 불가."
+  },
+  "items": [
+    {
+      "case_id": "SC-G001",
+      "risk_type": "deposit_return",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제9조(계약의 종료)",
+        "clause_id": "C009",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "user_confirmed_2026-11-08"
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G002",
+      "risk_type": "repair_cost",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제4조(임차주택의 사용·관리·수선)",
+        "clause_id": "C004",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "unavailable_in_current_workspace"
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G003",
+      "risk_type": "contract_termination",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제6조(채무불이행과 손해배상)",
+        "clause_id": "C006",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "unavailable_in_current_workspace"
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G004",
+      "risk_type": "deposit_return",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G005",
+      "risk_type": "deposit_return",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G006",
+      "risk_type": "deposit_return",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 117,
+          "text": "임대인은 새로운\n임차인이 입주한 이후 보증금을 반환한다.",
+          "similarity": 0.7556,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 22,
+          "text": "임대인은 새로운 임차인이 입주한 이후 보증금을 반환한다.",
+          "similarity": 0.7556,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 34,
+          "text": "임차인은 새로운 임차인이 입주한 이후 보증금을 반환한다.",
+          "similarity": 0.7556,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/integration/test_api_integration.py",
+          "line": 27,
+          "text": "임대인은 새로운 임차인이 입주한 이후 보증금을 반환한다.",
+          "similarity": 0.7556,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/integration/test_api_integration.py",
+          "line": 31,
+          "text": "임대인은 새로운 임차인이 입주한 이후 보증금을 반환한다.",
+          "similarity": 0.7556,
+          "exact": false,
+          "normalized_equal": false
+        }
+      ],
+      "total_overlap_hits": 5,
+      "usage_evidence_status": "potential_text_overlap_found"
+    },
+    {
+      "case_id": "SC-G007",
+      "risk_type": "deposit_return",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G008",
+      "risk_type": "deposit_return",
+      "gold_label": "potential_risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G009",
+      "risk_type": "deposit_return",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 147,
+          "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+          "similarity": 0.75,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 114,
+          "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+          "similarity": 0.75,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 158,
+          "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+          "similarity": 0.75,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/integration/test_api_integration.py",
+          "line": 47,
+          "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+          "similarity": 0.75,
+          "exact": false,
+          "normalized_equal": false
+        },
+        {
+          "file": "tests/integration/test_api_integration.py",
+          "line": 86,
+          "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+          "similarity": 0.75,
+          "exact": false,
+          "normalized_equal": false
+        }
+      ],
+      "total_overlap_hits": 7,
+      "usage_evidence_status": "potential_text_overlap_found"
+    },
+    {
+      "case_id": "SC-G010",
+      "risk_type": "deposit_return",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G011",
+      "risk_type": "deposit_return",
+      "gold_label": "unknown",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 26,
+          "text": "보증금 반환은 별도 협의에 따른다.",
+          "similarity": 0.8667,
+          "exact": false,
+          "normalized_equal": false
+        }
+      ],
+      "total_overlap_hits": 1,
+      "usage_evidence_status": "potential_text_overlap_found"
+    },
+    {
+      "case_id": "SC-G012",
+      "risk_type": "deposit_return",
+      "gold_label": "unknown",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G013",
+      "risk_type": "repair_cost",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 57,
+          "text": "고의 과실과 관계없이 모든 수리비는 임차인이 부담한다.",
+          "similarity": 0.8,
+          "exact": false,
+          "normalized_equal": false
+        }
+      ],
+      "total_overlap_hits": 1,
+      "usage_evidence_status": "potential_text_overlap_found"
+    },
+    {
+      "case_id": "SC-G014",
+      "risk_type": "repair_cost",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 45,
+          "text": "임차인의 고의 또는 과실로 발생한 파손은 임차인이 수리비를 부담한다.",
+          "similarity": 0.7143,
+          "exact": false,
+          "normalized_equal": false
+        }
+      ],
+      "total_overlap_hits": 1,
+      "usage_evidence_status": "potential_text_overlap_found"
+    },
+    {
+      "case_id": "SC-G015",
+      "risk_type": "repair_cost",
+      "gold_label": "potential_risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G016",
+      "risk_type": "repair_cost",
+      "gold_label": "potential_risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G017",
+      "risk_type": "repair_cost",
+      "gold_label": "potential_risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G018",
+      "risk_type": "repair_cost",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G019",
+      "risk_type": "repair_cost",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G020",
+      "risk_type": "repair_cost",
+      "gold_label": "unknown",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 51,
+          "text": "수리비는 추후 협의한다.",
+          "similarity": 0.9,
+          "exact": false,
+          "normalized_equal": false
+        }
+      ],
+      "total_overlap_hits": 1,
+      "usage_evidence_status": "potential_text_overlap_found"
+    },
+    {
+      "case_id": "SC-G021",
+      "risk_type": "repair_cost",
+      "gold_label": "unknown",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G022",
+      "risk_type": "contract_termination",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G023",
+      "risk_type": "contract_termination",
+      "gold_label": "risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G024",
+      "risk_type": "contract_termination",
+      "gold_label": "potential_risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [
+        {
+          "file": "tests/test_risk_rules.py",
+          "line": 77,
+          "text": "임차인이 중도해지하는 경우 남은 계약기간의 월세 전액을 위약금으로 지급한다.",
+          "similarity": 0.8,
+          "exact": false,
+          "normalized_equal": false
+        }
+      ],
+      "total_overlap_hits": 1,
+      "usage_evidence_status": "potential_text_overlap_found"
+    },
+    {
+      "case_id": "SC-G025",
+      "risk_type": "contract_termination",
+      "gold_label": "potential_risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G026",
+      "risk_type": "contract_termination",
+      "gold_label": "potential_risk",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G027",
+      "risk_type": "contract_termination",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G028",
+      "risk_type": "contract_termination",
+      "gold_label": "ok",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G029",
+      "risk_type": "contract_termination",
+      "gold_label": "unknown",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    },
+    {
+      "case_id": "SC-G030",
+      "risk_type": "contract_termination",
+      "gold_label": "unknown",
+      "original_review_status": "needs_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "assignment": "development_only_candidate",
+      "independent_test_eligible": false,
+      "exclusion_reasons": [
+        "독립 라벨 승인 기록 미확인",
+        "개발·검토 과정에서 노출된 데이터이며 독립 평가 버전으로 사전 격리된 기록 없음"
+      ],
+      "development_overlap_hits": [],
+      "total_overlap_hits": 0,
+      "usage_evidence_status": "direct_text_use_not_found_independence_not_proven"
+    }
+  ],
+  "alternative_sources": {
+    "dispute_case_candidates": [
+      {
+        "pdf_page": 81,
+        "printed_page": 78,
+        "location": "하단 보증금 반환에 관한 조정사례 ①",
+        "topic": "자금 사정으로 반환이 지연되어 반환일 연기·계속 거주를 조정한 사례",
+        "related_case_ids": [
+          "SC-G007"
+        ],
+        "relationship": "주제 참고. 기존 합성 문장의 직접 출처 또는 동일 사례가 아님.",
+        "review_status": "needs_review"
+      },
+      {
+        "pdf_page": 81,
+        "printed_page": 78,
+        "location": "하단 보증금 반환에 관한 조정사례 ②",
+        "topic": "합의해지 후 일부 미반환 보증금의 분할상환·지연이자를 조정한 사례",
+        "related_case_ids": [
+          "SC-G006",
+          "SC-G007"
+        ],
+        "relationship": "주제 참고. 새 임차인 입주 조건을 직접 승인하거나 동일한 문구를 확인한 것이 아님.",
+        "review_status": "needs_review"
+      }
+    ],
+    "eligible_verified_test_cases": 0,
+    "reason": "확인한 사례는 시나리오 참고 후보이며 계약 조항·정답 라벨의 독립 사람 검토 및 사전 격리 요건을 충족하지 않음. 이미 노출된 사례를 새 독립 정답으로 생성하지 않음."
+  },
+  "test_label_verification_level": "검증된 독립 테스트 정답 없음. 전 30개 needs_review 상태 보존.",
+  "future_test_governance": [
+    "개발자가 튜닝에 사용하지 않은 별도 출처·문서군과 시나리오를 확보하고 독립 검토자가 라벨을 확정할 것",
+    "원본·파생 문구·유사 시나리오를 문서군 단위로 묶어 개발/평가 간 분리할 것",
+    "후보 평가셋과 전체 개발 코퍼스의 정확·정규화·유사도·출처 중복 검사를 다시 수행할 것",
+    "검토자·검토일·의견 조정·출처·해시·버전을 기록하고 평가 전 동결할 것",
+    "확정 테스트 정답은 별도 접근 통제 저장소에서 관리하고 규칙·프롬프트 작성 또는 튜닝 입력에서 제외할 것",
+    "테스트 오류를 튜닝에 사용하면 해당 버전은 개발 데이터로 전환하고 새 미노출 평가셋을 확보할 것"
+  ],
+  "statistical_limitations": [
+    "독립 테스트 0개이므로 정확도·정밀도·재현율 등 성능 지표 계산 불가",
+    "개발 후보 30개(유형별 10개)도 라벨별 표본이 작아 신뢰구간이 넓을 수 있고 실제 계약 분포를 대표하지 않음. 개발셋 결과를 일반화 성능으로 보고하지 말 것"
+  ],
+  "validation": {
+    "gold_count": 30,
+    "unique_case_ids": true,
+    "existing_sources_labels_statuses_unchanged": true,
+    "evaluation_readiness_report_confirmed": true,
+    "test_file_exists": false
+  },
+  "input_sha256": {
+    "data/goldset/A1_source_verification_report.json": "406a22b9da1777a8944ecbce1a109c269c90bb4808b3c0b6683355b2f278f221",
+    "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+    "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+    "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+    "data/goldset/A1_integrated_validation_report.json": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+    "data/goldset/deposit_return_review.json": "b61403fdad9200f153cff655a38b31e355066be81ca7d94653c1db04c48d86df",
+    "data/goldset/A1_final_readiness_report.json": "41c6c6dc629521432ea3ca481793fb941c466171a41a50ee2509c3751d704c25",
+    "data/goldset/A1_label_final_review.json": "13cc248c407dfab1daf92c30696491db15adac54757b4609dea8c7d1a1454c01",
+    "data/goldset/A1_deposit_review_revalidation.json": "4b92fb60c7a1fb3bedd194c0b297fa4741a054e2da43b050e8e38e140994e454",
+    "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+    "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+    "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+    "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+    "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+    "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+    "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+    "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+    "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+    "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+    "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+    "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+    "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "collection_status": "provisional_synthetic_candidates_all_held",
+  "new_candidate_count": 12,
+  "independence_passed_count": 0,
+  "held_count": 12,
+  "held_candidate_ids": [
+    "SC-TC001",
+    "SC-TC002",
+    "SC-TC003",
+    "SC-TC004",
+    "SC-TC005",
+    "SC-TC006",
+    "SC-TC007",
+    "SC-TC008",
+    "SC-TC009",
+    "SC-TC010",
+    "SC-TC011",
+    "SC-TC012"
+  ],
+  "risk_type_counts": {
+    "deposit_return": 4,
+    "repair_cost": 4,
+    "contract_termination": 4
+  },
+  "suggested_label_distribution": {
+    "deposit_return": {
+      "risk": 1,
+      "potential_risk": 1,
+      "ok": 1,
+      "unknown": 1
+    },
+    "repair_cost": {
+      "risk": 1,
+      "potential_risk": 1,
+      "ok": 1,
+      "unknown": 1
+    },
+    "contract_termination": {
+      "risk": 1,
+      "potential_risk": 1,
+      "ok": 1,
+      "unknown": 1
+    }
+  },
+  "source_counts": {
+    "synthetic": 12,
+    "official": 0,
+    "dispute_case": 0
+  },
+  "excluded_sources": [
+    {
+      "path": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차 표준계약서(원본게시용).pdf",
+      "exists": true,
+      "hash_matches_prior": true,
+      "excluded": true,
+      "reason": "이미 개발 검토에서 노출된 문서군. 다른 페이지도 독립성 확보로 간주하지 않음."
+    },
+    {
+      "path": "/Users/sonsoi/Desktop/Project_학술제/데이터/[법무부·국토교통부] 주택임대차분쟁조정사례집.pdf",
+      "exists": true,
+      "hash_matches_prior": true,
+      "excluded": true,
+      "reason": "이미 개발 검토에서 노출된 문서군. 다른 페이지도 독립성 확보로 간주하지 않음."
+    }
+  ],
+  "existing_dataset_exclusions": {
+    "all_30_excluded": true,
+    "usage_unknown_20_not_reused": true,
+    "reason": "기존 개발 사례와 사용 여부 미확인 사례를 테스트로 재지정하지 않음."
+  },
+  "leakage_checks": {
+    "normalization": "NFC와 공백·줄바꿈 제거. 기호·금액·부정 표현 보존.",
+    "similarity_metric": "SequenceMatcher character ratio; 0.70 이상은 검토 표시일 뿐 독립성 판정 기준 아님",
+    "compared_gold_count": 30,
+    "gold_exact_match_count": 0,
+    "gold_normalized_match_count": 0,
+    "gold_near_duplicate_flag_count": 0,
+    "development_flag_count": 0,
+    "candidate_pair_flags": [],
+    "history_limit": "이번 신규 문구의 현재 코드·테스트·문서 비교 수행. 전체 과거 Git 문자열·외부 프롬프트에 대한 재감사는 수행하지 않음. 과거 준비 보고서의 한계 유지."
+  },
+  "label_status": "suggested_label만 존재. 법률상 효력 판단·정답 승인 아님. 균형 분포는 수집 설계일 뿐 실제 분포를 대표하지 않음.",
+  "required_human_review": [
+    "모든 12개 후보의 독립 검토자 라벨링 및 이견 조정",
+    "기존 시나리오의 단순 변형인지, 신규 의사결정 조건을 평가하는지 의미 수준 검토",
+    "risk/potential_risk 경계와 unknown의 정보 부족 판단 확인",
+    "검토 완료 전 개발·규칙·프롬프트 튜닝에 사용하지 않기",
+    "독립성을 입증하지 못하면 개발 후보로만 남기고 별도 비노출 출처·작성자로 재수집"
+  ],
+  "test_clauses_created": false,
+  "validation": {
+    "candidate_ids_unique": true,
+    "all_needs_review": true,
+    "existing_files_unchanged": true
+  },
+  "input_sha256": {
+    "data/goldset/A1_source_verification_report.json": "406a22b9da1777a8944ecbce1a109c269c90bb4808b3c0b6683355b2f278f221",
+    "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+    "data/goldset/A1_testset_preparation_report.json": "e713377a86b232e235e127e6344af6cc8c317270db10060644a747697d4f52e5",
+    "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+    "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+    "data/goldset/A1_integrated_validation_report.json": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+    "data/goldset/deposit_return_review.json": "b61403fdad9200f153cff655a38b31e355066be81ca7d94653c1db04c48d86df",
+    "data/goldset/A1_final_completion_report.json": "16dab54328ce4424f369835256a9694a0fbdd2634305b53f64c045c5b494f9ee",
+    "data/goldset/A1_final_readiness_report.json": "41c6c6dc629521432ea3ca481793fb941c466171a41a50ee2509c3751d704c25",
+    "data/goldset/A1_split_validation_report.json": "612116195519ba00cc4f7ca385ce1c340d553f80bdfdb07fbe3bfd5d98956369",
+    "data/goldset/A1_label_final_review.json": "13cc248c407dfab1daf92c30696491db15adac54757b4609dea8c7d1a1454c01",
+    "data/goldset/A1_deposit_review_revalidation.json": "4b92fb60c7a1fb3bedd194c0b297fa4741a054e2da43b050e8e38e140994e454",
+    "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+    "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+    "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+    "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+    "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+    "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+    "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+    "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+    "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+    "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+    "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+    "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+    "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26",
+    "scripts/extract_contract_text.py": "97c2253856818f320c3344681c2e5c37e5cb166b6bec87f6a20d626333bc07f8",
+    "scripts/summarize_ocr_experiments.py": "2f4eb2c64052362d3da96a4e8c1f58472fbf07a02886c3e40c514647f6edf91b",
+    "scripts/ocr_experiments.py": "caee29ee14432c3534b1e70e6bd4d0350ffdefeec617c8276e79811095e8b07b",
+    "scripts/run_risk_analysis.py": "0186e4ac8298775e6f50dc191d2161ceb5b6fc338c6db481fd08cabc1257bea2",
+    "scripts/risk_rules.py": "c10cb3441b7338168f3a0f44c7d6cbf94b24f235f6e723357614a3ea7ecf9909",
+    "scripts/prepare_clause_review.py": "a2f2251cb23b8d272025a2f62258fbd5115609c3320094375423e6975401e154",
+    "scripts/structure_ocr.py": "ee690f841e01344cc26b57e05210ba4dfc1712743573452a1fad93cac94e3c2d",
+    "scripts/validate_contract_json.py": "d171f6ff2a011af16d32d25f962758f855f51029a835d0b04ceb505d83e721e1",
+    "scripts/test_ocr.py": "5f6b0c9eec8244f1ef908ed6128e7c8e9efce0a39bd0161f1bc663048202d0a3",
+    "scripts/ocr_region_review.py": "7335290805da31a54a478f7b4bb125042602f6625ddb4386120006af9715a5b2",
+    "scripts/ocr_test_evaluation.py": "9499cb4f36b9bc517bbc188b1fd03bef76a28eaf074d4d3412f9616f0a3a0559",
+    "scripts/ocr_pages.py": "27ae2cf9bde1e066610418a2f27c7a8d09d835f6a1f992516079d26cf849402f",
+    "scripts/create_review_http_fixture.py": "ccf09c421ee91d3119fde8485e10dd598881c5c2a8fb54f0761af643e5820cb5",
+    "scripts/ocr_evaluation.py": "07564bdd73796b21dfb08f1bee456c06f904dfcef9f0843e0a149baffba6af2a",
+    "tests/test_ocr_evaluation.py": "5093e17dc5f44c59a063d88e80ed15b9b63a6128289e7bb9b97e737d24d59d8c",
+    "tests/test_ocr_auto_evaluation.py": "b02f26e8664ac8a28294762f5bd4657ffc34e7b0bf86b9574c831cf6dffb9794",
+    "tests/test_ocr_region_review.py": "e56106c03d5b30407715eb09477aa7eb3e89efabfd2d4bd82e62fd04062156af",
+    "tests/test_privacy_detection.py": "c4864469821da4e894e41c4153659b99bf9a2793c4adf85dc62cd534616d6e3b",
+    "tests/test_clause_review.py": "555ed48e79d16f922096be8057aeb73fbca10739ad2fd2d443807d5994aed3db",
+    "tests/test_ocr_structure.py": "dff914ce2ebb5abd9b8b67fc002882ada1824d21feaa703e1c0491d2665dd2b3",
+    "tests/test_ocr_experiments.py": "d102fdc7d13952bb4d42abf2f41253505b9153af1d862975f7f1313a573ccf99",
+    "tests/test_transfer_guard.py": "0584d0eb2c5b0545a57ea5e181f254da95a72bb005e5228f5844e6f0a8304956",
+    "tests/test_risk_rules.py": "698487daf7daada7868e524c19d887bfffeaae0001b92ac4bd3ce9137760ee22",
+    "tests/frontend/run_masking_browser.py": "7f01943fc1827d2f53ef03952e0e39702a4dc2cb339e721a9e769c572d50a5e1",
+    "tests/frontend/server_review_ui_checks.js": "99b9b93d88d1ab6a2b31f36762aa906c603a642d06fe2e27c0594afd77889ae4",
+    "tests/frontend/privacy_guard_checks.js": "7a7f620aca0132facb6bc4a075f9a7452f11f0b801c4b9c6fd76732db17accf5",
+    "tests/frontend/clause_review_checks.js": "8ce6377777a460cd8077189c86ec0299bd2f123b8f05296fcac8e6e221e823c7",
+    "tests/frontend/privacy_checks.js": "f16f3c677e20679e7066a9e362cf0cb4cd1a766670276d7fef061008a422d840",
+    "tests/frontend/masking_checks.js": "c0648acf6777aeec48b0d81c273aae132e398ee448a7705ae4710e4dee3397d7",
+    "tests/integration/test_privacy_service.py": "240b7b88c03028745f3beee0665aee6759aabbe0694d68c6802c829170b2f23e",
+    "tests/integration/test_api_integration.py": "c697d939a08ee0a4a17d7c1039116d2acd08cdf6cb5182013cc38ed4464c7331",
+    "tests/integration/test_review_http.py": "c9f5336323ee38799ee61503e1f4dfab58f31c7c4205af990432700a63085257",
+    "tests/integration/test_transfer_http.py": "01d07265058980e8ab322665626822d319d1a2c09b32f00503cff1fc6115f575",
+    "tests/integration/test_response_validation.py": "a8f6636687f52d054aae438afcc85429c3a30845c24fd3e866b4d8f0aa3a98ac",
+    "tests/fixtures/sample_ocr.json": "cca8ff9cddd976e73b2bc8236901fd98d52625333b8cbbd5cbbcbe39290ff86a",
+    "tests/fixtures/sample_analysis.json": "ad8af02b9e6fc62184c3424217dcbdb683a56ef43b2900ac44a1378c3368559a"
+  }
+}

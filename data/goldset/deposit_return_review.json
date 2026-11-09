@@ -1,0 +1,143 @@
+{
+  "scope": "보증금 반환 유형의 문구상 위험 신호 검토 후보. 법적 효력·위법·무효 판정 또는 최종 승인 아님. legal_basis_candidates는 조건부 참고 후보로 기존 골든셋에 연결하지 않음.",
+  "review_date": "2026-11-09",
+  "source_check": {
+    "method": "제공 PDF의 텍스트 레이어를 재추출하여 법률 데이터셋 source_spans와 대조",
+    "law_ids": [
+      "LAW-001",
+      "LAW-022",
+      "LAW-027"
+    ],
+    "limitations": "현재 법령의 현행성·판례 및 전체 페이지 시각 재대조는 수행하지 않음. 주택임대차보호법 적용 범위와 개별 특약 효력은 추가 검토 필요.",
+    "missing_basis_note": "공제·상계·반환 지체 등에 필요한 추가 조문의 정확한 선정은 미확정이므로 missing_legal_basis를 추측으로 채우지 않음. 구체적 보완 필요성은 각 legal_issues/additional_review_needed에 기록."
+  },
+  "items": [
+    {
+      "case_id": "SC-G001",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "주택 반환과 보증금 반환의 동시 이행을 명시하고 통상 손모를 구분하여 해당 유형의 명시적 불이익 신호가 없어 유지.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022"
+      ],
+      "legal_issues": "제536조는 동시이행 부분의 후보이다. 제4조 제2항은 적용 대상 주택임대차의 보증금 미반환 시 관계 존속에 관한 후보이며 정산 금액 전체를 확정하지 않는다.",
+      "additional_review_needed": "계약 종료·인도 제공 여부, 원상복구 범위와 공제할 채무, 주택임대차법 적용 여부 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G004",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "종료 시 반환 청구를 전면 포기시키는 중대한 금전적 권리 제한이 명시되어 유지.",
+      "legal_basis_candidates": [
+        "LAW-022",
+        "LAW-027"
+      ],
+      "legal_issues": "반환관계 존속 규정과 특례법 강행규정의 검토 후보이다. 제10조는 해당 법 위반 여부가 전제이며 문구만으로 포기의 법적 효력을 확정하지 않는다.",
+      "additional_review_needed": "사전 특약인지 분쟁 후 정산·면제 합의인지, 실제 반대급부와 미반환액, 법 적용 범위 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G005",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "사유 없는 전액 공제를 허용하는 일방적 손실 위험이 명시되어 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "현재 등록 조문에 구체적인 공제·상계 요건을 직접 판단할 근거가 부족하다. 제4조 제2항만으로 공제 금액을 판단하지 않는다.",
+      "additional_review_needed": "공제 대상 채무의 존재·발생 원인·금액·증빙, 정산 또는 상계 여부와 법리 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G006",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "새 임차인 입주라는 제3자의 사정에 반환을 종속시켜 종료 후에도 반환이 지연될 중대한 위험이 명시되어 유지.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022",
+        "LAW-027"
+      ],
+      "legal_issues": "인도 의무와 제3자 입주 조건을 구분한다. 제536조 및 제4조 제2항은 반환·인도 관계를 살피는 후보이며 유예 약정의 효력을 단정하지 않는다. 제10조 적용은 해당 법 위반 여부 확인이 필요하다.",
+      "additional_review_needed": "종료일·변제기·인도 또는 이행 제공, 유예 약정 경위, 기한·조건의 성격, 법 적용 범위 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G007",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "임대인의 불확정적인 자금 사정 개선에 반환을 종속시켜 반환 지연 위험이 명시되어 유지.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022",
+        "LAW-027"
+      ],
+      "legal_issues": "자금 사정과 인도 의무의 이행 여부를 별도로 본다. 후보 조문만으로 지체 성립 시점·손해배상액·유예 조건의 효력을 확정하지 않는다.",
+      "additional_review_needed": "반환 변제기, 실제 종료·인도 제공, 자금 조건의 내용과 약정 경위, 법 적용 범위 및 지체 관련 추가 근거 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G008",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "임대인의 단독 청소비 산정은 과다 공제 가능성이 있으나 금액·정산 기준에 따라 정도가 달라져 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "청소비 약정 및 구체적 공제 기준을 현재 등록 조문만으로 판단하기 어렵다. 일반 반환관계 규정을 청소비 금액의 직접 근거로 사용하지 않는다.",
+      "additional_review_needed": "청소 상태·통상 사용 흔적·합의 금액·산정 기준·영수증·중복 청구 및 계약상 부담 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G009",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "종료일에 주택 인도와 보증금 반환을 동시에 이행하도록 하여 명시적 불이익 신호가 없어 유지.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022"
+      ],
+      "legal_issues": "제536조의 동시이행 및 제4조 제2항의 관계 존속을 후보로 구분한다. 모든 보증금이 공제 없이 반환된다는 의미로 확장하지 않는다.",
+      "additional_review_needed": "실제 종료일과 인도 준비·이행 제공, 정산 대상 채무, 법 적용 범위 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G010",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "증빙 확인과 서면 합의를 요구하므로 문구 자체에 일방 공제의 불이익 신호가 없어 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "서면 합의 절차가 공제 대상 채무와 금액의 타당성을 보장하지 않는다. 구체적 정산·상계 법리 검토는 별개이다.",
+      "additional_review_needed": "합의의 자발성, 공제 항목·금액·증빙, 반대급부 및 권리 포기 문구 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G011",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "별도 반환 약정이 제공되지 않아 핵심 조건을 판단할 수 없으므로 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "별첨을 추정하여 기한·조건이나 적용 조문을 연결하지 않는다.",
+      "additional_review_needed": "별도 약정 원문, 반환일·인도 의무·공제·유예 조건 및 법 적용 범위 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G012",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "반환일 공란으로 약정된 시점을 확인할 수 없어 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "공란만으로 반환 의무의 부존재나 무효를 추정하지 않는다. 법정 판단과 다른 계약 조항을 확인해야 한다.",
+      "additional_review_needed": "계약기간·종료 사유·다른 반환 조항·인도 조건과 실제 합의 내용 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    }
+  ]
+}

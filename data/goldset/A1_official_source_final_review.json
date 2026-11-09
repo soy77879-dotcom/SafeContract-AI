@@ -1,0 +1,711 @@
+{
+  "reviewed_at": "2026-11-09T14:31:18.232892+09:00",
+  "branch": "dev/01",
+  "scope": "공식 출처·원문 관리 검증; 라벨 타당성 및 법률상 효력 승인 아님",
+  "summary": {
+    "total": 30,
+    "official": 3,
+    "synthetic": 27,
+    "official_success": 3,
+    "official_pending": 0,
+    "official_failure": 0,
+    "exact_matches": 0,
+    "normalization_only": 3,
+    "project_originals_present": 0,
+    "external_originals_present": 3,
+    "manifest_hash_matches": 3
+  },
+  "inputs": [
+    "data/goldset/golden_clauses.json",
+    "data/goldset/A1_source_verification_report.json",
+    "data/metadata/document_manifest.json"
+  ],
+  "comparison_method": {
+    "extraction": "macOS PDFKit page.string; OCR 미실행",
+    "page_number": "1-based physical PDF page",
+    "normalization": "Python re.sub(r\"\\s\", \"\", text), 비교용으로만 사용",
+    "visual_pages": {
+      "standard_contract": [
+        2
+      ],
+      "commentary": [
+        1,
+        2
+      ],
+      "casebook": [
+        81,
+        100
+      ]
+    },
+    "reproduce": "기록된 외부 경로 SHA-256을 계산하고 PDFKit 페이지 텍스트에서 시작 조문부터 다음 조문 직전까지 추출. 원문과 공백 제거 비교를 각각 수행하고 해당 페이지 렌더를 대조한다."
+  },
+  "document_inventory": [
+    {
+      "document_id": "standard_contract_001",
+      "title": "주택임대차표준계약서",
+      "expected_project_path": "data/contracts/original/standard_contract.pdf",
+      "project_file_exists": false,
+      "available_original_path": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차 표준계약서(원본게시용).pdf",
+      "sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+      "manifest_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+      "manifest_hash_match": true,
+      "page_count": 5,
+      "manifest_page_count_match": true,
+      "text_layer_page_count": 5,
+      "official_publication_page": "https://www.moj.go.kr/bbs/moj/118/575868/artclView.do",
+      "official_page_checked": true,
+      "official_attachment_redownloaded_this_run": false,
+      "new_official_download_binary_identity_verified": false,
+      "historical_binary_verification": "verified",
+      "restoration": {
+        "performed": false,
+        "preferred_method": "외부 보관 원본을 expected_project_path로 복사한 뒤 SHA-256 재계산. 원본은 유지.",
+        "fallback": "공식 게시물의 동일 제목·개정판 첨부파일을 다운로드하여 해시 및 판본 비교. 해시가 다르면 기존 원본과 동일하다고 승인하거나 덮어쓰지 않음."
+      }
+    },
+    {
+      "document_id": "housing_lease_commentary_001",
+      "title": "2020.7.31. 개정 「주택임대차보호법」 해설집",
+      "expected_project_path": "data/legal/housing_lease_act.pdf",
+      "project_file_exists": false,
+      "available_original_path": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차보호법 해설집(법무부-국토교통부).pdf",
+      "sha256": "45a8e4b335fb0a0d0e0641ade69b7873fde11fde1673f5e4cdd813e0ef1226c6",
+      "manifest_sha256": "45a8e4b335fb0a0d0e0641ade69b7873fde11fde1673f5e4cdd813e0ef1226c6",
+      "manifest_hash_match": true,
+      "page_count": 74,
+      "manifest_page_count_match": true,
+      "text_layer_page_count": 74,
+      "official_publication_page": "https://www.moj.go.kr/bbs/moj/118/530043/artclView.do",
+      "official_page_checked": true,
+      "official_attachment_redownloaded_this_run": false,
+      "new_official_download_binary_identity_verified": false,
+      "historical_binary_verification": "not_verified",
+      "restoration": {
+        "performed": false,
+        "preferred_method": "외부 보관 원본을 expected_project_path로 복사한 뒤 SHA-256 재계산. 원본은 유지.",
+        "fallback": "공식 게시물의 동일 제목·개정판 첨부파일을 다운로드하여 해시 및 판본 비교. 해시가 다르면 기존 원본과 동일하다고 승인하거나 덮어쓰지 않음."
+      }
+    },
+    {
+      "document_id": "dispute_cases_001",
+      "title": "주택임대차분쟁 조정사례집",
+      "expected_project_path": "data/cases/dispute_cases.pdf",
+      "project_file_exists": false,
+      "available_original_path": "/Users/sonsoi/Desktop/Project_학술제/데이터/[법무부·국토교통부] 주택임대차분쟁조정사례집.pdf",
+      "sha256": "c557cc8811247c8e81405ff44d8ebf13d59a49c9692554feb58246333c5d0743",
+      "manifest_sha256": "c557cc8811247c8e81405ff44d8ebf13d59a49c9692554feb58246333c5d0743",
+      "manifest_hash_match": true,
+      "page_count": 101,
+      "manifest_page_count_match": true,
+      "text_layer_page_count": 0,
+      "official_publication_page": "https://www.moj.go.kr/bbs/moj/118/554749/artclView.do",
+      "official_page_checked": true,
+      "official_attachment_redownloaded_this_run": false,
+      "new_official_download_binary_identity_verified": false,
+      "historical_binary_verification": "not_verified",
+      "restoration": {
+        "performed": false,
+        "preferred_method": "외부 보관 원본을 expected_project_path로 복사한 뒤 SHA-256 재계산. 원본은 유지.",
+        "fallback": "공식 게시물의 동일 제목·개정판 첨부파일을 다운로드하여 해시 및 판본 비교. 해시가 다르면 기존 원본과 동일하다고 승인하거나 덮어쓰지 않음."
+      }
+    }
+  ],
+  "items": [
+    {
+      "case_id": "SC-G001",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제9조(계약의 종료)",
+        "clause_id": "C009",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "user_confirmed_2026-11-08"
+      },
+      "synthetic": false,
+      "existing_review_status": "needs_review",
+      "source_file": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차 표준계약서(원본게시용).pdf",
+      "source_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+      "pdf_page": 2,
+      "original_location": {
+        "section": "제9조(계약의 종료)",
+        "end_boundary": "제10조 직전",
+        "page_region": "중앙, 제8조 다음 제9조",
+        "pdfkit_page_text_start_offset": 1360,
+        "pdfkit_page_text_end_offset_exclusive": 1512
+      },
+      "pdf_extracted_excerpt": "제9조(계약의 종료) 임대차계약이 종료된 경우에 임차인은 임차주택을 원래의 상태로 복구하여 임대인에게 반환\n하고, 이와 동시에 임대인은 보증금을 임차인에게 반환하여야 한다. 다만, 시설물의 노후화나 통상 생길 수\n있는 파손 등은 임차인의 원상복구의무에 포함되지 아니한다.",
+      "exact_match": false,
+      "whitespace_normalized_match": true,
+      "comparison_status": "normalization_difference",
+      "visual_review": {
+        "performed": true,
+        "reviewer": "AI",
+        "human_verification_claimed": false,
+        "scope": "PDF 2페이지 렌더와 조항 본문·번호·표의 책임 주체 대조"
+      },
+      "notes": "공백·줄바꿈만 제거해 비교. 기호·숫자·문구를 치환하지 않음. 기존 데이터 및 검토 상태 유지."
+    },
+    {
+      "case_id": "SC-G002",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제4조(임차주택의 사용·관리·수선)",
+        "clause_id": "C004",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "unavailable_in_current_workspace"
+      },
+      "synthetic": false,
+      "existing_review_status": "needs_review",
+      "source_file": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차 표준계약서(원본게시용).pdf",
+      "source_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+      "pdf_page": 2,
+      "original_location": {
+        "section": "제4조(임차주택의 사용·관리·수선)",
+        "end_boundary": "제5조 직전",
+        "page_region": "상단, 제4조 제1~4항 및 임대인부담·임차인부담 표 포함",
+        "pdfkit_page_text_start_offset": 0,
+        "pdfkit_page_text_end_offset_exclusive": 547
+      },
+      "pdf_extracted_excerpt": "제4조(임차주택의 사용·관리·수선) ① 임차인은 임대인의 동의 없이 임차주택의 구조변경 및 전대나 임차권 양도를\n할 수 없으며, 임대차 목적인 주거 이외의 용도로 사용할 수 없다.\n② 임대인은 계약 존속 중 임차주택을 사용·수익에 필요한 상태로 유지하여야 하고, 임차인은 임대인이 임차\n주택의 보존에 필요한 행위를 하는 때 이를 거절하지 못한다.\n③ 임대인과 임차인은 계약 존속 중에 발생하는 임차주택의 수리 및 비용부담에 관하여 다음과 같이 합의한다.\n다만, 합의되지 아니한 기타 수선비용에 관한 부담은 민법, 판례 기타 관습에 따른다.\n임대인부담 ( 예컨대, 난방, 상․하수도, 전기시설 등 임차주택의 주요설비에 대한 노후·불량으로 인한 수선은 민법 제623조, 판례상\n임대인이 부담하는 것으로 해석됨 )\n임차인부담 ( 예컨대, 임차인의 고의․과실에 기한 파손, 전구 등 통상의 간단한 수선, 소모품 교체 비용은 민법 제623조, 판례상\n임차인이 부담하는 것으로 해석됨 )\n④ 임차인이 임대인의 부담에 속하는 수선비용을 지출한 때에는 임대인에게 그 상환을 청구할 수 있다.",
+      "exact_match": false,
+      "whitespace_normalized_match": true,
+      "comparison_status": "normalization_difference",
+      "visual_review": {
+        "performed": true,
+        "reviewer": "AI",
+        "human_verification_claimed": false,
+        "scope": "PDF 2페이지 렌더와 조항 본문·번호·표의 책임 주체 대조"
+      },
+      "notes": "공백·줄바꿈만 제거해 비교. 기호·숫자·문구를 치환하지 않음. 기존 데이터 및 검토 상태 유지."
+    },
+    {
+      "case_id": "SC-G003",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제6조(채무불이행과 손해배상)",
+        "clause_id": "C006",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "unavailable_in_current_workspace"
+      },
+      "synthetic": false,
+      "existing_review_status": "needs_review",
+      "source_file": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차 표준계약서(원본게시용).pdf",
+      "source_sha256": "9b514b8497bd2cde78969a1111718b1aea2bd9911c49710d7ac676e0683468d5",
+      "pdf_page": 2,
+      "original_location": {
+        "section": "제6조(채무불이행과 손해배상)",
+        "end_boundary": "제7조 직전",
+        "page_region": "상단~중앙, 제5조 다음 제6조",
+        "pdfkit_page_text_start_offset": 651,
+        "pdfkit_page_text_end_offset_exclusive": 812
+      },
+      "pdf_extracted_excerpt": "제6조(채무불이행과 손해배상) 당사자 일방이 채무를 이행하지 아니하는 때에는 상대방은 상당한 기간을 정하여\n그 이행을 최고하고 계약을 해제할 수 있으며, 그로 인한 손해배상을 청구할 수 있다. 다만, 채무자가 미리\n이행하지 아니할 의사를 표시한 경우의 계약해제는 최고를 요하지 아니한다.",
+      "exact_match": false,
+      "whitespace_normalized_match": true,
+      "comparison_status": "normalization_difference",
+      "visual_review": {
+        "performed": true,
+        "reviewer": "AI",
+        "human_verification_claimed": false,
+        "scope": "PDF 2페이지 렌더와 조항 본문·번호·표의 책임 주체 대조"
+      },
+      "notes": "공백·줄바꿈만 제거해 비교. 기호·숫자·문구를 치환하지 않음. 기존 데이터 및 검토 상태 유지."
+    },
+    {
+      "case_id": "SC-G004",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G005",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G006",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G007",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G008",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G009",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G010",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G011",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G012",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G013",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G014",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G015",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G016",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G017",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G018",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G019",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G020",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G021",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G022",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G023",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G024",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G025",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G026",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G027",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G028",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G029",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    },
+    {
+      "case_id": "SC-G030",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "synthetic": true,
+      "existing_review_status": "needs_review",
+      "comparison_status": "not_applicable_synthetic",
+      "source_file": null,
+      "pdf_page": null,
+      "original_location": null,
+      "notes": "합성 문구이며 공식 자료의 직접 인용 또는 검증된 실제 분쟁 사례로 표시하지 않음."
+    }
+  ],
+  "commentary_review": {
+    "status": "bibliography_and_contents_checked",
+    "publication": "2020-08",
+    "covered_revision": "2020-07-31",
+    "used_as_gold_clause_text": false,
+    "limitation": "현행 법률 또는 30개 라벨의 법적 근거가 검증되었다는 의미가 아님. 본문 법리 전수 대조 미실시."
+  },
+  "dispute_case_review": {
+    "status": "candidate_screening_only",
+    "used_in_existing_goldset_count": 0,
+    "text_layer": false,
+    "ocr_performed": false,
+    "candidates": [
+      {
+        "pdf_page": 81,
+        "printed_page": 78,
+        "location": "첫 번째 주황색 사례 상자",
+        "summary_not_quote": "보증금 반환일 연기와 임차인의 계속 거주를 조정한 사례",
+        "potential_use": "반환 지연 조건·대체 합의의 문맥 검토",
+        "related_existing_cases": [
+          "SC-G006",
+          "SC-G007"
+        ]
+      },
+      {
+        "pdf_page": 81,
+        "printed_page": 78,
+        "location": "두 번째 주황색 사례 상자",
+        "summary_not_quote": "합의해지와 퇴거 후 미반환 보증금의 분할 상환 및 지연 관련 조정 사례",
+        "potential_use": "종료 후 반환 지연과 상환 합의의 구분"
+      }
+    ],
+    "limitations": [
+      "사례 요약은 계약서 원문 조항이 아님. 골든셋에 반영하지 않음.",
+      "활용 전 원문 전사·맥락·개인정보·이용 조건 및 사람 라벨 검토 필요.",
+      "이미 확인한 사례이므로 독립 테스트셋의 미노출 사례로 간주하지 않음."
+    ]
+  },
+  "unresolved_source_management": [
+    "프로젝트의 원본 PDF 3개 경로가 비어 있음. 외부 원본 복사 및 경로·해시 재검증 필요.",
+    "해설집·사례집의 공식 다운로드 첨부파일과 현재 외부 원본의 직접 바이너리 비교는 미실시. 기존 manifest와의 해시 일치와 구분함.",
+    "G002·G003 source.pdf_verification의 과거 unavailable 상태는 현재 외부 원본 확인 결과와 다름. 기존 데이터 수정 금지 조건에 따라 유지하며 이 보고서에 최신 확인 결과를 기록함.",
+    "해설집·사례집을 통한 신규 골든셋 보완은 수행하지 않았음."
+  ],
+  "checklist_02": {
+    "status": "partial",
+    "completed": "공식 계약서 3개 문구 대조 및 3종 원본 위치·해시·공식 게시물·복원 방법 기록",
+    "remaining": "프로젝트 내 재현 가능한 원본 경로 복원, 해설집·사례집 공식 첨부 바이너리 대조 및 실제 활용 범위에 대한 후속 검토",
+    "automatically_approved": false
+  },
+  "validation": {
+    "json_syntax": true,
+    "unique_case_ids": true,
+    "count_30": true,
+    "synthetic_27_preserved": true,
+    "existing_data_unchanged": true,
+    "original_pdf_unchanged": true,
+    "commit_push_performed": false
+  }
+}

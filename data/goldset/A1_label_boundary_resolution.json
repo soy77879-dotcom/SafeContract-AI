@@ -1,0 +1,830 @@
+{
+  "guideline_version": "A-1 v2",
+  "date": "2026-11-09",
+  "boundary_source_trace": {
+    "requested_report": "data/goldset/A1_final_completion_report.json",
+    "finding": "완료 보고서에는 9개라는 수만 있고 ID 목록은 직접 없음. 체크리스트 ③의 evidence인 A1_label_final_review.json summary.ambiguous_label_boundary_cases에서 정확한 9개를 확인함.",
+    "resolved_boundary_case_ids": [
+      "SC-G006",
+      "SC-G007",
+      "SC-G008",
+      "SC-G015",
+      "SC-G016",
+      "SC-G017",
+      "SC-G024",
+      "SC-G025",
+      "SC-G026"
+    ]
+  },
+  "items": [
+    {
+      "case_id": "SC-G001",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "동시 반환과 통상 손모 제외로 반환 유형의 일방 부담 신호 없음.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022"
+      ],
+      "legal_application_limits": "제536조는 동시이행 부분의 후보이다. 제4조 제2항은 적용 대상 주택임대차의 보증금 미반환 시 관계 존속에 관한 후보이며 정산 금액 전체를 확정하지 않는다.",
+      "alternative_interpretation": "복구 범위를 확대 해석하면 부담 우려가 있으나 원문 예외를 무시해서는 안 됨.",
+      "unresolved_issues": [
+        "계약 종료·인도 제공 여부, 원상복구 범위와 공제할 채무, 주택임대차법 적용 여부 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G002",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "유지 의무·책임 분담·상환을 함께 제시하므로 ok 후보.",
+      "legal_basis_candidates": [
+        "LAW-007",
+        "LAW-008",
+        "LAW-010"
+      ],
+      "legal_application_limits": "예시와 실제 기입한 수선 특약을 구분하고, 필요비·유익비 및 귀책 범위를 확인해야 함.",
+      "alternative_interpretation": "추가 기입 특약이 불리할 수 있으나 제공되지 않은 특약을 가정하지 않음.",
+      "unresolved_issues": [
+        "예시와 실제 기입한 수선 특약을 구분하고, 필요비·유익비 및 귀책 범위를 확인해야 함.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G003",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "쌍방 불이행과 최고 요건을 둔 해제 절차로 ok 후보.",
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-003",
+        "LAW-006"
+      ],
+      "legal_application_limits": "제544조는 이행지체에 따른 해제이고 제551조는 손해배상 청구와의 관계이다. 이 조항을 모든 임대차 해지 상황에 그대로 적용하지 않는다.",
+      "alternative_interpretation": "해지 법리와 혼동하면 위험 판단이 달라질 수 있어 적용 단계는 별도 확인.",
+      "unresolved_issues": [
+        "이행기·최고 기간과 미이행 여부, 계약 진행 단계, 거절 의사, 실제 해제권 발생 요건 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G004",
+      "boundary_case": false,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "전액 반환 포기는 권리 제거 자체가 명시되어 risk.",
+      "legal_basis_candidates": [
+        "LAW-022",
+        "LAW-027"
+      ],
+      "legal_application_limits": "반환관계 존속 규정과 특례법 강행규정의 검토 후보이다. 제10조는 해당 법 위반 여부가 전제이며 문구만으로 포기의 법적 효력을 확정하지 않는다.",
+      "alternative_interpretation": "사후 정산·반대급부가 있는 포기라면 법적 평가가 달라지지만 문구에 없음.",
+      "unresolved_issues": [
+        "사전 특약인지 분쟁 후 정산·면제 합의인지, 실제 반대급부와 미반환액, 법 적용 범위 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "보증금 반환 청구를 전면 포기시키는 문구로 중대한 금전적 불이익 위험이 명시되어 있다. 약정의 법적 유효성은 판단하지 않는다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G005",
+      "boundary_case": false,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "사유 없는 전액 공제 권한은 확정적인 중대한 불이익 신호.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "현재 등록 조문에 구체적인 공제·상계 요건을 직접 판단할 근거가 부족하다. 제4조 제2항만으로 공제 금액을 판단하지 않는다.",
+      "alternative_interpretation": "실제 공제가 발생하지 않을 수 있다는 가능성은 문구상 권한 부여를 없애지 않음.",
+      "unresolved_issues": [
+        "공제 대상 채무의 존재·발생 원인·금액·증빙, 정산 또는 상계 여부와 법리 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "사유 없이 보증금 전액의 공제를 허용하는 일방적 문구로 중대한 금전적 불이익 위험이 있다. 실제 공제·상계 요건은 별도 검토한다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G006",
+      "boundary_case": true,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "제3자 입주를 반환 조건으로 두고 최종 기한이 없어 risk 유지.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022",
+        "LAW-027"
+      ],
+      "legal_application_limits": "인도 의무와 제3자 입주 조건을 구분한다. 제536조 및 제4조 제2항은 반환·인도 관계를 살피는 후보이며 유예 약정의 효력을 단정하지 않는다. 제10조 적용은 해당 법 위반 여부 확인이 필요하다.",
+      "alternative_interpretation": "입주가 곧 이루어지면 손실이 작아 potential_risk 해석 가능하나 제한 자체가 이미 명시됨.",
+      "unresolved_issues": [
+        "종료일·변제기·인도 또는 이행 제공, 유예 약정 경위, 기한·조건의 성격, 법 적용 범위 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "보증금 반환을 제3자인 새 임차인의 입주 조건에 종속시켜, 입주가 이루어지지 않으면 반환이 지연될 위험이 명시되어 있다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G007",
+      "boundary_case": true,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "자금 개선이라는 불확정 사정에 무기한 종속되어 risk 유지.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022",
+        "LAW-027"
+      ],
+      "legal_application_limits": "자금 사정과 인도 의무의 이행 여부를 별도로 본다. 후보 조문만으로 지체 성립 시점·손해배상액·유예 조건의 효력을 확정하지 않는다.",
+      "alternative_interpretation": "자금 사정이 곧 나아질 수 있다는 사실상 가능성만으로 기한 없는 제한을 낮추지 않음.",
+      "unresolved_issues": [
+        "반환 변제기, 실제 종료·인도 제공, 자금 조건의 내용과 약정 경위, 법 적용 범위 및 지체 관련 추가 근거 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "보증금 반환을 임대인의 불확정적인 자금 사정 개선에 종속시켜, 반환 시점을 확정할 수 없고 반환이 지연될 위험이 명시되어 있다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G008",
+      "boundary_case": true,
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "단독 비용 결정 신호는 있으나 전액·무제한 부담까지 명시되지 않아 potential_risk.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "청소비 약정 및 구체적 공제 기준을 현재 등록 조문만으로 판단하기 어렵다. 일반 반환관계 규정을 청소비 금액의 직접 근거로 사용하지 않는다.",
+      "alternative_interpretation": "일방 결정권 자체를 중대 제한으로 보면 risk 가능. 실제 상한·이의 절차 확인 필요.",
+      "unresolved_issues": [
+        "청소 상태·통상 사용 흔적·합의 금액·산정 기준·영수증·중복 청구 및 계약상 부담 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "청소비 금액을 임대인이 단독 결정하도록 하여 과다 공제 가능성이 있으나 정산 기준 등 추가 정보가 없다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "potential_risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G009",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "반환기일과 인도·반환의 동시 이행을 명시하여 ok.",
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022"
+      ],
+      "legal_application_limits": "제536조의 동시이행 및 제4조 제2항의 관계 존속을 후보로 구분한다. 모든 보증금이 공제 없이 반환된다는 의미로 확장하지 않는다.",
+      "alternative_interpretation": "인도 제공을 둘러싼 분쟁 가능성만으로 현재 문구를 위험 분류하지 않음.",
+      "unresolved_issues": [
+        "실제 종료일과 인도 준비·이행 제공, 정산 대상 채무, 법 적용 범위 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "주택 인도와 보증금 반환의 동시 이행이 명시되어 보증금 반환 유형의 불이익 신호가 보이지 않는다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G010",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "증빙과 양측 합의를 요구하는 정산 절차여서 ok.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "서면 합의 절차가 공제 대상 채무와 금액의 타당성을 보장하지 않는다. 구체적 정산·상계 법리 검토는 별개이다.",
+      "alternative_interpretation": "부당한 합의 내용이 따로 있으면 재검토하되 현재 문구만으로 추정하지 않음.",
+      "unresolved_issues": [
+        "합의의 자발성, 공제 항목·금액·증빙, 반대급부 및 권리 포기 문구 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "공제 금액을 증빙 확인 후 서면 합의하도록 하여 일방 공제 문구가 아니다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G011",
+      "boundary_case": false,
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "실제 별도 약정 부재로 조건 자체를 알 수 없어 unknown.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "별첨을 추정하여 기한·조건이나 적용 조문을 연결하지 않는다.",
+      "alternative_interpretation": "별도 약정이 있다는 사실만으로 불리한 유예를 추정하면 안 됨.",
+      "unresolved_issues": [
+        "별도 약정 원문, 반환일·인도 의무·공제·유예 조건 및 법 적용 범위 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "별도 약정이 제공되지 않아 보증금 반환 조건의 위험 여부를 판정할 수 없다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "unknown",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G012",
+      "boundary_case": false,
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "반환일 공란으로 시점 평가의 핵심 정보가 없어 unknown.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "공란만으로 반환 의무의 부존재나 무효를 추정하지 않는다. 법정 판단과 다른 계약 조항을 확인해야 한다.",
+      "alternative_interpretation": "다른 법정 반환 시점이 적용될 가능성은 문구상 정보 부재를 보충하지 않음.",
+      "unresolved_issues": [
+        "계약기간·종료 사유·다른 반환 조항·인도 조건과 실제 합의 내용 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "반환일이 공란이므로 해당 문구만으로 구체적인 반환일 또는 지연 위험을 판단할 수 없다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "deposit_return",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "unknown",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G013",
+      "boundary_case": false,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "과실 무관·건물 전체·모든 수리비라는 포괄 전가로 risk.",
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "legal_application_limits": "임차 목적물 범위, 주요 설비, 공용부분 및 특약의 효력을 별도 검토해야 함.",
+      "alternative_interpretation": "실제 비용이 작을 수 있어도 책임 범위의 포괄성을 낮추지 않음.",
+      "unresolved_issues": [
+        "임차 목적물 범위, 주요 설비, 공용부분 및 특약의 효력을 별도 검토해야 함.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "임차인에게 무제한의 수리비 부담을 명시한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G014",
+      "boundary_case": false,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "임대인의 고의로 인한 비용까지 임차인 전액 부담으로 risk.",
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "legal_application_limits": "제623조는 유지 의무의 참고 후보일 뿐 고의 파손의 손해배상·면책 효력을 직접 확정하지 않음. 관련 배상 근거 추가 확인 필요.",
+      "alternative_interpretation": "구체적 고의 입증 여부는 문구상 전가의 존재와 별개.",
+      "unresolved_issues": [
+        "제623조는 유지 의무의 참고 후보일 뿐 고의 파손의 손해배상·면책 효력을 직접 확정하지 않음. 관련 배상 근거 추가 확인 필요.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "임대인의 고의로 발생한 비용까지 임차인에게 전가한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G015",
+      "boundary_case": true,
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "사용 연수를 무시한 부담이나 귀책 무관 모든 고장까지 명시하지 않아 potential_risk.",
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "legal_application_limits": "노후·불량 또는 임차인 귀책, 수리와 교체의 필요성, 특약 범위 확인 필요.",
+      "alternative_interpretation": "노후 교체까지 일괄 전가한다고 읽으면 risk 가능. 교체 원인·귀책과 예외 확인 필요.",
+      "unresolved_issues": [
+        "노후·불량 또는 임차인 귀책, 수리와 교체의 필요성, 특약 범위 확인 필요.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "고장 원인과 노후 상태를 고려하지 않는 부담인지 확인이 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "potential_risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G016",
+      "boundary_case": true,
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "원인 전 선지급은 불리하나 최종 책임 확정인지 정산 가능한지 불명확해 potential_risk.",
+      "legal_basis_candidates": [
+        "LAW-007",
+        "LAW-010"
+      ],
+      "legal_application_limits": "선지급인지 최종 부담인지, 실제 필요비 지출 여부와 상환·정산 약정을 확인해야 함. 제626조는 모든 선지급의 환급을 보장하는 근거가 아님.",
+      "alternative_interpretation": "선지급 부담 자체가 중대하다는 risk 해석 가능. 지급액·환급 조건 확인 필요.",
+      "unresolved_issues": [
+        "선지급인지 최종 부담인지, 실제 필요비 지출 여부와 상환·정산 약정을 확인해야 함. 제626조는 모든 선지급의 환급을 보장하는 근거가 아님.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "책임 확정 전 비용 지급 및 정산 조건의 확인이 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "potential_risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G017",
+      "boundary_case": true,
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "임대인 산정·청구가 있으나 그 금액의 최종 무조건 부담까지 명시하지 않아 potential_risk.",
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "legal_application_limits": "고장 원인, 노후화, 실제 수리 내역과 비용 증빙 및 일방 산정 조건 확인 필요.",
+      "alternative_interpretation": "산정권을 일방 확정권으로 해석하면 risk 가능. 이의·증빙·정산 방식 확인.",
+      "unresolved_issues": [
+        "고장 원인, 노후화, 실제 수리 내역과 비용 증빙 및 일방 산정 조건 확인 필요.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "산정 기준과 증빙 제공 조건이 불명확하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "potential_risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G018",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "무과실 노후 주요 설비를 임대인이 부담하므로 ok.",
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "legal_application_limits": "실제 주요 설비인지, 노후 원인과 사용·수익 유지에 필요한 수리인지 확인 필요.",
+      "alternative_interpretation": "실제 귀책 분쟁은 문구의 합리적 분담과 구분.",
+      "unresolved_issues": [
+        "실제 주요 설비인지, 노후 원인과 사용·수익 유지에 필요한 수리인지 확인 필요.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "임차인에게 무과실 노후 수리비를 전가하지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G019",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "고의 파손의 실제 증빙 비용으로 부담을 제한해 ok.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "제623·624·626조만으로 임차인의 고의 파손 배상 책임을 직접 뒷받침하지 않음. 관련 배상 규정과 인과관계·비용 검토 필요.",
+      "alternative_interpretation": "실제 수리비가 과다하면 별도 검토하되 비용 전가를 포괄적으로 가정하지 않음.",
+      "unresolved_issues": [
+        "제623·624·626조만으로 임차인의 고의 파손 배상 책임을 직접 뒷받침하지 않음. 관련 배상 규정과 인과관계·비용 검토 필요.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "귀책과 실제 비용을 한정하여 부담한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G020",
+      "boundary_case": false,
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "협의 외 주체·대상·조건이 없어 unknown.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "수리 대상·원인·비용·책임 주체·합의 내용을 확인한 뒤 근거 후보 선정 필요.",
+      "alternative_interpretation": "협의 조항 자체는 중립적이나 핵심 책임 결론을 낼 정보가 없음.",
+      "unresolved_issues": [
+        "수리 대상·원인·비용·책임 주체·합의 내용을 확인한 뒤 근거 후보 선정 필요.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "부담 주체와 기준이 제공되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "unknown",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G021",
+      "boundary_case": false,
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "미선택 부담자와 대상 부재로 unknown.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "선택된 부담 주체, 수리 대상·원인·범위 확인 전 조문을 임의 연결하지 않음.",
+      "alternative_interpretation": "선택지 존재가 합의 완료를 의미하지 않음.",
+      "unresolved_issues": [
+        "선택된 부담 주체, 수리 대상·원인·범위 확인 전 조문을 임의 연결하지 않음.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "선택 여부와 수리 대상이 확인되지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "repair_cost",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "unknown",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G022",
+      "boundary_case": false,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "아무 사유 없이 즉시 종료·당일 퇴거를 요구하는 중대 제한으로 risk.",
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-022",
+        "LAW-023",
+        "LAW-024",
+        "LAW-027"
+      ],
+      "legal_application_limits": "제543조는 해지권을 새로 부여하는 규정이 아니다. 주택임대차 특례의 적용 대상·기간·갱신 상태를 확인해야 하며 제6조의2의 임차인 통지를 임대인의 즉시 종료권으로 해석하지 않는다.",
+      "alternative_interpretation": "기간 만료 또는 유효한 별도 종료 사유를 원문 밖에서 보충하지 않음.",
+      "unresolved_issues": [
+        "주거용 여부, 일시사용 여부, 기간과 유보 해지권, 종료 경위 및 법정 갱신 상태 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "사유와 준비 기간 없이 임대인에게 일방적인 종료 권한을 부여한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G023",
+      "boundary_case": false,
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "임대인의 전면 불이행에도 해지 금지라는 제한으로 문구상 risk.",
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-005",
+        "LAW-006"
+      ],
+      "legal_application_limits": "해지는 장래 효력 소멸, 해제는 원상회복 문제와 구분한다. 제544조를 해지권의 보편적 직접 근거로 연결하지 않는다. 구체적 의무 위반에 따른 해지 근거와 적용 법리 보완 필요.",
+      "alternative_interpretation": "법적으로 실제 해지가 가능한지는 별도. 제544조로 일반 해지권을 단정하지 않음.",
+      "unresolved_issues": [
+        "불이행 의무, 이행 촉구, 사용 가능성, 임대차 목적 달성 여부 및 판례 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "상대방의 전면적 불이행에도 임차인의 해지를 제한한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G024",
+      "boundary_case": true,
+      "current_label": "potential_risk",
+      "recommended_label": "risk",
+      "review_reason": "중도 해지 시 잔여기간 월세 전액을 예외 없이 위약금으로 지급하는 큰 일률 부담이 명시돼 risk 변경 권고.",
+      "legal_basis_candidates": [
+        "LAW-006",
+        "LAW-028"
+      ],
+      "legal_application_limits": "제551조만으로 위약금 액수의 적정성을 판단할 수 없다. 제398조의 손해배상 예정과 별도 위약벌 여부를 구분한다.",
+      "alternative_interpretation": "잔여 기간이 짧거나 손해와 비슷하면 potential_risk 유지 가능. 문구상 전액 부담 구조를 우선하되 사람의 기준 승인 필요.",
+      "unresolved_issues": [
+        "잔여 기간·금액, 귀책, 재임대와 손해, 중복 청구, 특례상 적법 해지 여부 및 약정 성격 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "잔여 기간 전체의 비용이 부과되어 사유와 산정 기준의 검토가 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "recommended_label_differs_under_v2",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "potential_risk",
+      "prior_review_difference": "변경 권고: 이전은 금액·상황 미상을 우선했고 v2는 명시된 일률 손실 구조를 우선함."
+    },
+    {
+      "case_id": "SC-G025",
+      "boundary_case": true,
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "추가 조건 모두 수용 요구가 있어 unknown은 부적절. 구체적 조건과 갱신 유형이 없어 potential_risk 유지.",
+      "legal_basis_candidates": [
+        "LAW-023",
+        "LAW-025",
+        "LAW-027"
+      ],
+      "legal_application_limits": "묵시적 갱신, 법정 갱신요구, 합의 갱신을 구분한다. 제6조의3은 행사 시기·횟수·거절 사유 등 조건이 있으며 모든 합의 갱신에 자동 적용하지 않는다. 제10조로 불리한 모든 조건을 일괄 무효화하지 않는다.",
+      "alternative_interpretation": "법정 권리를 사실상 전면 배제하는 조건이면 risk. 단순 합의 협상이라면 ok 가능하므로 조건 확인.",
+      "unresolved_issues": [
+        "주택임대차법 적용 범위, 요구 시기·횟수, 거절 사유 및 구체적 추가 조건 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "추가 조건과 갱신 절차가 제시되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "potential_risk",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G026",
+      "boundary_case": true,
+      "current_label": "potential_risk",
+      "recommended_label": "risk",
+      "review_reason": "중도 해지에 보증금 절반이라는 큰 고정 손실을 일률 부과하여 risk 변경 권고.",
+      "legal_basis_candidates": [
+        "LAW-006",
+        "LAW-028"
+      ],
+      "legal_application_limits": "고정 비율만으로 위법·무효를 확정하지 않는다. 제398조에 따른 예정액인지 별도 위약벌인지 및 구체적 사실 확인 필요.",
+      "alternative_interpretation": "절대 금액·손해와의 관계에 따라 potential_risk 유지 해석 가능. 비율만의 법적 과다성 판정이 아니며 사람 확인 필요.",
+      "unresolved_issues": [
+        "보증금과 월세, 해지 사유, 실제 손해, 산정 근거 및 다른 배상과 중복 여부 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "큰 고정 위약금의 적용 사유와 실제 손해 관계를 확인해야 한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "recommended_label_differs_under_v2",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "potential_risk",
+      "prior_review_difference": "변경 권고: 이전은 금액·상황 미상을 우선했고 v2는 명시된 일률 손실 구조를 우선함."
+    },
+    {
+      "case_id": "SC-G027",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "쌍방 합의 종료와 위약금 미부과로 ok.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "합의 종료는 일방적 법정·약정 해지권 행사와 구분하며 제543조를 직접적인 합의 종료 근거로 연결하지 않는다. 위약금 없음이 보증금·다른 채무 정산 완료를 뜻하지 않는다.",
+      "alternative_interpretation": "보증금 정산 등 다른 권리 포기를 포함한다고 추정하지 않음.",
+      "unresolved_issues": [
+        "자유로운 합의 여부, 합의 당사자, 종료일·인도·보증금 반환 및 잔여 채무 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "합의 종료 및 위약금 미부과가 명시되어 있다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G028",
+      "boundary_case": false,
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "협의 내용을 쌍방 서면 확인하는 절차 자체는 ok.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "서면화 자체와 실제 갱신 조건의 적법성은 별개이다. 법정 갱신요구권 행사와 합의 갱신의 성립을 서면 유무만으로 판단하지 않는다.",
+      "alternative_interpretation": "서면의 실제 내용이 불리할 수 있으나 서면화 문구만으로 위험을 확정하지 않음.",
+      "unresolved_issues": [
+        "서면의 실제 내용, 조건 변경, 확인·동의의 의미 및 갱신 유형 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "서면 확인 자체에서는 해당 유형의 불이익이 확인되지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "ok",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G029",
+      "boundary_case": false,
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "별첨의 위약금 조건이 제공되지 않아 unknown.",
+      "legal_basis_candidates": [
+        "LAW-028"
+      ],
+      "legal_application_limits": "별첨이 없는 상태에서 제551조를 위약금 근거로 확정하지 않는다. 제398조를 추가하더라도 구체적 약정과 손해 확인이 우선이다.",
+      "alternative_interpretation": "위약금이라는 명칭만으로 potential_risk를 부여하지 않음. LAW-028은 내용의 대체물이 아님.",
+      "unresolved_issues": [
+        "별첨 원문, 산식·금액·상한, 적용 사유, 손해배상 예정 또는 위약벌 여부 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "별첨이 없어 금액과 적용 조건을 판단할 수 없다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "unknown",
+      "prior_review_difference": null
+    },
+    {
+      "case_id": "SC-G030",
+      "boundary_case": false,
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "갱신 조건이 미기재되어 unknown.",
+      "legal_basis_candidates": [],
+      "legal_application_limits": "조건 미기재만으로 법정 갱신요구권 부존재나 계약 무효를 추정하지 않는다. 법정 요구와 합의 갱신 여부도 아직 불명확하다.",
+      "alternative_interpretation": "추후 협의의 가능성과 지금 제공된 조건의 존재를 혼동하지 않음.",
+      "unresolved_issues": [
+        "실제 갱신 조건, 갱신 유형, 법 적용 범위, 행사 시기·횟수 및 거절 사유 확인.",
+        "보완 기준의 사람 승인 및 독립 라벨 확인 필요"
+      ],
+      "requires_human_confirmation": true,
+      "review_status": "needs_review",
+      "current_label_reason": "갱신 조건이 제공되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_reason_alignment": "consistent_with_v2_reading",
+      "risk_type": "contract_termination",
+      "risk_type_assessment": "해당 유형의 문구로 적절. 복합 내용은 선택 유형에 한정해 판정.",
+      "previous_type_review_recommendation": "unknown",
+      "prior_review_difference": null
+    }
+  ],
+  "summary": {
+    "total": 30,
+    "boundary_cases": 9,
+    "retained": 28,
+    "change_recommended": 2,
+    "changed_recommendation_case_ids": [
+      "SC-G024",
+      "SC-G026"
+    ],
+    "boundary_retained": 7,
+    "boundary_change_recommended": 2,
+    "requires_human_confirmation": 30,
+    "gold_labels_changed": 0
+  },
+  "law_source_validation": {
+    "method": "저장 PDF를 PDFKit으로 다시 추출해 사용한 등록 법률 후보의 페이지별 source_spans 비교",
+    "checked_law_ids": [
+      "LAW-001",
+      "LAW-002",
+      "LAW-003",
+      "LAW-005",
+      "LAW-006",
+      "LAW-007",
+      "LAW-008",
+      "LAW-010",
+      "LAW-022",
+      "LAW-023",
+      "LAW-024",
+      "LAW-025",
+      "LAW-027",
+      "LAW-028"
+    ],
+    "result": "passed",
+    "limitations": "판본 최신성·판례 및 전체 페이지 시각 대조를 이번에 승인하지 않음."
+  },
+  "checklist_assessment": {
+    "item_1": {
+      "status": "partial",
+      "completed": "30개 라벨·사유·출처 보존 및 법률 후보·반대 해석 교차 검토",
+      "remaining": "변경 권고 2개 및 전체 라벨의 사람 확인, G023 법리와 조건부 법률 적용 검토"
+    },
+    "item_3": {
+      "status": "partial",
+      "completed": "7개 경계의 규칙·예외·예시·등록 근거·법률 한계 문서화",
+      "remaining": "v2의 중대 부담 기준, 특히 G024/G026에 대한 사람 기준 승인. 최종 확정으로 표시하지 않음."
+    }
+  },
+  "validation": {
+    "json_parse": true,
+    "all_ids_unique": true,
+    "all_candidate_law_ids_exist": true,
+    "existing_gold_30_unchanged": true,
+    "existing_labels_sources_review_status_preserved": true,
+    "all_existing_data_except_guidelines_unchanged": true,
+    "human_verification_performed": false
+  },
+  "input_sha256": {
+    "data/.DS_Store": "5303eced3026a414736749a04b53f6945d8fe96b9ff9f84004d8e9d184ab36f9",
+    "data/goldset/A1_source_verification_report.json": "406a22b9da1777a8944ecbce1a109c269c90bb4808b3c0b6683355b2f278f221",
+    "data/goldset/test_candidate_blind_review.json": "591e23fcf02e68fd741e1d75330e70ff252e0a071071fa3558c11ba71202a034",
+    "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+    "data/goldset/A1_testset_preparation_report.json": "e713377a86b232e235e127e6344af6cc8c317270db10060644a747697d4f52e5",
+    "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+    "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+    "data/goldset/A1_integrated_validation_report.json": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+    "data/goldset/deposit_return_review.json": "b61403fdad9200f153cff655a38b31e355066be81ca7d94653c1db04c48d86df",
+    "data/goldset/test_candidate_collection_report.json": "00c8373c10f807e71aeaeb9cbe1984f21fc320b9d96284cc71d2031a92f18c36",
+    "data/goldset/A1_final_completion_report.json": "16dab54328ce4424f369835256a9694a0fbdd2634305b53f64c045c5b494f9ee",
+    "data/goldset/A1_final_readiness_report.json": "41c6c6dc629521432ea3ca481793fb941c466171a41a50ee2509c3751d704c25",
+    "data/goldset/A1_split_validation_report.json": "612116195519ba00cc4f7ca385ce1c340d553f80bdfdb07fbe3bfd5d98956369",
+    "data/goldset/test_candidate_clauses.json": "2a8a7107d306b2b7cadbcc7f1bd699cb5962d2b35aeb8c637b803cc85bce1917",
+    "data/goldset/A1_label_final_review.json": "13cc248c407dfab1daf92c30696491db15adac54757b4609dea8c7d1a1454c01",
+    "data/goldset/test_candidate_ai_legal_preliminary_review.json": "6f6d83f92083d4ff3d95b4a7b9738845f06fade37dfb040d30782106d38f6030",
+    "data/goldset/A1_deposit_review_revalidation.json": "4b92fb60c7a1fb3bedd194c0b297fa4741a054e2da43b050e8e38e140994e454",
+    "data/goldset/test_candidate_semantic_review.json": "b3b8dd503edd73c1c235416407c4fc43e16e3aa4878e1bcebeba481a31ebf114",
+    "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+    "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+    "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+    "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+    "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+    "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+    "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+    "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+    "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+    "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+    "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+    "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+    "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26"
+  }
+}
