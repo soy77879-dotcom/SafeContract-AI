@@ -88,9 +88,20 @@ def analyze_request(request,ledger):
 
 
 class OCRProcess:
-    def __init__(self,timeout=900,python=None,worker=None):
-        self.timeout=timeout;self.python=Path(python or ROOT/'.venv/bin/python')
-        self.worker=Path(worker or ROOT/'integrations/ocr_worker.py');self.lock=threading.Lock()
+    def __init__(self, timeout=900, python=None, worker=None):
+        self.timeout = timeout
+
+        if os.name == "nt":
+            default_python = ROOT / ".venv-ocr/Scripts/python.exe"
+        else:
+            default_python = ROOT / ".venv/bin/python"
+
+        self.python = Path(python or default_python)
+        self.worker = Path(
+            worker or ROOT / "integrations/ocr_worker.py"
+        )
+        self.lock = threading.Lock()
+
     def __call__(self,uploads):
         if not 1<=len(uploads)<=5:raise AdapterError(422,'VALIDATION_ERROR','이미지는 1~5장이어야 합니다.')
         suffixes=[validate_upload(*u) for u in uploads]
@@ -110,10 +121,20 @@ class OCRProcess:
                 except OSError as exc:raise AdapterError(503,'OCR_UNAVAILABLE','OCR 실행 환경을 확인하세요.') from exc
                 try:proc.wait(timeout=self.timeout)
                 except subprocess.TimeoutExpired:
-                    try:os.killpg(proc.pid,signal.SIGKILL)
-                    except ProcessLookupError:pass
+                    try:
+                        if os.name == "nt":
+                            proc.kill()
+                        else:
+                            os.killpg(proc.pid, signal.SIGKILL)
+                    except ProcessLookupError:
+                        pass
+
                     proc.wait()
-                    raise AdapterError(504,'OCR_TIMEOUT','OCR 처리 시간이 초과됐습니다.')
+                    raise AdapterError(
+                        504,
+                        "OCR_TIMEOUT",
+                        "OCR 처리 시간이 초과됐습니다.",
+                    )
                 if not out.is_file() or out.stat().st_size>20*1024*1024:
                     raise AdapterError(500,'OCR_PROCESSING_ERROR','OCR 결과를 읽을 수 없습니다.')
                 try:result=json.loads(out.read_text(encoding='utf-8'))

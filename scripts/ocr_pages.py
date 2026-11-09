@@ -2,6 +2,7 @@
 from pathlib import Path
 import json
 import time
+import os
 
 import fitz
 from PIL import Image, ImageEnhance
@@ -18,14 +19,20 @@ OUTPUT_DIR = ROOT / "tmp/ocr_pages"
 
 
 def create_ocr():
-    """기존 D-7 실험과 동일한 한국어 OCR 모델 사용"""
-    return PaddleOCR(
-        text_detection_model_name="PP-OCRv5_server_det",
-        text_recognition_model_name="korean_PP-OCRv5_mobile_rec",
-        use_doc_orientation_classify=False,
-        use_doc_unwarping=False,
-        use_textline_orientation=False,
-    )
+    """공통 한글 모델을 사용하고 Windows 실행 옵션을 적용한다."""
+    options = {
+        "text_detection_model_name": "PP-OCRv5_server_det",
+        "text_recognition_model_name": "korean_PP-OCRv5_mobile_rec",
+        "use_doc_orientation_classify": False,
+        "use_doc_unwarping": False,
+        "use_textline_orientation": False,
+    }
+
+    if os.name == "nt":
+        options["device"] = "cpu"
+        options["enable_mkldnn"] = False
+
+    return PaddleOCR(**options)
 
 
 def process_page(page, page_number, ocr):
