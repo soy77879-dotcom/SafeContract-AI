@@ -1,0 +1,474 @@
+[
+  {
+    "case_id": "SC-G001",
+    "text": "제9조(계약의 종료) 임대차계약이 종료된 경우에 임차인은 임차주택을 원래의 상태로 복구하여 임대인에게 반환\n하고, 이와 동시에 임대인은 보증금을 임차인에게 반환하여야 한다. 다만, 시설물의 노후화나 통상 생길 수 \n있는 파손 등은 임차인의 원상복구의무에 포함되지 아니한다. \n",
+    "risk_type": "deposit_return",
+    "gold_label": "ok",
+    "label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+    "source": {
+      "kind": "official_contract",
+      "document": "주택임대차표준계약서",
+      "pdf_page": 2,
+      "provision": "제9조(계약의 종료)",
+      "clause_id": "C009",
+      "extracted_from": "data/ocr/sample_contract.json",
+      "pdf_verification": "user_confirmed_2026-11-08"
+    },
+    "legal_basis": [
+      "LAW-001"
+    ],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G002",
+    "text": " 제4조(임차주택의 사용·관리·수선) ① 임차인은 임대인의 동의 없이 임차주택의 구조변경 및 전대나 임차권 양도를 \n할 수 없으며, 임대차 목적인 주거 이외의 용도로 사용할 수 없다.\n  ② 임대인은 계약 존속 중 임차주택을 사용·수익에 필요한 상태로 유지하여야 하고, 임차인은 임대인이 임차\n주택의 보존에 필요한 행위를 하는 때 이를 거절하지 못한다.\n  ③ 임대인과 임차인은 계약 존속 중에 발생하는 임차주택의 수리 및 비용부담에 관하여 다음과 같이 합의한다. \n다만, 합의되지 아니한 기타 수선비용에 관한 부담은 민법, 판례 기타 관습에 따른다.\n임대인부담\n ( 예컨대, 난방, 상․하수도, 전기시설 등 임차주택의 주요설비에 대한 노후·불량으로 인한 수선은 민법 제623조, 판례상 \n임대인이 부담하는 것으로 해석됨                                                            ) \n임차인부담\n ( 예컨대, 임차인의 고의․과실에 기한 파손, 전구 등 통상의 간단한 수선, 소모품 교체 비용은 민법 제623조, 판례상 \n임차인이 부담하는 것으로 해석됨                                                           )\n  ④ 임차인이 임대인의 부담에 속하는 수선비용을 지출한 때에는 임대인에게 그 상환을 청구할 수 있다. \n",
+    "risk_type": "repair_cost",
+    "gold_label": "ok",
+    "label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+    "source": {
+      "kind": "official_contract",
+      "document": "주택임대차표준계약서",
+      "pdf_page": 2,
+      "provision": "제4조(임차주택의 사용·관리·수선)",
+      "clause_id": "C004",
+      "extracted_from": "data/ocr/sample_contract.json",
+      "pdf_verification": "unavailable_in_current_workspace"
+    },
+    "legal_basis": [
+      "LAW-007",
+      "LAW-008",
+      "LAW-010"
+    ],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G003",
+    "text": "제6조(채무불이행과 손해배상) 당사자 일방이 채무를 이행하지 아니하는 때에는 상대방은 상당한 기간을 정하여 \n그 이행을 최고하고 계약을 해제할 수 있으며, 그로 인한 손해배상을 청구할 수 있다. 다만, 채무자가 미리 \n이행하지 아니할 의사를 표시한 경우의 계약해제는 최고를 요하지 아니한다.\n",
+    "risk_type": "contract_termination",
+    "gold_label": "ok",
+    "label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+    "source": {
+      "kind": "official_contract",
+      "document": "주택임대차표준계약서",
+      "pdf_page": 2,
+      "provision": "제6조(채무불이행과 손해배상)",
+      "clause_id": "C006",
+      "extracted_from": "data/ocr/sample_contract.json",
+      "pdf_verification": "unavailable_in_current_workspace"
+    },
+    "legal_basis": [
+      "LAW-003",
+      "LAW-006"
+    ],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G004",
+    "text": "계약 종료 시 임차인은 보증금 전액의 반환을 포기한다.",
+    "risk_type": "deposit_return",
+    "gold_label": "risk",
+    "label_reason": "보증금 반환 청구를 전면 포기시키는 문구로 중대한 금전적 불이익 위험이 명시되어 있다. 약정의 법적 유효성은 판단하지 않는다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G005",
+    "text": "임대인은 사유를 제시하지 않고 보증금 전액을 공제할 수 있다.",
+    "risk_type": "deposit_return",
+    "gold_label": "risk",
+    "label_reason": "사유 없이 보증금 전액의 공제를 허용하는 일방적 문구로 중대한 금전적 불이익 위험이 있다. 실제 공제·상계 요건은 별도 검토한다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G006",
+    "text": "보증금은 새로운 임차인이 입주한 후 반환한다.",
+    "risk_type": "deposit_return",
+    "gold_label": "risk",
+    "label_reason": "보증금 반환을 제3자인 새 임차인의 입주 조건에 종속시켜, 입주가 이루어지지 않으면 반환이 지연될 위험이 명시되어 있다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G007",
+    "text": "보증금은 임대인의 자금 사정이 나아지면 반환한다.",
+    "risk_type": "deposit_return",
+    "gold_label": "risk",
+    "label_reason": "보증금 반환을 임대인의 불확정적인 자금 사정 개선에 종속시켜, 반환 시점을 확정할 수 없고 반환이 지연될 위험이 명시되어 있다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G008",
+    "text": "퇴거 청소비는 임대인이 정한 금액으로 보증금에서 공제한다.",
+    "risk_type": "deposit_return",
+    "gold_label": "potential_risk",
+    "label_reason": "청소비 금액을 임대인이 단독 결정하도록 하여 과다 공제 가능성이 있으나 정산 기준 등 추가 정보가 없다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G009",
+    "text": "임대인은 계약 종료일에 주택을 인도받음과 동시에 보증금을 반환한다.",
+    "risk_type": "deposit_return",
+    "gold_label": "ok",
+    "label_reason": "주택 인도와 보증금 반환의 동시 이행이 명시되어 보증금 반환 유형의 불이익 신호가 보이지 않는다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [
+      "LAW-001"
+    ],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G010",
+    "text": "보증금에서 공제할 금액은 증빙을 확인한 후 당사자가 서면으로 합의한다.",
+    "risk_type": "deposit_return",
+    "gold_label": "ok",
+    "label_reason": "공제 금액을 증빙 확인 후 서면 합의하도록 하여 일방 공제 문구가 아니다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G011",
+    "text": "보증금 반환은 별도 약정에 따른다.",
+    "risk_type": "deposit_return",
+    "gold_label": "unknown",
+    "label_reason": "별도 약정이 제공되지 않아 보증금 반환 조건의 위험 여부를 판정할 수 없다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G012",
+    "text": "보증금 반환일: __________.",
+    "risk_type": "deposit_return",
+    "gold_label": "unknown",
+    "label_reason": "반환일이 공란이므로 해당 문구만으로 구체적인 반환일 또는 지연 위험을 판단할 수 없다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G013",
+    "text": "임차인의 과실과 관계없이 건물 전체의 모든 수리비를 임차인이 부담한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "risk",
+    "label_reason": "임차인에게 무제한의 수리비 부담을 명시한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G014",
+    "text": "임대인의 고의로 발생한 시설 파손도 임차인이 전액 수리한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "risk",
+    "label_reason": "임대인의 고의로 발생한 비용까지 임차인에게 전가한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G015",
+    "text": "보일러 교체 비용은 사용 연수와 관계없이 임차인이 부담한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "potential_risk",
+    "label_reason": "고장 원인과 노후 상태를 고려하지 않는 부담인지 확인이 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G016",
+    "text": "수선비의 절반은 고장 원인을 확인하기 전에 임차인이 지급한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "potential_risk",
+    "label_reason": "책임 확정 전 비용 지급 및 정산 조건의 확인이 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G017",
+    "text": "시설 수리비는 퇴거할 때 임대인이 산정하여 임차인에게 청구한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "potential_risk",
+    "label_reason": "산정 기준과 증빙 제공 조건이 불명확하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G018",
+    "text": "임차인의 고의나 과실 없이 노후화로 고장 난 주요 설비의 수리비는 임대인이 부담한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "ok",
+    "label_reason": "임차인에게 무과실 노후 수리비를 전가하지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [
+      "LAW-007"
+    ],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G019",
+    "text": "임차인이 고의로 파손한 시설의 실제 수리비는 증빙을 확인하여 임차인이 부담한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "ok",
+    "label_reason": "귀책과 실제 비용을 한정하여 부담한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G020",
+    "text": "수리비는 협의한다.",
+    "risk_type": "repair_cost",
+    "gold_label": "unknown",
+    "label_reason": "부담 주체와 기준이 제공되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G021",
+    "text": "수리비 부담자: □ 임대인 □ 임차인.",
+    "risk_type": "repair_cost",
+    "gold_label": "unknown",
+    "label_reason": "선택 여부와 수리 대상이 확인되지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G022",
+    "text": "임대인은 아무런 사유 없이 즉시 계약을 종료하고 임차인에게 당일 퇴거를 요구할 수 있다.",
+    "risk_type": "contract_termination",
+    "gold_label": "risk",
+    "label_reason": "사유와 준비 기간 없이 임대인에게 일방적인 종료 권한을 부여한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G023",
+    "text": "임대인이 계약상 의무를 전혀 이행하지 않아도 임차인은 계약을 해지할 수 없다.",
+    "risk_type": "contract_termination",
+    "gold_label": "risk",
+    "label_reason": "상대방의 전면적 불이행에도 임차인의 해지를 제한한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G024",
+    "text": "중도 해지 시 임차인은 남은 계약기간의 월세 전액을 위약금으로 지급한다.",
+    "risk_type": "contract_termination",
+    "gold_label": "risk",
+    "label_reason": "중도 해지 시 잔여 계약기간의 월세 전액을 위약금으로 지급하도록 하여 명시적인 중대한 금전 부담을 부과하는 문구상 위험이다. 법률적 위법성·무효 또는 위약금의 법적 과다성을 확정한 판단은 아니다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G025",
+    "text": "계약 갱신 여부는 임대인이 정한 추가 조건을 모두 수용한 경우 결정한다.",
+    "risk_type": "contract_termination",
+    "gold_label": "potential_risk",
+    "label_reason": "추가 조건과 갱신 절차가 제시되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G026",
+    "text": "임차인이 중도 해지하면 보증금의 절반을 위약금으로 지급한다.",
+    "risk_type": "contract_termination",
+    "gold_label": "risk",
+    "label_reason": "중도 해지 시 보증금의 절반을 위약금으로 지급하도록 하여 명시적인 중대한 금전 부담을 부과하는 문구상 위험이다. 법률적 위법성·무효 또는 위약금의 법적 과다성을 확정한 판단은 아니다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G027",
+    "text": "당사자가 서면으로 합의한 날짜에 계약을 종료하며 별도 위약금은 부과하지 않는다.",
+    "risk_type": "contract_termination",
+    "gold_label": "ok",
+    "label_reason": "합의 종료 및 위약금 미부과가 명시되어 있다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G028",
+    "text": "계약 갱신에 관한 협의 내용은 양 당사자가 확인한 서면으로 남긴다.",
+    "risk_type": "contract_termination",
+    "gold_label": "ok",
+    "label_reason": "서면 확인 자체에서는 해당 유형의 불이익이 확인되지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G029",
+    "text": "중도 해지 위약금은 별첨에 따른다.",
+    "risk_type": "contract_termination",
+    "gold_label": "unknown",
+    "label_reason": "별첨이 없어 금액과 적용 조건을 판단할 수 없다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  },
+  {
+    "case_id": "SC-G030",
+    "text": "계약 갱신 조건: 추후 기재.",
+    "risk_type": "contract_termination",
+    "gold_label": "unknown",
+    "label_reason": "갱신 조건이 제공되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+    "source": {
+      "kind": "synthetic",
+      "document": null,
+      "pdf_page": null,
+      "provision": null
+    },
+    "legal_basis": [],
+    "review_status": "needs_review"
+  }
+]

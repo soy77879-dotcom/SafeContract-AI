@@ -1,0 +1,198 @@
+{
+  "purpose": "블라인드 검토와 분리된 관리자용 의미상 누출 가능성 점검. 사람의 검토나 정답 판정이 아님.",
+  "items": [
+    {
+      "candidate_id": "SC-TC001",
+      "possibly_related_gold_case_ids": [
+        "SC-G004",
+        "SC-G006",
+        "SC-G007"
+      ],
+      "shared_semantic_pattern": "반환 수령을 권리 포기 또는 별도 조건에 결부",
+      "distinction_and_review_question": "기존은 반환 자체 포기·입주·자금 조건, 신규는 후기 삭제·민원 제한. 문구 차이 외 권리 제한 시나리오 재사용 여부 확인.",
+      "similarity_screening_priority": "medium",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC002",
+      "possibly_related_gold_case_ids": [
+        "SC-G006",
+        "SC-G007"
+      ],
+      "shared_semantic_pattern": "조건 충족까지 보증금 송금 보류",
+      "distinction_and_review_question": "계좌 본인 확인이라는 별도 목적과 합리적 절차 가능성은 기존 제3자·자금 사정과 다름. 조건부 지연 패턴 공유 여부 검토.",
+      "similarity_screening_priority": "medium",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC003",
+      "possibly_related_gold_case_ids": [
+        "SC-G009"
+      ],
+      "shared_semantic_pattern": "반환기일을 유지하는 절차",
+      "distinction_and_review_question": "기존 인도·동시이행과 신규 계좌 오기 정정은 다른 사실관계. 같은 기일 보호 주제만으로 파생으로 확정하지 않음.",
+      "similarity_screening_priority": "low",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC004",
+      "possibly_related_gold_case_ids": [
+        "SC-G011",
+        "SC-G012"
+      ],
+      "shared_semantic_pattern": "중요 정보가 없어 반환 조건 판단이 어려움",
+      "distinction_and_review_question": "기존은 약정·반환일 누락, 신규는 수령 권한자 식별과 위임 관계 문제. 정보 부족 틀의 재사용 여부 확인.",
+      "similarity_screening_priority": "low",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC005",
+      "possibly_related_gold_case_ids": [
+        "SC-G013",
+        "SC-G014",
+        "SC-G023"
+      ],
+      "shared_semantic_pattern": "수리 관련 부담 또는 장래 권리의 포괄 제한",
+      "distinction_and_review_question": "비용 전가와 장래 수리 요구 포기는 차이가 있으나 포괄 권리 배제 시나리오 및 유형 간 전환 가능성 검토.",
+      "similarity_screening_priority": "medium",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC006",
+      "possibly_related_gold_case_ids": [
+        "SC-G016",
+        "SC-G017"
+      ],
+      "shared_semantic_pattern": "수리비 정산 조건과 비용 확정 보류",
+      "distinction_and_review_question": "야간 긴급 출동·연락·업체 선택은 새 조건이나 정산 보류 구조의 의미상 중복 검토 필요.",
+      "similarity_screening_priority": "medium",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC007",
+      "possibly_related_gold_case_ids": [
+        "SC-G018",
+        "SC-G019"
+      ],
+      "shared_semantic_pattern": "수리비 부담의 제한",
+      "distinction_and_review_question": "노후·귀책 기준과 중복 청구 오류 정정은 다름. 합리적 부담 분담이라는 넓은 주제 유사만 확인.",
+      "similarity_screening_priority": "low",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC008",
+      "possibly_related_gold_case_ids": [
+        "SC-G020",
+        "SC-G021"
+      ],
+      "shared_semantic_pattern": "수리 비용 판단 정보 부족",
+      "distinction_and_review_question": "책임 주체가 명시된 신규 문구는 기존 주체·범위 부재와 다름. 실제 부담액 불확정의 정보 부족 유형 비교 필요.",
+      "similarity_screening_priority": "low",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC009",
+      "possibly_related_gold_case_ids": [
+        "SC-G022",
+        "SC-G023"
+      ],
+      "shared_semantic_pattern": "계약 종료 관련 권리 행사 제한",
+      "distinction_and_review_question": "즉시 종료·해지권 배제와 통지 증명 수단 배제는 다른 장치이나 종료권 제한 패턴의 재사용 여부 검토.",
+      "similarity_screening_priority": "medium",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC010",
+      "possibly_related_gold_case_ids": [
+        "SC-G025"
+      ],
+      "shared_semantic_pattern": "갱신 과정에 부가 조건 설정",
+      "distinction_and_review_question": "갱신 조건 수용과 통신 장애 입증 부담은 다르지만 임차인의 절차상 조건 부담이라는 추상 패턴 공유.",
+      "similarity_screening_priority": "medium",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC011",
+      "possibly_related_gold_case_ids": [
+        "SC-G028",
+        "SC-G025"
+      ],
+      "shared_semantic_pattern": "갱신 협의 절차와 권리 취급",
+      "distinction_and_review_question": "서면화·조건 수용과 무응답을 포기로 간주하지 않는 것은 다른 사실관계. 단순 부정문 변형인지 별도 판단.",
+      "similarity_screening_priority": "low",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    },
+    {
+      "candidate_id": "SC-TC012",
+      "possibly_related_gold_case_ids": [
+        "SC-G029",
+        "SC-G030"
+      ],
+      "shared_semantic_pattern": "종료·갱신 판단을 위한 핵심 조건 미확정",
+      "distinction_and_review_question": "문서 누락과 서로 서명된 문서 간 충돌은 구분. 불명확성만으로 동일 파생으로 단정하지 않음.",
+      "similarity_screening_priority": "low",
+      "assessment_type": "AI_semantic_screening_not_human_review",
+      "semantic_leakage_confirmed": null,
+      "independence_approved": false,
+      "review_status": "needs_review"
+    }
+  ],
+  "reviewer_packet_policy": {
+    "send_to_reviewer": [
+      "test_candidate_blind_review.json",
+      "제안 라벨 분포·예시를 포함하지 않는 공통 라벨 정의"
+    ],
+    "withhold_until_review_submitted": [
+      "test_candidate_clauses.json",
+      "test_candidate_collection_report.json",
+      "test_candidate_semantic_review.json",
+      "golden_clauses.json",
+      "기존 AI 제안 라벨 및 판단 이유가 있는 대화·보고서"
+    ],
+    "ordering": "candidate_id는 보존하고 배열 순서는 무작위 배치해 원래 제안 라벨 순서 노출을 줄임.",
+    "limitations": "이미 제안 라벨을 본 검토자의 지식을 지울 수 없음. 기존 ID와 원본의 대응은 유지되므로 원본 파일 접근을 제한해야 함. JSON 필드 제거는 접근 통제나 독립 검토 완료를 보장하지 않음."
+  },
+  "human_review_performed": false,
+  "independence_approved_count": 0,
+  "candidate_count": 12,
+  "validation": {
+    "exact_allowed_blind_keys": true,
+    "all_review_fields_empty": true,
+    "text_and_ids_preserved": true,
+    "suggested_label_reason_not_copied": true,
+    "existing_files_unchanged": true
+  }
+}

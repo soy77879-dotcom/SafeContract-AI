@@ -1,0 +1,2048 @@
+{
+  "validation_summary": {
+    "date": "2026-11-09",
+    "branch": "dev/01",
+    "overall_status": "needs_review",
+    "counting_unit": "검증 목록의 개별 check. 법적 승인 건수 또는 문제 조항 수가 아님.",
+    "check_counts": {
+      "passed": 183,
+      "failed": 1,
+      "pending": 7
+    },
+    "checks": [
+      {
+        "check": "gold_count_and_ids",
+        "status": "passed",
+        "references": [],
+        "detail": null
+      },
+      {
+        "check": "law_count_and_ids",
+        "status": "passed",
+        "references": [],
+        "detail": null
+      },
+      {
+        "check": "unique_law_articles",
+        "status": "passed",
+        "references": [],
+        "detail": null
+      },
+      {
+        "check": "guideline_labels",
+        "status": "passed",
+        "references": [],
+        "detail": null
+      },
+      {
+        "check": "type_count",
+        "status": "passed",
+        "references": [
+          "deposit_return"
+        ],
+        "detail": null
+      },
+      {
+        "check": "type_count",
+        "status": "passed",
+        "references": [
+          "repair_cost"
+        ],
+        "detail": null
+      },
+      {
+        "check": "type_count",
+        "status": "passed",
+        "references": [
+          "contract_termination"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G001"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G001"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G001",
+          "LAW-001"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G002"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G002"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G002",
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G002",
+          "LAW-008"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G002",
+          "LAW-010"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G003"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G003"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G003",
+          "LAW-003"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G003",
+          "LAW-006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G004"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G004"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G005"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G005"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G008"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G008"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G009"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G009"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G009",
+          "LAW-001"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G010"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G010"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G011"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G011"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G012"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G012"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G013"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G013"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G014"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G014"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G015"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G015"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G016"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G016"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G017"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G017"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G018"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G018"
+        ],
+        "detail": null
+      },
+      {
+        "check": "linked_risk_type",
+        "status": "passed",
+        "references": [
+          "SC-G018",
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G019"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G019"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G020"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G020"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G021"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G021"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G022"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G022"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G023"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G023"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G024"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G024"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G025"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G025"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G026"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G026"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G029"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G029"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_schema_status",
+        "status": "passed",
+        "references": [
+          "SC-G030"
+        ],
+        "detail": null
+      },
+      {
+        "check": "gold_law_references",
+        "status": "passed",
+        "references": [
+          "SC-G030"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-001"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-002"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-003"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-004"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-005"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-008"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-009"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-010"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-011"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-012"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-013"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-014"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-015"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-016"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-017"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-018"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-019"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-020"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-021"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-022"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-023"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-024"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-025"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-026"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "law_pdf_text_page_date",
+        "status": "passed",
+        "references": [
+          "LAW-028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_coverage",
+        "status": "passed",
+        "references": [
+          "repair_cost"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G002"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G002",
+          "LAW-007",
+          "LAW-008",
+          "LAW-010"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G013"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G013",
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G014"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G014",
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G015"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G015",
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G016"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G016",
+          "LAW-007",
+          "LAW-010"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G017"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G017",
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G018"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G018",
+          "LAW-007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G019"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G019"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G020"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G020"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G021"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G021"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_coverage",
+        "status": "passed",
+        "references": [
+          "contract_termination"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G003"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G003",
+          "LAW-002",
+          "LAW-003",
+          "LAW-006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G022"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G022",
+          "LAW-002",
+          "LAW-022",
+          "LAW-023",
+          "LAW-024",
+          "LAW-027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G023"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G023",
+          "LAW-002",
+          "LAW-005",
+          "LAW-006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G024"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G024",
+          "LAW-006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G025"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G025",
+          "LAW-023",
+          "LAW-025",
+          "LAW-027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G026"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G026",
+          "LAW-006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G029"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G029"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_label_alignment",
+        "status": "passed",
+        "references": [
+          "SC-G030"
+        ],
+        "detail": null
+      },
+      {
+        "check": "review_candidate_ids",
+        "status": "passed",
+        "references": [
+          "SC-G030"
+        ],
+        "detail": null
+      },
+      {
+        "check": "deposit_review_file_present",
+        "status": "failed",
+        "references": [
+          "SC-G001",
+          "SC-G004",
+          "SC-G005",
+          "SC-G006",
+          "SC-G007",
+          "SC-G008",
+          "SC-G009",
+          "SC-G010",
+          "SC-G011",
+          "SC-G012"
+        ],
+        "detail": "別途 보증금 반환 유형 검토 기록 없음"
+      },
+      {
+        "check": "label_semantics_final_approval",
+        "status": "pending",
+        "references": [
+          "SC-G001",
+          "SC-G002",
+          "SC-G003",
+          "SC-G004",
+          "SC-G005",
+          "SC-G006",
+          "SC-G007",
+          "SC-G008",
+          "SC-G009",
+          "SC-G010",
+          "SC-G011",
+          "SC-G012",
+          "SC-G013",
+          "SC-G014",
+          "SC-G015",
+          "SC-G016",
+          "SC-G017",
+          "SC-G018",
+          "SC-G019",
+          "SC-G020",
+          "SC-G021",
+          "SC-G022",
+          "SC-G023",
+          "SC-G024",
+          "SC-G025",
+          "SC-G026",
+          "SC-G027",
+          "SC-G028",
+          "SC-G029",
+          "SC-G030"
+        ],
+        "detail": "문구·사유 대조에서 명백한 모순은 발견하지 못함. G006/G007 risk는 사용자 지침에 따른 반환 지연 위험 분류. G024/G026은 금액·사유·약정 성격에 따라 정도가 달라지는 potential_risk로 기존 검토와 일치. 전체 사람 최종 검토 필요."
+      },
+      {
+        "check": "recorded_links_match_current_gold",
+        "status": "passed",
+        "references": [
+          "SC-G001",
+          "SC-G002",
+          "SC-G003",
+          "SC-G009",
+          "SC-G018"
+        ],
+        "detail": null
+      },
+      {
+        "check": "recorded_hold_list_match_unlinked",
+        "status": "passed",
+        "references": [],
+        "detail": null
+      },
+      {
+        "check": "LAW028_candidate_available",
+        "status": "passed",
+        "references": [
+          "SC-G024",
+          "LAW-028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "historical_missing_basis_now_registered",
+        "status": "pending",
+        "references": [
+          "SC-G024",
+          "LAW-028"
+        ],
+        "detail": "기존 contract_termination_review의 missing_legal_basis는 등록 전 이력. 보완 기록에서 연결 가능 확인됨. 후보 배열 및 골든셋에는 아직 미연결이며 이번 검증에서 변경하지 않음."
+      },
+      {
+        "check": "LAW028_candidate_available",
+        "status": "passed",
+        "references": [
+          "SC-G026",
+          "LAW-028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "historical_missing_basis_now_registered",
+        "status": "pending",
+        "references": [
+          "SC-G026",
+          "LAW-028"
+        ],
+        "detail": "기존 contract_termination_review의 missing_legal_basis는 등록 전 이력. 보완 기록에서 연결 가능 확인됨. 후보 배열 및 골든셋에는 아직 미연결이며 이번 검증에서 변경하지 않음."
+      },
+      {
+        "check": "LAW028_candidate_available",
+        "status": "passed",
+        "references": [
+          "SC-G029",
+          "LAW-028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "historical_missing_basis_now_registered",
+        "status": "pending",
+        "references": [
+          "SC-G029",
+          "LAW-028"
+        ],
+        "detail": "기존 contract_termination_review의 missing_legal_basis는 등록 전 이력. 보완 기록에서 연결 가능 확인됨. 후보 배열 및 골든셋에는 아직 미연결이며 이번 검증에서 변경하지 않음."
+      },
+      {
+        "check": "G023_pending_preserved",
+        "status": "passed",
+        "references": [
+          "SC-G023"
+        ],
+        "detail": null
+      },
+      {
+        "check": "G023_termination_doctrine",
+        "status": "pending",
+        "references": [
+          "SC-G023"
+        ],
+        "detail": "해제와 계속적 계약 해지 구별, 의무 위반 사실·최고·목적 달성 여부 및 판례 확인 필요."
+      },
+      {
+        "check": "official_quote_vs_ground_truth",
+        "status": "passed",
+        "references": [
+          "SC-G001"
+        ],
+        "detail": null
+      },
+      {
+        "check": "official_quote_vs_ground_truth",
+        "status": "passed",
+        "references": [
+          "SC-G002"
+        ],
+        "detail": null
+      },
+      {
+        "check": "official_quote_vs_ground_truth",
+        "status": "passed",
+        "references": [
+          "SC-G003"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G004"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G005"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G006"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G007"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G008"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G009"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G010"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G011"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G012"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G013"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G014"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G015"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G016"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G017"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G018"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G019"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G020"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G021"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G022"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G023"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G024"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G025"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G026"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G027"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G028"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G029"
+        ],
+        "detail": null
+      },
+      {
+        "check": "synthetic_source_separation",
+        "status": "passed",
+        "references": [
+          "SC-G030"
+        ],
+        "detail": null
+      },
+      {
+        "check": "official_contract_pdf_recomparison",
+        "status": "pending",
+        "references": [
+          "SC-G001",
+          "SC-G002",
+          "SC-G003"
+        ],
+        "detail": "data/contracts/original/standard_contract.pdf 없음. 기존 GT 대조만 수행. source의 사용자 확인 기록을 신규 확인으로 간주하지 않음."
+      },
+      {
+        "check": "legal_currentness_and_application",
+        "status": "pending",
+        "references": [
+          "LAW-001",
+          "LAW-002",
+          "LAW-003",
+          "LAW-004",
+          "LAW-005",
+          "LAW-006",
+          "LAW-007",
+          "LAW-008",
+          "LAW-009",
+          "LAW-010",
+          "LAW-011",
+          "LAW-012",
+          "LAW-013",
+          "LAW-014",
+          "LAW-015",
+          "LAW-016",
+          "LAW-017",
+          "LAW-018",
+          "LAW-019",
+          "LAW-020",
+          "LAW-021",
+          "LAW-022",
+          "LAW-023",
+          "LAW-024",
+          "LAW-025",
+          "LAW-026",
+          "LAW-027",
+          "LAW-028"
+        ],
+        "detail": "제공 PDF의 시행일·텍스트 일치 확인은 현행성, 경과규정, 개별 계약 적용 또는 법적 타당성의 승인이 아님. 이번 실행은 모든 페이지의 시각 대조를 수행하지 않음."
+      },
+      {
+        "check": "existing_files_unchanged",
+        "status": "passed",
+        "references": [],
+        "detail": null
+      },
+      {
+        "check": "branch_preserved",
+        "status": "passed",
+        "references": [],
+        "detail": null
+      }
+    ]
+  },
+  "dataset_statistics": {
+    "gold_count": 30,
+    "law_count": 28,
+    "risk_type_counts": {
+      "deposit_return": 10,
+      "repair_cost": 10,
+      "contract_termination": 10
+    },
+    "review_coverage": {
+      "repair_cost": {
+        "record_count": 10,
+        "missing_case_ids": []
+      },
+      "contract_termination": {
+        "record_count": 10,
+        "missing_case_ids": []
+      },
+      "deposit_return": {
+        "record_count": 0,
+        "missing_case_ids": [
+          "SC-G001",
+          "SC-G004",
+          "SC-G005",
+          "SC-G006",
+          "SC-G007",
+          "SC-G008",
+          "SC-G009",
+          "SC-G010",
+          "SC-G011",
+          "SC-G012"
+        ],
+        "files_found": []
+      }
+    }
+  },
+  "label_distribution": {
+    "deposit_return": {
+      "ok": 3,
+      "risk": 4,
+      "potential_risk": 1,
+      "unknown": 2
+    },
+    "repair_cost": {
+      "ok": 3,
+      "risk": 2,
+      "potential_risk": 3,
+      "unknown": 2
+    },
+    "contract_termination": {
+      "ok": 3,
+      "risk": 2,
+      "potential_risk": 3,
+      "unknown": 2
+    }
+  },
+  "legal_basis_coverage": {
+    "linked_cases": 5,
+    "unlinked_cases": [
+      "SC-G004",
+      "SC-G005",
+      "SC-G006",
+      "SC-G007",
+      "SC-G008",
+      "SC-G010",
+      "SC-G011",
+      "SC-G012",
+      "SC-G013",
+      "SC-G014",
+      "SC-G015",
+      "SC-G016",
+      "SC-G017",
+      "SC-G019",
+      "SC-G020",
+      "SC-G021",
+      "SC-G022",
+      "SC-G023",
+      "SC-G024",
+      "SC-G025",
+      "SC-G026",
+      "SC-G027",
+      "SC-G028",
+      "SC-G029",
+      "SC-G030"
+    ],
+    "link_count": 8,
+    "linked_by_type": {
+      "deposit_return": 2,
+      "repair_cost": 2,
+      "contract_termination": 1
+    },
+    "LAW028_candidates": [
+      "SC-G024",
+      "SC-G026",
+      "SC-G029"
+    ],
+    "mapping_note": "기존 연결은 해당 부분의 참고 근거. 후보와 실제 legal_basis 연결, 법적 승인 상태를 구분."
+  },
+  "missing_or_invalid_references": [
+    {
+      "case_ids": [
+        "SC-G001",
+        "SC-G004",
+        "SC-G005",
+        "SC-G006",
+        "SC-G007",
+        "SC-G008",
+        "SC-G009",
+        "SC-G010",
+        "SC-G011",
+        "SC-G012"
+      ],
+      "issue": "missing_deposit_return_review",
+      "severity": "review_record_gap"
+    }
+  ],
+  "label_consistency_issues": [],
+  "pending_legal_reviews": [
+    {
+      "case_id": "SC-G002",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [
+        "LAW-007",
+        "LAW-008",
+        "LAW-010"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "예시와 실제 기입한 수선 특약을 구분하고, 필요비·유익비 및 귀책 범위를 확인해야 함."
+    },
+    {
+      "case_id": "SC-G013",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [
+        "LAW-007"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "임차 목적물 범위, 주요 설비, 공용부분 및 특약의 효력을 별도 검토해야 함."
+    },
+    {
+      "case_id": "SC-G014",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [
+        "LAW-007"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "제623조는 유지 의무의 참고 후보일 뿐 고의 파손의 손해배상·면책 효력을 직접 확정하지 않음. 관련 배상 근거 추가 확인 필요."
+    },
+    {
+      "case_id": "SC-G015",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [
+        "LAW-007"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "노후·불량 또는 임차인 귀책, 수리와 교체의 필요성, 특약 범위 확인 필요."
+    },
+    {
+      "case_id": "SC-G016",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [
+        "LAW-007",
+        "LAW-010"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "선지급인지 최종 부담인지, 실제 필요비 지출 여부와 상환·정산 약정을 확인해야 함. 제626조는 모든 선지급의 환급을 보장하는 근거가 아님."
+    },
+    {
+      "case_id": "SC-G017",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [
+        "LAW-007"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "고장 원인, 노후화, 실제 수리 내역과 비용 증빙 및 일방 산정 조건 확인 필요."
+    },
+    {
+      "case_id": "SC-G018",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [
+        "LAW-007"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "실제 주요 설비인지, 노후 원인과 사용·수익 유지에 필요한 수리인지 확인 필요."
+    },
+    {
+      "case_id": "SC-G019",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [],
+      "review_status": "needs_review",
+      "review_needed": "제623·624·626조만으로 임차인의 고의 파손 배상 책임을 직접 뒷받침하지 않음. 관련 배상 규정과 인과관계·비용 검토 필요."
+    },
+    {
+      "case_id": "SC-G020",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [],
+      "review_status": "needs_review",
+      "review_needed": "수리 대상·원인·비용·책임 주체·합의 내용을 확인한 뒤 근거 후보 선정 필요."
+    },
+    {
+      "case_id": "SC-G021",
+      "risk_type": "repair_cost",
+      "candidate_law_ids": [],
+      "review_status": "needs_review",
+      "review_needed": "선택된 부담 주체, 수리 대상·원인·범위 확인 전 조문을 임의 연결하지 않음."
+    },
+    {
+      "case_id": "SC-G003",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [
+        "LAW-002",
+        "LAW-003",
+        "LAW-006"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "이행기·최고 기간과 미이행 여부, 계약 진행 단계, 거절 의사, 실제 해제권 발생 요건 확인."
+    },
+    {
+      "case_id": "SC-G022",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [
+        "LAW-002",
+        "LAW-022",
+        "LAW-023",
+        "LAW-024",
+        "LAW-027"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "주거용 여부, 일시사용 여부, 기간과 유보 해지권, 종료 경위 및 법정 갱신 상태 확인."
+    },
+    {
+      "case_id": "SC-G023",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [
+        "LAW-002",
+        "LAW-005",
+        "LAW-006"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "불이행 의무, 이행 촉구, 사용 가능성, 임대차 목적 달성 여부 및 판례 확인."
+    },
+    {
+      "case_id": "SC-G024",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [
+        "LAW-006"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "잔여 기간·금액, 귀책, 재임대와 손해, 중복 청구, 특례상 적법 해지 여부 및 약정 성격 확인."
+    },
+    {
+      "case_id": "SC-G025",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [
+        "LAW-023",
+        "LAW-025",
+        "LAW-027"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "주택임대차법 적용 범위, 요구 시기·횟수, 거절 사유 및 구체적 추가 조건 확인."
+    },
+    {
+      "case_id": "SC-G026",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [
+        "LAW-006"
+      ],
+      "review_status": "needs_review",
+      "review_needed": "보증금과 월세, 해지 사유, 실제 손해, 산정 근거 및 다른 배상과 중복 여부 확인."
+    },
+    {
+      "case_id": "SC-G027",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [],
+      "review_status": "needs_review",
+      "review_needed": "자유로운 합의 여부, 합의 당사자, 종료일·인도·보증금 반환 및 잔여 채무 확인."
+    },
+    {
+      "case_id": "SC-G028",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [],
+      "review_status": "needs_review",
+      "review_needed": "서면의 실제 내용, 조건 변경, 확인·동의의 의미 및 갱신 유형 확인."
+    },
+    {
+      "case_id": "SC-G029",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [],
+      "review_status": "needs_review",
+      "review_needed": "별첨 원문, 산식·금액·상한, 적용 사유, 손해배상 예정 또는 위약벌 여부 확인."
+    },
+    {
+      "case_id": "SC-G030",
+      "risk_type": "contract_termination",
+      "candidate_law_ids": [],
+      "review_status": "needs_review",
+      "review_needed": "실제 갱신 조건, 갱신 유형, 법 적용 범위, 행사 시기·횟수 및 거절 사유 확인."
+    },
+    {
+      "case_id": "SC-G001",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G004",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G005",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G006",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G007",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G008",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G009",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G010",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G011",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    },
+    {
+      "case_id": "SC-G012",
+      "risk_type": "deposit_return",
+      "review_status": "needs_review",
+      "review_needed": "유형별 검토 기록 작성 및 라벨·근거 확인 필요"
+    }
+  ],
+  "source_integrity": {
+    "source_kind_counts": {
+      "official_contract": 3,
+      "synthetic": 27
+    },
+    "official_quotes": [
+      {
+        "case_id": "SC-G001",
+        "gt_text_and_page_match": true,
+        "recorded_pdf_verification": "user_confirmed_2026-11-08"
+      },
+      {
+        "case_id": "SC-G002",
+        "gt_text_and_page_match": true,
+        "recorded_pdf_verification": "unavailable_in_current_workspace"
+      },
+      {
+        "case_id": "SC-G003",
+        "gt_text_and_page_match": true,
+        "recorded_pdf_verification": "unavailable_in_current_workspace"
+      }
+    ],
+    "historical_preservation_limit": "이번 실행 전후 source/review_status 포함 모든 기존 파일 해시 유지. 전체 과거 버전과의 동일성은 증명하지 않음.",
+    "preexisting_sha256": {
+      "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+      "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+      "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+      "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+      "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+      "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+      "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+      "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+      "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+      "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+      "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+      "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+      "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+      "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+      "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+      "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26"
+    },
+    "pdf_text_comparison": "28개 모두 source_spans/페이지/시행일 검사 결과는 checks 참조"
+  },
+  "recommended_next_actions": [
+    "보증금 반환 10개 별도 검토 기록 작성",
+    "등록 전 미등록 근거 기록과 LAW-028 보완 기록의 관계를 명시적으로 갱신할지 검토. 후보 연결은 별도 승인 후 진행",
+    "SC-G023의 계속적 계약 해지 법리·판례 검토",
+    "미연결 25개는 사유·적용 조건을 확인하고 추측 연결하지 않음",
+    "표준계약서 PDF 복원 후 공식 인용 3개 원문 재대조",
+    "모든 라벨과 근거 후보는 최종 사람 검토 전 needs_review 유지"
+  ]
+}

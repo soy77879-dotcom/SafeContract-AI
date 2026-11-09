@@ -1,0 +1,56 @@
+{
+  "sources": [
+    {
+      "source_file": "data/legal/민법(법률)(제21454호)(20260317).pdf",
+      "sha256": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+      "page_count": 106,
+      "effective_date": "2026-03-17",
+      "effective_date_source_pdf_page": 1,
+      "original_file": "/Users/sonsoi/Desktop/Project_학술제/데이터/민법(법률)(제21454호)(20260317).pdf",
+      "copy_hash_match": true
+    },
+    {
+      "source_file": "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf",
+      "sha256": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+      "page_count": 9,
+      "effective_date": "2026-07-01",
+      "effective_date_source_pdf_page": 1,
+      "original_file": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf",
+      "copy_hash_match": true
+    },
+    {
+      "source_file": "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf",
+      "sha256": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+      "page_count": 11,
+      "effective_date": "2026-01-02",
+      "effective_date_source_pdf_page": 1,
+      "original_file": "/Users/sonsoi/Desktop/Project_학술제/데이터/주택임대차보호법(법률)(제21065호)(20260102).pdf",
+      "copy_hash_match": true
+    }
+  ],
+  "extraction_method": "macOS PDFKit text layer; repeated page title/publisher footer removed; all other extracted characters and line breaks preserved. source_spans track page boundaries.",
+  "article_count": 27,
+  "risk_distribution": {
+    "deposit_return": 9,
+    "contract_termination": 17,
+    "repair_cost": 8
+  },
+  "review_notes": [
+    "All entries need human review of PDF glyphs, article boundaries and relevance.",
+    "Dates are document header effective dates, not independent confirmation of current law or transitional applicability.",
+    "golden_clauses.json absent on dev/01; user requested types matched scripts/risk_rules.py.",
+    "No risk labels validated."
+  ],
+  "validation": {
+    "json_parse": "passed",
+    "unique_ids_and_articles": "passed",
+    "required_fields": "passed",
+    "source_exists": "passed",
+    "page_text_substring_match": "passed",
+    "original_copy_sha256": "passed: 3 files"
+  },
+  "visual_review": {
+    "scope": "Each PDF first page header and effective date only",
+    "all_article_glyphs_reviewed": false
+  }
+}

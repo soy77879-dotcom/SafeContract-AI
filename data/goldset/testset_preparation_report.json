@@ -1,0 +1,954 @@
+{
+  "assessment_date": "2026-11-09",
+  "branch": "dev/01",
+  "decision": "new_independently_reviewed_cases_required",
+  "existing_dataset_usage": {
+    "cases": [
+      {
+        "case_id": "SC-G001",
+        "risk_type": "deposit_return",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "official_contract",
+          "document": "주택임대차표준계약서",
+          "pdf_page": 2,
+          "provision": "제9조(계약의 종료)",
+          "clause_id": "C009",
+          "extracted_from": "data/ocr/sample_contract.json",
+          "pdf_verification": "user_confirmed_2026-11-08"
+        },
+        "usage_status": "same_source_family_development_use_documented",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": {
+          "path": "docs/d7_risk_rules_report.md",
+          "description": "표준계약서 구조화 OCR 19개 조항을 규칙 분석에 실행한 기록. 골든셋 자체로 튜닝했다는 증거와는 구분."
+        },
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G002",
+        "risk_type": "repair_cost",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "official_contract",
+          "document": "주택임대차표준계약서",
+          "pdf_page": 2,
+          "provision": "제4조(임차주택의 사용·관리·수선)",
+          "clause_id": "C004",
+          "extracted_from": "data/ocr/sample_contract.json",
+          "pdf_verification": "unavailable_in_current_workspace"
+        },
+        "usage_status": "same_source_family_development_use_documented",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": {
+          "path": "docs/d7_risk_rules_report.md",
+          "description": "표준계약서 구조화 OCR 19개 조항을 규칙 분석에 실행한 기록. 골든셋 자체로 튜닝했다는 증거와는 구분."
+        },
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G003",
+        "risk_type": "contract_termination",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "official_contract",
+          "document": "주택임대차표준계약서",
+          "pdf_page": 2,
+          "provision": "제6조(채무불이행과 손해배상)",
+          "clause_id": "C006",
+          "extracted_from": "data/ocr/sample_contract.json",
+          "pdf_verification": "unavailable_in_current_workspace"
+        },
+        "usage_status": "same_source_family_development_use_documented",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": {
+          "path": "docs/d7_risk_rules_report.md",
+          "description": "표준계약서 구조화 OCR 19개 조항을 규칙 분석에 실행한 기록. 골든셋 자체로 튜닝했다는 증거와는 구분."
+        },
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G004",
+        "risk_type": "deposit_return",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G005",
+        "risk_type": "deposit_return",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G006",
+        "risk_type": "deposit_return",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "similar_development_case_found_exact_use_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 117,
+            "text": "임대인은 새로운\n임차인이 입주한 이후 보증금을 반환한다.",
+            "similarity": 0.7556,
+            "exact": false,
+            "normalized_equal": false
+          },
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 22,
+            "text": "임대인은 새로운 임차인이 입주한 이후 보증금을 반환한다.",
+            "similarity": 0.7556,
+            "exact": false,
+            "normalized_equal": false
+          },
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 34,
+            "text": "임차인은 새로운 임차인이 입주한 이후 보증금을 반환한다.",
+            "similarity": 0.7556,
+            "exact": false,
+            "normalized_equal": false
+          }
+        ],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G007",
+        "risk_type": "deposit_return",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G008",
+        "risk_type": "deposit_return",
+        "gold_label": "potential_risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G009",
+        "risk_type": "deposit_return",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "similar_development_case_found_exact_use_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 147,
+            "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+            "similarity": 0.75,
+            "exact": false,
+            "normalized_equal": false
+          },
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 114,
+            "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+            "similarity": 0.75,
+            "exact": false,
+            "normalized_equal": false
+          },
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 158,
+            "text": "임대인은 계약 종료 시 보증금을 반환한다.",
+            "similarity": 0.75,
+            "exact": false,
+            "normalized_equal": false
+          }
+        ],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G010",
+        "risk_type": "deposit_return",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G011",
+        "risk_type": "deposit_return",
+        "gold_label": "unknown",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "similar_development_case_found_exact_use_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 26,
+            "text": "보증금 반환은 별도 협의에 따른다.",
+            "similarity": 0.8667,
+            "exact": false,
+            "normalized_equal": false
+          }
+        ],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G012",
+        "risk_type": "deposit_return",
+        "gold_label": "unknown",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G013",
+        "risk_type": "repair_cost",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "similar_development_case_found_exact_use_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 57,
+            "text": "고의 과실과 관계없이 모든 수리비는 임차인이 부담한다.",
+            "similarity": 0.8,
+            "exact": false,
+            "normalized_equal": false
+          }
+        ],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G014",
+        "risk_type": "repair_cost",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "similar_development_case_found_exact_use_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 45,
+            "text": "임차인의 고의 또는 과실로 발생한 파손은 임차인이 수리비를 부담한다.",
+            "similarity": 0.7143,
+            "exact": false,
+            "normalized_equal": false
+          }
+        ],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G015",
+        "risk_type": "repair_cost",
+        "gold_label": "potential_risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G016",
+        "risk_type": "repair_cost",
+        "gold_label": "potential_risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G017",
+        "risk_type": "repair_cost",
+        "gold_label": "potential_risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G018",
+        "risk_type": "repair_cost",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G019",
+        "risk_type": "repair_cost",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G020",
+        "risk_type": "repair_cost",
+        "gold_label": "unknown",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "similar_development_case_found_exact_use_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 51,
+            "text": "수리비는 추후 협의한다.",
+            "similarity": 0.9,
+            "exact": false,
+            "normalized_equal": false
+          }
+        ],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G021",
+        "risk_type": "repair_cost",
+        "gold_label": "unknown",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G022",
+        "risk_type": "contract_termination",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G023",
+        "risk_type": "contract_termination",
+        "gold_label": "risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G024",
+        "risk_type": "contract_termination",
+        "gold_label": "potential_risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "similar_development_case_found_exact_use_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [
+          {
+            "file": "tests/test_risk_rules.py",
+            "line": 77,
+            "text": "임차인이 중도해지하는 경우 남은 계약기간의 월세 전액을 위약금으로 지급한다.",
+            "similarity": 0.8,
+            "exact": false,
+            "normalized_equal": false
+          }
+        ],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G025",
+        "risk_type": "contract_termination",
+        "gold_label": "potential_risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G026",
+        "risk_type": "contract_termination",
+        "gold_label": "potential_risk",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G027",
+        "risk_type": "contract_termination",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G028",
+        "risk_type": "contract_termination",
+        "gold_label": "ok",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G029",
+        "risk_type": "contract_termination",
+        "gold_label": "unknown",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      },
+      {
+        "case_id": "SC-G030",
+        "risk_type": "contract_termination",
+        "gold_label": "unknown",
+        "review_status": "needs_review",
+        "source": {
+          "kind": "synthetic",
+          "document": null,
+          "pdf_page": null,
+          "provision": null
+        },
+        "usage_status": "usage_unknown",
+        "direct_text_matches": [],
+        "similarity_evidence": [],
+        "same_source_family_evidence": null,
+        "prompt_usage": "not_fully_auditable",
+        "independent_test_eligible": false,
+        "exclusion_reason": "독립 라벨 확정·미노출 이력·사전 평가 분리 기록 미확인. 현재 조항 노출 및 유사 사례가 있어 독립성 추정 금지."
+      }
+    ],
+    "counts": {
+      "same_source_family_development_use_documented": 3,
+      "usage_unknown": 20,
+      "similar_development_case_found_exact_use_unknown": 7
+    },
+    "scope": {
+      "working_tree_files": 72,
+      "head_ancestor_commits": 12,
+      "unique_historical_blobs": 76,
+      "scanned_roots": [
+        "scripts/",
+        "tests/",
+        "integrations/",
+        "backend/",
+        "frontend/",
+        "docs/"
+      ],
+      "id_mentions": [],
+      "parse_warnings": [],
+      "normalization": "NFC 및 공백·줄바꿈 제거. 숫자·기호·부정문 보존.",
+      "search_method": "현재 파일과 HEAD에서 도달 가능한 12개 커밋의 코드·문서 본문, Python 문자열 리터럴 및 JSON 문자열에 대해 원문/정규화 부분문자열 재사용 검사. 다른 브랜치 전환·원격 조회 없음.",
+      "limits": "삭제된 비추적 파일, 접근 불가 이력, 외부 프롬프트·실험·개인 기억은 확인 불가. 검색 미발견은 과거 미사용을 증명하지 않음."
+    },
+    "type_label_distribution": {
+      "deposit_return": {
+        "ok": 3,
+        "risk": 4,
+        "potential_risk": 1,
+        "unknown": 2
+      },
+      "repair_cost": {
+        "ok": 3,
+        "risk": 2,
+        "potential_risk": 3,
+        "unknown": 2
+      },
+      "contract_termination": {
+        "ok": 3,
+        "risk": 2,
+        "potential_risk": 3,
+        "unknown": 2
+      }
+    }
+  },
+  "leakage_risks": [
+    {
+      "risk": "same_source_document",
+      "case_ids": [
+        "SC-G001",
+        "SC-G002",
+        "SC-G003"
+      ],
+      "detail": "표준계약서 개발 사용 이력이 있어 동일 문서 또는 인접·파생 조항을 새 테스트로 분할하지 않음."
+    },
+    {
+      "risk": "near_duplicate_scenarios",
+      "case_ids": [
+        "SC-G006",
+        "SC-G009",
+        "SC-G011",
+        "SC-G013",
+        "SC-G014",
+        "SC-G020",
+        "SC-G024"
+      ],
+      "detail": "문구 유사도는 후보 검색일 뿐 의미 동등성 확정이 아님. 숫자·주체·조사만 바꾼 사례는 독립성 확보 방법이 아님."
+    },
+    {
+      "risk": "prompt_or_historical_exposure_unknown",
+      "case_ids": [
+        "SC-G001",
+        "SC-G002",
+        "SC-G003",
+        "SC-G004",
+        "SC-G005",
+        "SC-G006",
+        "SC-G007",
+        "SC-G008",
+        "SC-G009",
+        "SC-G010",
+        "SC-G011",
+        "SC-G012",
+        "SC-G013",
+        "SC-G014",
+        "SC-G015",
+        "SC-G016",
+        "SC-G017",
+        "SC-G018",
+        "SC-G019",
+        "SC-G020",
+        "SC-G021",
+        "SC-G022",
+        "SC-G023",
+        "SC-G024",
+        "SC-G025",
+        "SC-G026",
+        "SC-G027",
+        "SC-G028",
+        "SC-G029",
+        "SC-G030"
+      ],
+      "detail": "개발 프롬프트 전체 감사 불가. 기존 30개를 미노출 평가셋으로 인증할 수 없음."
+    }
+  ],
+  "eligible_test_candidates": {
+    "count": 0,
+    "case_ids": [],
+    "label_verification": "기존 최종 라벨 검토에서 독립 평가 준비 0개. 모두 needs_review 유지.",
+    "independent_approval": false
+  },
+  "required_new_cases": {
+    "required": true,
+    "coverage_cells": [
+      {
+        "risk_type": "deposit_return",
+        "label": "risk",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "deposit_return",
+        "label": "potential_risk",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "deposit_return",
+        "label": "ok",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "deposit_return",
+        "label": "unknown",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "repair_cost",
+        "label": "risk",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "repair_cost",
+        "label": "potential_risk",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "repair_cost",
+        "label": "ok",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "repair_cost",
+        "label": "unknown",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "contract_termination",
+        "label": "risk",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "contract_termination",
+        "label": "potential_risk",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "contract_termination",
+        "label": "ok",
+        "verified_test_count": 0
+      },
+      {
+        "risk_type": "contract_termination",
+        "label": "unknown",
+        "verified_test_count": 0
+      }
+    ],
+    "planning_target": {
+      "cases_per_cell": 5,
+      "total": 60,
+      "status": "수집 계획 예시이며 통계적으로 충분한 표본 수를 보장하지 않음. 문맥상 근거 없는 셀은 억지로 채우지 않음."
+    },
+    "sample_size_limit": "3유형×4라벨 12개 셀 모두 검증된 독립 표본 0개. 실제 평가 규모는 목표 정밀도·신뢰구간·운영 분포를 정한 뒤 결정. 소표본에서 단일 정확도 수치 과신 금지.",
+    "official_source_leads": [
+      {
+        "pdf_page": 81,
+        "printed_page": 78,
+        "location": "하단 보증금 반환에 관한 조정사례 ①",
+        "topic": "자금 사정으로 반환이 지연되어 반환일 연기·계속 거주를 조정한 사례",
+        "related_case_ids": [
+          "SC-G007"
+        ],
+        "relationship": "주제 참고. 기존 합성 문장의 직접 출처 또는 동일 사례가 아님.",
+        "review_status": "needs_review"
+      },
+      {
+        "pdf_page": 81,
+        "printed_page": 78,
+        "location": "하단 보증금 반환에 관한 조정사례 ②",
+        "topic": "합의해지 후 일부 미반환 보증금의 분할상환·지연이자를 조정한 사례",
+        "related_case_ids": [
+          "SC-G006",
+          "SC-G007"
+        ],
+        "relationship": "주제 참고. 새 임차인 입주 조건을 직접 승인하거나 동일한 문구를 확인한 것이 아님.",
+        "review_status": "needs_review"
+      }
+    ],
+    "lead_limitations": "사례집 PDF 81쪽 후보 2건은 이미 개발 검토에 노출됨. 새로운 독립 후보로 계수하지 않음. 다른 미검토 사례도 문서군 중복과 출처·라벨 검토 후 선정해야 함. 현재 신규 검증 후보를 확보한 것은 아님.",
+    "synthetic_policy": "합성 신규 사례는 실제 사례와 구분하고 출처 생성자·날짜·시나리오군 기록. 독립 검토자 승인 전 정답 또는 평가 준비로 표시하지 않음."
+  },
+  "proposed_split_strategy": [
+    "현재 30개를 변경하지 않고 개발용 후보로 유지. 임의 랜덤 분할 금지.",
+    "독립 데이터 담당자가 미노출 별도 문서·시나리오군을 확보하고 개발자가 테스트 정답에 접근하지 않도록 관리.",
+    "출처 파일·발행시점·실제 페이지·원문 위치·해시를 기록하고 두 검토자의 독립 라벨링 및 이견 조정 수행. 법적 적용 검토와 문구 라벨 승인을 분리.",
+    "개발 전체 코퍼스와 정확·정규화·의미 유사·동일 문서 파생 검사를 수행하고 문서/시나리오군 단위로 분리.",
+    "개발 검증셋과 최종 테스트셋을 별도로 동결. 버전·해시·접근 권한·평가 이력 기록.",
+    "최종 테스트로 규칙·프롬프트를 조정하지 않음. 오류 분석이 튜닝에 사용되면 해당 버전을 개발 데이터로 이관하고 미노출 테스트 새로 확보."
+  ],
+  "source_requirements": [
+    "기관·문서명·원본 파일·물리적 페이지·해시·발행/시행 시점 및 원문 위치 확인",
+    "현행 법률 타당성과 과거 사례의 관찰 사실을 구분",
+    "현재 노출된 표준계약서·사례집 문서군을 무조건 독립 신규 출처로 취급하지 않음",
+    "개인정보 없는 자료 또는 검증된 비식별화 자료 사용",
+    "출처 불명·문구 재작성·합성 여부와 검토 수준을 기록, 미검증 자료에 verified 부여 금지"
+  ],
+  "unresolved_questions": [
+    "기존 30개나 동일 시나리오가 외부 프롬프트·삭제된 실험에서 사용된 이력이 있는가?",
+    "독립 라벨 검토자와 테스트 정답 관리 담당자는 누구인가?",
+    "새 미노출 공식 자료·독립 수집 계약서·합성 후보를 어떤 방식으로 확보할 것인가?",
+    "risk/potential_risk 경계 9개를 어떻게 일관되게 판정하고 이견 조정할 것인가?",
+    "평가의 대상은 문구 위험 분류인가, 법률 타당성 판단인가? 목표 분포·신뢰구간은 무엇인가?"
+  ],
+  "validation": {
+    "gold_count": 30,
+    "unique_ids": true,
+    "all_existing_files_unchanged": true,
+    "test_clauses_created": false,
+    "existing_test_file": false
+  },
+  "input_sha256": {
+    "data/goldset/A1_source_verification_report.json": "406a22b9da1777a8944ecbce1a109c269c90bb4808b3c0b6683355b2f278f221",
+    "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+    "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+    "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+    "data/goldset/A1_integrated_validation_report.json": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+    "data/goldset/deposit_return_review.json": "b61403fdad9200f153cff655a38b31e355066be81ca7d94653c1db04c48d86df",
+    "data/goldset/A1_final_completion_report.json": "16dab54328ce4424f369835256a9694a0fbdd2634305b53f64c045c5b494f9ee",
+    "data/goldset/A1_final_readiness_report.json": "41c6c6dc629521432ea3ca481793fb941c466171a41a50ee2509c3751d704c25",
+    "data/goldset/A1_split_validation_report.json": "612116195519ba00cc4f7ca385ce1c340d553f80bdfdb07fbe3bfd5d98956369",
+    "data/goldset/A1_label_final_review.json": "13cc248c407dfab1daf92c30696491db15adac54757b4609dea8c7d1a1454c01",
+    "data/goldset/A1_deposit_review_revalidation.json": "4b92fb60c7a1fb3bedd194c0b297fa4741a054e2da43b050e8e38e140994e454",
+    "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+    "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+    "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+    "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+    "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+    "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+    "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+    "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+    "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+    "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+    "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+    "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+    "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26"
+  }
+}

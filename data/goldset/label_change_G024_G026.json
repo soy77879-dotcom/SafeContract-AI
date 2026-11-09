@@ -1,0 +1,50 @@
+{
+  "recorded_at": "2026-11-09T05:26:38.427576+00:00",
+  "authorization": "사용자가 SC-G024·SC-G026의 변경 권고 반영을 명시적으로 요청함. 사람 원문 검토 완료 또는 법률 승인 기록이 아님.",
+  "recommendation_source": "data/goldset/A1_label_boundary_resolution.json",
+  "recommendation_source_sha256": "20a72723d2deee58d846265ce82373dd2d90e3eb7faf2f4ba62a41db317aaea0",
+  "changes": [
+    {
+      "case_id": "SC-G024",
+      "before": {
+        "gold_label": "potential_risk",
+        "label_reason": "잔여 기간 전체의 비용이 부과되어 사유와 산정 기준의 검토가 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다."
+      },
+      "after": {
+        "gold_label": "risk",
+        "label_reason": "중도 해지 시 잔여 계약기간의 월세 전액을 위약금으로 지급하도록 하여 명시적인 중대한 금전 부담을 부과하는 문구상 위험이다. 법률적 위법성·무효 또는 위약금의 법적 과다성을 확정한 판단은 아니다."
+      },
+      "review_status": "needs_review",
+      "legal_basis_changed": false
+    },
+    {
+      "case_id": "SC-G026",
+      "before": {
+        "gold_label": "potential_risk",
+        "label_reason": "큰 고정 위약금의 적용 사유와 실제 손해 관계를 확인해야 한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다."
+      },
+      "after": {
+        "gold_label": "risk",
+        "label_reason": "중도 해지 시 보증금의 절반을 위약금으로 지급하도록 하여 명시적인 중대한 금전 부담을 부과하는 문구상 위험이다. 법률적 위법성·무효 또는 위약금의 법적 과다성을 확정한 판단은 아니다."
+      },
+      "review_status": "needs_review",
+      "legal_basis_changed": false
+    }
+  ],
+  "gold_before_sha256": "bce77c958489ead8168b471a559ea5b15fc22ea01a2dd9f27daf71c38d5ce475",
+  "before_hash_scope": "정렬 키 JSON 직렬화 내용 해시",
+  "gold_after_file_sha256": "886b8fd1c6bdc67e1ca95e6694705f3e6be5940b29d3faf440993a0729e424ba",
+  "historical_reports": "이전 보고서는 당시 라벨의 기록으로 보존. 현재 라벨 해석 시 본 변경 기록을 함께 참조.",
+  "validation": {
+    "json_valid": true,
+    "count": 30,
+    "duplicate_ids": 0,
+    "only_two_requested_fields_per_target_changed": true,
+    "other_28_records_unchanged": true,
+    "all_legal_references_valid": true,
+    "all_legal_basis_unchanged": true,
+    "existing_other_files_unchanged": true
+  },
+  "human_review_completed": false,
+  "legal_validity_approved": false
+}
