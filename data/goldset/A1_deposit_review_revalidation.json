@@ -1,0 +1,100 @@
+{
+  "validation_scope": "보증금 반환 검토 기록 생성 및 기존 실패 1건의 집중 재검증. 이전 전체 검증을 재실행한 것으로 집계하지 않음.",
+  "previous_report": "data/goldset/A1_integrated_validation_report.json",
+  "previous_report_sha256": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+  "previous_counts": {
+    "passed": 183,
+    "failed": 1,
+    "pending": 7
+  },
+  "resolved_previous_failure": {
+    "check": "deposit_review_file_present",
+    "status": "passed",
+    "case_ids": [
+      "SC-G001",
+      "SC-G004",
+      "SC-G005",
+      "SC-G006",
+      "SC-G007",
+      "SC-G008",
+      "SC-G009",
+      "SC-G010",
+      "SC-G011",
+      "SC-G012"
+    ]
+  },
+  "new_checks": [
+    {
+      "check": "json_roundtrip",
+      "status": "passed"
+    },
+    {
+      "check": "ten_items_exact_ids_no_duplicates",
+      "status": "passed"
+    },
+    {
+      "check": "current_labels_match_gold",
+      "status": "passed"
+    },
+    {
+      "check": "recommendations_retain_labels",
+      "status": "passed"
+    },
+    {
+      "check": "law_ids_exist",
+      "status": "passed"
+    },
+    {
+      "check": "all_needs_review",
+      "status": "passed"
+    },
+    {
+      "check": "gold_count_30_law_count_28",
+      "status": "passed"
+    },
+    {
+      "check": "preexisting_files_unchanged",
+      "status": "passed"
+    },
+    {
+      "check": "prior_failure_identified",
+      "status": "passed"
+    },
+    {
+      "check": "deposit_review_file_present",
+      "status": "passed"
+    },
+    {
+      "check": "branch_dev01",
+      "status": "passed"
+    }
+  ],
+  "new_check_counts": {
+    "passed": 11,
+    "failed": 0
+  },
+  "label_recommendations": {
+    "retain": 10,
+    "change": 0
+  },
+  "remaining_review": "이전 보류 7개 검증 항목은 이번 작업으로 해소 판정하지 않음. 법률 적용·추가 근거·최종 사람 검토 필요.",
+  "protected_files_sha256": {
+    "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+    "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+    "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+    "data/goldset/A1_integrated_validation_report.json": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+    "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+    "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+    "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+    "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+    "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+    "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+    "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+    "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+    "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+    "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+    "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+    "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+    "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26"
+  }
+}

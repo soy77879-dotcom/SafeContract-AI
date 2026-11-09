@@ -1,0 +1,472 @@
+{
+  "completion_status": "ready_with_limitations",
+  "assessment_date": "2026-11-09",
+  "decision_scope": "A-1 구조 검증·1차 검토 기록 완료 및 제한된 다음 개발 단계 진행. 최종 라벨·법률 검토 완료를 뜻하지 않음.",
+  "passed_checks": [
+    {
+      "check": "all_nine_json_parse_without_duplicate_keys",
+      "detail": null
+    },
+    {
+      "check": "gold_30_unique_expected_ids",
+      "detail": null
+    },
+    {
+      "check": "laws_28_unique_expected_ids",
+      "detail": null
+    },
+    {
+      "check": "unique_articles",
+      "detail": null
+    },
+    {
+      "check": "three_types_ten_each",
+      "detail": null
+    },
+    {
+      "check": "labeling_guidelines_exist",
+      "detail": null
+    },
+    {
+      "check": "deposit_return_ten_review_records",
+      "detail": null
+    },
+    {
+      "check": "deposit_return_labels_and_status",
+      "detail": null
+    },
+    {
+      "check": "repair_cost_ten_review_records",
+      "detail": null
+    },
+    {
+      "check": "repair_cost_labels_and_status",
+      "detail": null
+    },
+    {
+      "check": "contract_termination_ten_review_records",
+      "detail": null
+    },
+    {
+      "check": "contract_termination_labels_and_status",
+      "detail": null
+    },
+    {
+      "check": "thirty_distinct_reviewed_candidates",
+      "detail": null
+    },
+    {
+      "check": "all_law_references_valid",
+      "detail": []
+    },
+    {
+      "check": "pdf_match_LAW-001",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-002",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-003",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-004",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-005",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-006",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-007",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-008",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-009",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-010",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-011",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-012",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-013",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-014",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-015",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-016",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-017",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-018",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-019",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-020",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-021",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-022",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-023",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-024",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-025",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-026",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-027",
+      "detail": null
+    },
+    {
+      "check": "pdf_match_LAW-028",
+      "detail": null
+    },
+    {
+      "check": "ground_truth_match_SC-G001",
+      "detail": null
+    },
+    {
+      "check": "ground_truth_match_SC-G002",
+      "detail": null
+    },
+    {
+      "check": "ground_truth_match_SC-G003",
+      "detail": null
+    },
+    {
+      "check": "no_automatic_approval",
+      "detail": null
+    },
+    {
+      "check": "LAW028_candidate_check",
+      "detail": null
+    },
+    {
+      "check": "G023_still_pending",
+      "detail": null
+    },
+    {
+      "check": "seven_pending_items_accounted",
+      "detail": null
+    },
+    {
+      "check": "prior_missing_deposit_review_resolved",
+      "detail": null
+    },
+    {
+      "check": "preexisting_files_unchanged",
+      "detail": null
+    },
+    {
+      "check": "branch_preserved",
+      "detail": null
+    }
+  ],
+  "blocking_issues": [],
+  "deferred_reviews": [
+    {
+      "review_id": "A1-D01",
+      "original_check": "label_semantics_final_approval",
+      "references": [
+        "SC-G001",
+        "SC-G002",
+        "SC-G003",
+        "SC-G004",
+        "SC-G005",
+        "SC-G006",
+        "SC-G007",
+        "SC-G008",
+        "SC-G009",
+        "SC-G010",
+        "SC-G011",
+        "SC-G012",
+        "SC-G013",
+        "SC-G014",
+        "SC-G015",
+        "SC-G016",
+        "SC-G017",
+        "SC-G018",
+        "SC-G019",
+        "SC-G020",
+        "SC-G021",
+        "SC-G022",
+        "SC-G023",
+        "SC-G024",
+        "SC-G025",
+        "SC-G026",
+        "SC-G027",
+        "SC-G028",
+        "SC-G029",
+        "SC-G030"
+      ],
+      "priority": "high",
+      "classification": "deferred_to_next_phase",
+      "required_before": "확정 정답 기반 성능 평가 전",
+      "reason": "30개 라벨의 최종 사람 승인 필요. 문구상 라벨 유지와 법률상 판단을 구분한다.",
+      "status": "needs_review",
+      "blocks_structural_development": false
+    },
+    {
+      "review_id": "A1-D02",
+      "original_check": "historical_missing_basis_now_registered",
+      "references": [
+        "SC-G024",
+        "LAW-028"
+      ],
+      "priority": "medium",
+      "classification": "deferred_to_next_phase",
+      "required_before": "법률 근거 후보 병합 또는 법률 근거 평가 전",
+      "reason": "LAW-028은 실제 등록되어 위약금 검토 후보로 연결 가능. G024·G026은 약정 성격·손해·과다성, G029는 별첨 확보가 선행되어야 한다. 기존 missing_legal_basis는 등록 전 이력으로 보완 기록과 함께 해석하며 자동 연결하지 않는다.",
+      "status": "needs_review",
+      "blocks_structural_development": false
+    },
+    {
+      "review_id": "A1-D03",
+      "original_check": "historical_missing_basis_now_registered",
+      "references": [
+        "SC-G026",
+        "LAW-028"
+      ],
+      "priority": "medium",
+      "classification": "deferred_to_next_phase",
+      "required_before": "법률 근거 후보 병합 또는 법률 근거 평가 전",
+      "reason": "LAW-028은 실제 등록되어 위약금 검토 후보로 연결 가능. G024·G026은 약정 성격·손해·과다성, G029는 별첨 확보가 선행되어야 한다. 기존 missing_legal_basis는 등록 전 이력으로 보완 기록과 함께 해석하며 자동 연결하지 않는다.",
+      "status": "needs_review",
+      "blocks_structural_development": false
+    },
+    {
+      "review_id": "A1-D04",
+      "original_check": "historical_missing_basis_now_registered",
+      "references": [
+        "SC-G029",
+        "LAW-028"
+      ],
+      "priority": "medium",
+      "classification": "deferred_to_next_phase",
+      "required_before": "법률 근거 후보 병합 또는 법률 근거 평가 전",
+      "reason": "LAW-028은 실제 등록되어 위약금 검토 후보로 연결 가능. G024·G026은 약정 성격·손해·과다성, G029는 별첨 확보가 선행되어야 한다. 기존 missing_legal_basis는 등록 전 이력으로 보완 기록과 함께 해석하며 자동 연결하지 않는다.",
+      "status": "needs_review",
+      "blocks_structural_development": false
+    },
+    {
+      "review_id": "A1-D05",
+      "original_check": "G023_termination_doctrine",
+      "references": [
+        "SC-G023"
+      ],
+      "priority": "high",
+      "classification": "deferred_to_next_phase",
+      "required_before": "G023의 법률 근거 정답 확정 또는 법률 설명 제공 전",
+      "reason": "제623조 의무 위반과 해지권 발생은 별개. 제625·627조의 요건, 최고·목적 달성 여부, 계속적 계약 해지 판례 확인 필요.",
+      "status": "needs_review",
+      "blocks_structural_development": false
+    },
+    {
+      "review_id": "A1-D06",
+      "original_check": "official_contract_pdf_recomparison",
+      "references": [
+        "SC-G001",
+        "SC-G002",
+        "SC-G003"
+      ],
+      "priority": "high",
+      "classification": "deferred_to_next_phase",
+      "required_before": "공식 인용 3개를 원문 검증 완료 자료로 재배포하거나 확정 평가에 사용하기 전",
+      "reason": "프로젝트 표준계약서 PDF 없음. 3개 텍스트·페이지는 기존 사람 검토 GT와 일치하므로 개발용 초안의 추적 가능성은 유지됨. PDF 복원·해시 및 원문 재대조 필요.",
+      "status": "needs_review",
+      "blocks_structural_development": false
+    },
+    {
+      "review_id": "A1-D07",
+      "original_check": "legal_currentness_and_application",
+      "references": [
+        "LAW-001",
+        "LAW-002",
+        "LAW-003",
+        "LAW-004",
+        "LAW-005",
+        "LAW-006",
+        "LAW-007",
+        "LAW-008",
+        "LAW-009",
+        "LAW-010",
+        "LAW-011",
+        "LAW-012",
+        "LAW-013",
+        "LAW-014",
+        "LAW-015",
+        "LAW-016",
+        "LAW-017",
+        "LAW-018",
+        "LAW-019",
+        "LAW-020",
+        "LAW-021",
+        "LAW-022",
+        "LAW-023",
+        "LAW-024",
+        "LAW-025",
+        "LAW-026",
+        "LAW-027",
+        "LAW-028"
+      ],
+      "priority": "high",
+      "classification": "deferred_to_next_phase",
+      "required_before": "법률 적용 정답 또는 사용자 대상 법률 설명 제공 전",
+      "reason": "제공 PDF 3개의 28개 추출 조문 대조와 현행성·경과규정·개별 적용 판단은 구분. 전문가 검토 필요.",
+      "status": "needs_review",
+      "blocks_structural_development": false
+    }
+  ],
+  "legal_basis_coverage": {
+    "linked_cases": 5,
+    "link_count": 8,
+    "unlinked_case_ids": [
+      "SC-G004",
+      "SC-G005",
+      "SC-G006",
+      "SC-G007",
+      "SC-G008",
+      "SC-G010",
+      "SC-G011",
+      "SC-G012",
+      "SC-G013",
+      "SC-G014",
+      "SC-G015",
+      "SC-G016",
+      "SC-G017",
+      "SC-G019",
+      "SC-G020",
+      "SC-G021",
+      "SC-G022",
+      "SC-G023",
+      "SC-G024",
+      "SC-G025",
+      "SC-G026",
+      "SC-G027",
+      "SC-G028",
+      "SC-G029",
+      "SC-G030"
+    ],
+    "LAW028_candidate_case_ids": [
+      "SC-G024",
+      "SC-G026",
+      "SC-G029"
+    ],
+    "candidate_links_applied": false
+  },
+  "dataset_statistics": {
+    "gold_count": 30,
+    "law_count": 28,
+    "risk_type_counts": {
+      "deposit_return": 10,
+      "repair_cost": 10,
+      "contract_termination": 10
+    },
+    "review_records": 30,
+    "labels": {
+      "ok": 9,
+      "risk": 8,
+      "potential_risk": 7,
+      "unknown": 6
+    },
+    "source_kinds": {
+      "official_contract": 3,
+      "synthetic": 27
+    },
+    "passed_check_count": 52,
+    "blocking_count": 0,
+    "deferred_count": 7
+  },
+  "evaluation_usage_limitations": [
+    "개발용 초안의 구조 검증과 1차 검토 기록 정리만 완료. needs_review는 유지하며 법적 승인 또는 확정 골든셋으로 표시하지 않음.",
+    "스키마·입출력·참조 무결성 테스트는 가능. 모델 정확도 확정 수치나 법률 판단 성능을 보장하는 평가에는 사용하지 않음.",
+    "실제 legal_basis 연결은 5개 조항 8개 참조뿐이며 미연결 25개를 근거 없음 또는 안전의 정답으로 취급하지 않음.",
+    "LAW-028의 등록을 후보 연결·라벨 승인과 동일시하지 않음.",
+    "공식 계약서 기반 3개는 기존 GT와 일치하지만 원본 PDF 부재로 이번 원문 재검증이 제한됨. 합성 27개는 실제 분쟁 사례가 아님.",
+    "법률 최신성·부칙·판례·개별 적용 요건은 미확정. 과거 보고서 수치는 실행 시점의 이력으로 보존."
+  ],
+  "recommended_next_phase": {
+    "allowed": "후속 개발에서 JSON 로더·스키마·LAW 참조 검증 및 위험 탐지 입출력 회귀 테스트 진행",
+    "required_followup": [
+      "표준계약서 원본 복원 및 3개 공식 인용 재대조",
+      "LAW-028 후보 검토와 기록 정리, G023 법리 검토",
+      "30개 라벨 및 법률 적용의 사람 검토 후 평가용 버전 동결"
+    ],
+    "not_authorized_by_readiness": "확정 법률 정답 평가, 자동 법적 승인, 검토 상태 변경"
+  },
+  "evidence": {
+    "input_sha256": {
+      "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+      "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+      "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+      "data/goldset/A1_integrated_validation_report.json": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+      "data/goldset/deposit_return_review.json": "b61403fdad9200f153cff655a38b31e355066be81ca7d94653c1db04c48d86df",
+      "data/goldset/A1_deposit_review_revalidation.json": "4b92fb60c7a1fb3bedd194c0b297fa4741a054e2da43b050e8e38e140994e454",
+      "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+      "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+      "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+      "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+      "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+      "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+      "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+      "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+      "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+      "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+      "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+      "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+      "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26"
+    },
+    "pdf_method": "이번 실행에서 PDFKit 텍스트 재추출 후 28개 source_spans·페이지·시행일 대조. 전체 페이지 시각 재검증은 미실시.",
+    "previous_report_unchanged": true
+  }
+}

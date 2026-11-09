@@ -1,0 +1,1471 @@
+{
+  "review_date": "2026-11-09",
+  "scope": "문구상 위험 라벨 전수 교차 검토. 독립 평가 준비와 개발용 회귀 사용을 구분. 기존 자료에 대한 자동 승인·변경 없음.",
+  "evaluation_policy": {
+    "evaluation_ready": "독립 라벨 판정·이견 조정·출처 및 평가셋 분리 조건이 확인되어 정의된 범위의 독립 평가에 사용 가능한 상태",
+    "needs_manual_review": "라벨 확정 또는 독립 평가 조건에 대한 사람 검토 필요",
+    "source_unverified": "원문 확인 불가 또는 불일치로 평가 사용 보류",
+    "data_review_vs_legal_approval": "AI의 데이터 교차 검토 완료는 사람 라벨 승인이나 법률 전문가 승인과 다르다. 문구 분류 평가와 법률 타당성 평가도 별개이다."
+  },
+  "summary": {
+    "total": 30,
+    "evaluation_ready": 0,
+    "needs_manual_review": 30,
+    "source_unverified": 0,
+    "label_change_recommendations": 0,
+    "provisional_label_retention": 30,
+    "ambiguous_label_boundary_cases": [
+      "SC-G006",
+      "SC-G007",
+      "SC-G008",
+      "SC-G015",
+      "SC-G016",
+      "SC-G017",
+      "SC-G024",
+      "SC-G025",
+      "SC-G026"
+    ],
+    "development_regression_candidates": 20,
+    "legal_basis_connection_or_selection_pending": 25,
+    "legal_expert_approval_unconfirmed": 30,
+    "counting_note": "25건은 실제 legal_basis 미연결 항목 수. 30건의 전문가 승인 미확인 및 수동 검토 수와 중복되며 합산하지 않음."
+  },
+  "items": [
+    {
+      "case_id": "SC-G001",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+      "label_review_reason": "주택 반환과 보증금 반환의 동시 이행을 명시하고 통상 손모를 구분하여 해당 유형의 명시적 불이익 신호가 없어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제9조(계약의 종료)",
+        "clause_id": "C009",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "user_confirmed_2026-11-08"
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "normalization_difference",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [
+        "LAW-001"
+      ],
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "linked_reference_application_needs_review",
+      "legal_issues": "제536조는 동시이행 부분의 후보이다. 제4조 제2항은 적용 대상 주택임대차의 보증금 미반환 시 관계 존속에 관한 후보이며 정산 금액 전체를 확정하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G002",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+      "label_review_reason": "표준계약서의 유지·보존·수선비 상환 규정으로, 문구상 합리적인 책임 분담이므로 기존 ok 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제4조(임차주택의 사용·관리·수선)",
+        "clause_id": "C004",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "unavailable_in_current_workspace"
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "normalization_difference",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [
+        "LAW-007",
+        "LAW-008",
+        "LAW-010"
+      ],
+      "legal_basis_candidates": [
+        "LAW-007",
+        "LAW-008",
+        "LAW-010"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "linked_reference_application_needs_review",
+      "legal_issues": "예시와 실제 기입한 수선 특약을 구분하고, 필요비·유익비 및 귀책 범위를 확인해야 함.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G003",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "해당 유형에서 명시적인 일방적 불이익이 확인되지 않는다는 후보 판단. 기존 사람 검토는 문자 일치에 한정되며 위험 라벨 및 현행 법률 검토는 별도 필요.",
+      "label_review_reason": "상당한 기간의 최고 및 이행 거절 예외를 둔 쌍방 채무불이행 조항으로 명시적 일방 불이익이 없어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "official_contract",
+        "document": "주택임대차표준계약서",
+        "pdf_page": 2,
+        "provision": "제6조(채무불이행과 손해배상)",
+        "clause_id": "C006",
+        "extracted_from": "data/ocr/sample_contract.json",
+        "pdf_verification": "unavailable_in_current_workspace"
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "normalization_difference",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [
+        "LAW-003",
+        "LAW-006"
+      ],
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-003",
+        "LAW-006"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "linked_reference_application_needs_review",
+      "legal_issues": "제544조는 이행지체에 따른 해제이고 제551조는 손해배상 청구와의 관계이다. 이 조항을 모든 임대차 해지 상황에 그대로 적용하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G004",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "보증금 반환 청구를 전면 포기시키는 문구로 중대한 금전적 불이익 위험이 명시되어 있다. 약정의 법적 유효성은 판단하지 않는다.",
+      "label_review_reason": "종료 시 반환 청구를 전면 포기시키는 중대한 금전적 권리 제한이 명시되어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-022",
+        "LAW-027"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "반환관계 존속 규정과 특례법 강행규정의 검토 후보이다. 제10조는 해당 법 위반 여부가 전제이며 문구만으로 포기의 법적 효력을 확정하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G005",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "사유 없이 보증금 전액의 공제를 허용하는 일방적 문구로 중대한 금전적 불이익 위험이 있다. 실제 공제·상계 요건은 별도 검토한다.",
+      "label_review_reason": "사유 없는 전액 공제를 허용하는 일방적 손실 위험이 명시되어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "현재 등록 조문에 구체적인 공제·상계 요건을 직접 판단할 근거가 부족하다. 제4조 제2항만으로 공제 금액을 판단하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G006",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "보증금 반환을 제3자인 새 임차인의 입주 조건에 종속시켜, 입주가 이루어지지 않으면 반환이 지연될 위험이 명시되어 있다.",
+      "label_review_reason": "새 임차인 입주라는 제3자의 사정에 반환을 종속시켜 종료 후에도 반환이 지연될 중대한 위험이 명시되어 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022",
+        "LAW-027"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "인도 의무와 제3자 입주 조건을 구분한다. 제536조 및 제4조 제2항은 반환·인도 관계를 살피는 후보이며 유예 약정의 효력을 단정하지 않는다. 제10조 적용은 해당 법 위반 여부 확인이 필요하다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "반환을 제3자 입주에 종속시키는 위험이 명시되지만 risk의 중대성 기준과 potential_risk의 조건 의존 기준이 겹친다. 사용자의 risk 지시를 유지하고 지연 상한 없는 조건에 대한 공통 기준을 사람에게 확인한다."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G007",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "보증금 반환을 임대인의 불확정적인 자금 사정 개선에 종속시켜, 반환 시점을 확정할 수 없고 반환이 지연될 위험이 명시되어 있다.",
+      "label_review_reason": "임대인의 불확정적인 자금 사정 개선에 반환을 종속시켜 반환 지연 위험이 명시되어 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022",
+        "LAW-027"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "자금 사정과 인도 의무의 이행 여부를 별도로 본다. 후보 조문만으로 지체 성립 시점·손해배상액·유예 조건의 효력을 확정하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "불확정 자금 사정에 따른 지연 위험은 명시되나 중대성과 조건 의존 위험의 경계를 정량화하지 않았다. 기존 risk를 유지하고 G006과 함께 기준 확인 필요."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G008",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "label_change_recommended": false,
+      "current_label_reason": "청소비 금액을 임대인이 단독 결정하도록 하여 과다 공제 가능성이 있으나 정산 기준 등 추가 정보가 없다.",
+      "label_review_reason": "임대인의 단독 청소비 산정은 과다 공제 가능성이 있으나 금액·정산 기준에 따라 정도가 달라져 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "청소비 약정 및 구체적 공제 기준을 현재 등록 조문만으로 판단하기 어렵다. 일반 반환관계 규정을 청소비 금액의 직접 근거로 사용하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "일방 산정이라는 신호와 실제 청소비·상한의 부재를 구분해 risk/potential_risk 경계 확인 필요."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G009",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "주택 인도와 보증금 반환의 동시 이행이 명시되어 보증금 반환 유형의 불이익 신호가 보이지 않는다.",
+      "label_review_reason": "종료일에 주택 인도와 보증금 반환을 동시에 이행하도록 하여 명시적 불이익 신호가 없어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [
+        "LAW-001"
+      ],
+      "legal_basis_candidates": [
+        "LAW-001",
+        "LAW-022"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "linked_reference_application_needs_review",
+      "legal_issues": "제536조의 동시이행 및 제4조 제2항의 관계 존속을 후보로 구분한다. 모든 보증금이 공제 없이 반환된다는 의미로 확장하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G010",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "공제 금액을 증빙 확인 후 서면 합의하도록 하여 일방 공제 문구가 아니다.",
+      "label_review_reason": "증빙 확인과 서면 합의를 요구하므로 문구 자체에 일방 공제의 불이익 신호가 없어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "서면 합의 절차가 공제 대상 채무와 금액의 타당성을 보장하지 않는다. 구체적 정산·상계 법리 검토는 별개이다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G011",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "label_change_recommended": false,
+      "current_label_reason": "별도 약정이 제공되지 않아 보증금 반환 조건의 위험 여부를 판정할 수 없다.",
+      "label_review_reason": "별도 반환 약정이 제공되지 않아 핵심 조건을 판단할 수 없으므로 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "별첨을 추정하여 기한·조건이나 적용 조문을 연결하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G012",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "label_change_recommended": false,
+      "current_label_reason": "반환일이 공란이므로 해당 문구만으로 구체적인 반환일 또는 지연 위험을 판단할 수 없다.",
+      "label_review_reason": "반환일 공란으로 약정된 시점을 확인할 수 없어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "공란만으로 반환 의무의 부존재나 무효를 추정하지 않는다. 법정 판단과 다른 계약 조항을 확인해야 한다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G013",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "임차인에게 무제한의 수리비 부담을 명시한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "과실과 무관하게 건물 전체의 모든 수리비를 임차인에게 전가하는 중대한 부담이 명시되어 risk 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "임차 목적물 범위, 주요 설비, 공용부분 및 특약의 효력을 별도 검토해야 함.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G014",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "임대인의 고의로 발생한 비용까지 임차인에게 전가한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "임대인의 고의 파손 비용까지 임차인에게 전가하는 문구이므로 risk 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "제623조는 유지 의무의 참고 후보일 뿐 고의 파손의 손해배상·면책 효력을 직접 확정하지 않음. 관련 배상 근거 추가 확인 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G015",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "label_change_recommended": false,
+      "current_label_reason": "고장 원인과 노후 상태를 고려하지 않는 부담인지 확인이 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "사용 연수와 관계없는 보일러 교체비 부담은 고장 원인 등에 따라 위험 정도가 달라져 potential_risk 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "노후·불량 또는 임차인 귀책, 수리와 교체의 필요성, 특약 범위 확인 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "노후·귀책 불문 전가인지 교체 필요성과 귀책에 따른 부담인지 해석에 따라 강도가 달라짐."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G016",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "label_change_recommended": false,
+      "current_label_reason": "책임 확정 전 비용 지급 및 정산 조건의 확인이 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "원인 확인 전 절반을 지급하게 하므로 책임 확정과 사후 정산 조건 확인이 필요하여 potential_risk 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-007",
+        "LAW-010"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "선지급인지 최종 부담인지, 실제 필요비 지출 여부와 상환·정산 약정을 확인해야 함. 제626조는 모든 선지급의 환급을 보장하는 근거가 아님.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "원인 확인 전 선지급과 최종 부담 전가를 구분해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G017",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "label_change_recommended": false,
+      "current_label_reason": "산정 기준과 증빙 제공 조건이 불명확하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "임대인의 퇴거 시 비용 산정은 원인·산정 기준·증빙 확인이 필요하여 potential_risk 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "고장 원인, 노후화, 실제 수리 내역과 비용 증빙 및 일방 산정 조건 확인 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "일방 산정이 최종 강제 청구인지 증빙 후 정산인지 불명확함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G018",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "임차인에게 무과실 노후 수리비를 전가하지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "임차인 귀책 없는 주요 설비의 노후 수리비를 임대인이 부담하는 합리적 분담 문구로 ok 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [
+        "LAW-007"
+      ],
+      "legal_basis_candidates": [
+        "LAW-007"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "linked_reference_application_needs_review",
+      "legal_issues": "실제 주요 설비인지, 노후 원인과 사용·수익 유지에 필요한 수리인지 확인 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G019",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "귀책과 실제 비용을 한정하여 부담한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "임차인의 고의 파손에 한정하고 실제 비용 증빙을 요구하는 합리적 분담 문구로 ok 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "제623·624·626조만으로 임차인의 고의 파손 배상 책임을 직접 뒷받침하지 않음. 관련 배상 규정과 인과관계·비용 검토 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G020",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "label_change_recommended": false,
+      "current_label_reason": "부담 주체와 기준이 제공되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "협의한다는 표현만으로 책임 주체와 범위를 판단할 수 없어 unknown 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "수리 대상·원인·비용·책임 주체·합의 내용을 확인한 뒤 근거 후보 선정 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G021",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "label_change_recommended": false,
+      "current_label_reason": "선택 여부와 수리 대상이 확인되지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "부담자 체크 여부와 수리 범위가 없어 unknown 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "선택된 부담 주체, 수리 대상·원인·범위 확인 전 조문을 임의 연결하지 않음.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G022",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "사유와 준비 기간 없이 임대인에게 일방적인 종료 권한을 부여한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "아무 사유 없는 즉시 종료와 당일 퇴거는 거주 지속과 대응 시간을 중대하게 제한하므로 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-022",
+        "LAW-023",
+        "LAW-024",
+        "LAW-027"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "제543조는 해지권을 새로 부여하는 규정이 아니다. 주택임대차 특례의 적용 대상·기간·갱신 상태를 확인해야 하며 제6조의2의 임차인 통지를 임대인의 즉시 종료권으로 해석하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G023",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "label_change_recommended": false,
+      "current_label_reason": "상대방의 전면적 불이행에도 임차인의 해지를 제한한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "임대인의 전면 불이행에도 임차인의 해지를 일률 차단하는 권리 제한이 명시되어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-005",
+        "LAW-006"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "해지는 장래 효력 소멸, 해제는 원상회복 문제와 구분한다. 제544조를 해지권의 보편적 직접 근거로 연결하지 않는다. 구체적 의무 위반에 따른 해지 근거와 적용 법리 보완 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "문구상 포괄적 권리 제한은 risk 후보이나 제623조 의무 위반과 해지권 발생은 별개. 제625·627조 요건과 계속적 계약의 해지 법리·판례 및 최고 필요성 미확정."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G024",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "label_change_recommended": false,
+      "current_label_reason": "잔여 기간 전체의 비용이 부과되어 사유와 산정 기준의 검토가 필요하다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "잔여 월세 전액의 위약금은 부담 신호이나 잔여 기간·해지 사유·손해 및 약정 성격에 따라 정도가 달라져 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-006"
+      ],
+      "additional_legal_basis_candidates": [
+        "LAW-028"
+      ],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "제551조만으로 위약금 액수의 적정성을 판단할 수 없다. 제398조의 손해배상 예정과 별도 위약벌 여부를 구분한다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "잔여 월세 전액이라는 강한 부담과 잔여 기간·약정 성격의 조건 의존성이 겹치므로 risk 상향 여부 수동 검토."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G025",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "label_change_recommended": false,
+      "current_label_reason": "추가 조건과 갱신 절차가 제시되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "임대인의 추가 조건 전부 수용을 요구하지만 조건 내용과 갱신 유형이 없어 위험 정도 확인이 필요하여 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-023",
+        "LAW-025",
+        "LAW-027"
+      ],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "묵시적 갱신, 법정 갱신요구, 합의 갱신을 구분한다. 제6조의3은 행사 시기·횟수·거절 사유 등 조건이 있으며 모든 합의 갱신에 자동 적용하지 않는다. 제10조로 불리한 모든 조건을 일괄 무효화하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "추가 조건 전부 수용이라는 권리 제한 신호와 법정·합의 갱신 구별, 구체적 조건 부재를 함께 검토해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G026",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "label_change_recommended": false,
+      "current_label_reason": "큰 고정 위약금의 적용 사유와 실제 손해 관계를 확인해야 한다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "보증금 절반의 위약금은 큰 부담 가능성이 있으나 금액·사유·손해 및 약정 성격에 따라 평가가 달라져 유지.",
+      "label_consistency": "boundary_requires_manual_review",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [
+        "LAW-006"
+      ],
+      "additional_legal_basis_candidates": [
+        "LAW-028"
+      ],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "고정 비율만으로 위법·무효를 확정하지 않는다. 제398조에 따른 예정액인지 별도 위약벌인지 및 구체적 사실 확인 필요.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": false,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함.",
+        "보증금 절반이라는 큰 부담과 실제 금액·귀책·손해에 따른 평가 차이를 함께 검토해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G027",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "합의 종료 및 위약금 미부과가 명시되어 있다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "쌍방 서면 합의 종료와 위약금 미부과는 문구상 일방적 불이익 신호가 없어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "합의 종료는 일방적 법정·약정 해지권 행사와 구분하며 제543조를 직접적인 합의 종료 근거로 연결하지 않는다. 위약금 없음이 보증금·다른 채무 정산 완료를 뜻하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G028",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "label_change_recommended": false,
+      "current_label_reason": "서면 확인 자체에서는 해당 유형의 불이익이 확인되지 않는다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "쌍방이 확인한 서면으로 협의 내용을 남긴다는 절차 자체에는 불이익 신호가 없어 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "서면화 자체와 실제 갱신 조건의 적법성은 별개이다. 법정 갱신요구권 행사와 합의 갱신의 성립을 서면 유무만으로 판단하지 않는다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G029",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "label_change_recommended": false,
+      "current_label_reason": "별첨이 없어 금액과 적용 조건을 판단할 수 없다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "위약금의 핵심 조건이 별첨에만 있어 판단할 수 없으므로 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [
+        "LAW-028"
+      ],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "별첨이 없는 상태에서 제551조를 위약금 근거로 확정하지 않는다. 제398조를 추가하더라도 구체적 약정과 손해 확인이 우선이다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    },
+    {
+      "case_id": "SC-G030",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "label_change_recommended": false,
+      "current_label_reason": "갱신 조건이 제공되지 않았다. 법률상 유효·무효 판단이 아닌 문구상 불이익의 라벨 후보이다.",
+      "label_review_reason": "갱신 조건이 추후 기재로 남아 핵심 내용을 판단할 수 없으므로 유지.",
+      "label_consistency": "no_definite_contradiction_found",
+      "source": {
+        "kind": "synthetic",
+        "document": null,
+        "pdf_page": null,
+        "provision": null
+      },
+      "source_verification": {
+        "report": "data/goldset/A1_source_verification_report.json",
+        "comparison_status": "not_applicable_synthetic",
+        "note": "공식 인용은 공백·줄바꿈 정규화 후 외부 원본과 일치. 합성 문장은 실제 사례 아님. 출처 일치는 라벨 승인이 아님."
+      },
+      "existing_legal_basis": [],
+      "legal_basis_candidates": [],
+      "additional_legal_basis_candidates": [],
+      "legal_basis_status": "pending_connection_or_basis_selection",
+      "legal_issues": "조건 미기재만으로 법정 갱신요구권 부존재나 계약 무효를 추정하지 않는다. 법정 요구와 합의 갱신 여부도 아직 불명확하다.",
+      "data_review_status": "cross_check_completed_by_assistant",
+      "legal_expert_approval_status": "not_confirmed",
+      "original_review_status": "needs_review",
+      "review_status": "needs_review",
+      "evaluation_usage_status": "needs_manual_review",
+      "evaluation_ready": false,
+      "development_regression_candidate": true,
+      "manual_review_reasons": [
+        "독립된 사람 라벨 판정·이견 조정 및 평가 버전 동결 기록이 확인되지 않음.",
+        "개발 과정에 사용된 자료이므로 독립 평가셋 여부와 학습·튜닝 노출을 별도로 점검해야 함."
+      ],
+      "usage_limitations": [
+        "기존 라벨을 가정한 개발용 동작 확인만 가능. 확정 법률 정답이나 독립 성능 수치의 근거로 사용하지 않음.",
+        "법률 근거 후보의 존재 또는 부재로 라벨을 자동 확정하지 않음.",
+        "unknown은 문구의 정보 부족 분류이지 검토 누락을 뜻하지 않음."
+      ]
+    }
+  ],
+  "cross_record_findings": [
+    {
+      "case_id": "SC-G024",
+      "kind": "historical_missing_basis_resolved_in_supplement",
+      "detail": "기존 검토의 제398조 미등록 기록은 이전 시점 이력. LAW-028 등록 및 후속 연결 가능 기록 존재. 골든셋에 실제 연결된 것은 아님."
+    },
+    {
+      "case_id": "SC-G026",
+      "kind": "historical_missing_basis_resolved_in_supplement",
+      "detail": "기존 검토의 제398조 미등록 기록은 이전 시점 이력. LAW-028 등록 및 후속 연결 가능 기록 존재. 골든셋에 실제 연결된 것은 아님."
+    },
+    {
+      "case_id": "SC-G029",
+      "kind": "historical_missing_basis_resolved_in_supplement",
+      "detail": "기존 검토의 제398조 미등록 기록은 이전 시점 이력. LAW-028 등록 및 후속 연결 가능 기록 존재. 골든셋에 실제 연결된 것은 아님."
+    },
+    {
+      "case_ids": [
+        "SC-G001",
+        "SC-G004",
+        "SC-G005",
+        "SC-G006",
+        "SC-G007",
+        "SC-G008",
+        "SC-G009",
+        "SC-G010",
+        "SC-G011",
+        "SC-G012"
+      ],
+      "kind": "historical_missing_review_resolved",
+      "detail": "통합 보고서의 보증금 검토 누락은 이후 deposit_return_review 및 재검증 보고서로 보완됨."
+    },
+    {
+      "case_ids": [
+        "SC-G001",
+        "SC-G002",
+        "SC-G003"
+      ],
+      "kind": "historical_source_unavailable_resolved_externally",
+      "detail": "원문 재대조 불가였던 이전 보고서와 달리 새 출처 보고서는 외부 원본 정규화 일치를 확인. 저장소 PDF 부재는 별개로 남음."
+    }
+  ],
+  "G023_legal_hold": {
+    "review_status": "needs_review",
+    "checked_existing_law_ids": [
+      "LAW-002",
+      "LAW-003",
+      "LAW-005",
+      "LAW-007",
+      "LAW-009",
+      "LAW-011"
+    ],
+    "findings": [
+      "제623조(LAW-007)는 임대인의 인도 및 사용·수익 상태 유지 의무이다. 의무 위반 사실만으로 모든 계약에서 즉시 해지가 인정된다고 확정하지 않는다.",
+      "제625조(LAW-009)는 임차인 의사에 반한 보존행위로 임차 목적을 달성할 수 없는 경우의 해지 규정이다.",
+      "제627조 제2항(LAW-011)은 같은 조 제1항의 일부 사용·수익 불능 상황에서 잔존부분으로 목적을 달성할 수 없는 경우를 대상으로 한다.",
+      "제543조(LAW-002)는 해지·해제권 행사의 의사표시, 제550조(LAW-005)는 해지의 장래 효과이다. 독립적인 일반 해지 사유로 사용하지 않는다.",
+      "제544조(LAW-003)의 최고 후 해제와 계속적 임대차의 해지를 구분한다. 채무불이행에 따른 해지 법리·판례 및 최고 필요성은 추가 검토해야 한다."
+    ],
+    "additional_article_candidates": [],
+    "additional_review_needed": [
+      "구체적 위반 의무·정도·기간, 수선 요구 및 이행 기회, 사용·수익 가능성, 목적 달성 여부 확인",
+      "현재 등록 조문만으로 G023의 포괄적 해지 제한 특약 효력을 확정하지 않음. 판례와 계속적 계약 해지 법리 검토 필요."
+    ]
+  },
+  "LAW028_candidate_review": {
+    "case_ids": [
+      "SC-G024",
+      "SC-G026",
+      "SC-G029"
+    ],
+    "law_id": "LAW-028",
+    "assessment": "위약금·배상액 예정의 참고 후보로 적절하나 약정 성격·사실관계 확인 필요. G029는 별첨 부재이므로 unknown 유지 후보이며 내용 판단 불가.",
+    "applied_to_goldset": false
+  },
+  "recommended_next_actions": [
+    "risk/potential_risk 경계 9개에 대한 공통 기준과 사람 이견 조정 기록 작성",
+    "30개 라벨의 독립 검토자 판정과 평가 버전 동결",
+    "개발 노출 여부를 확인하고 별도의 미노출 평가셋을 마련하거나 본 세트를 개발용으로 명시",
+    "G023 법리와 LAW-028 적용 조건 검토, 검토 완료 후에만 후보 연결 판단"
+  ],
+  "validation": {
+    "json_valid": true,
+    "item_count": 30,
+    "unique_case_ids": true,
+    "all_law_ids_exist": true,
+    "label_disagreements_with_type_reviews": 0,
+    "existing_files_unchanged": true
+  },
+  "input_sha256": {
+    "data/goldset/A1_source_verification_report.json": "406a22b9da1777a8944ecbce1a109c269c90bb4808b3c0b6683355b2f278f221",
+    "data/goldset/legal_basis_review.json": "dbb97dfd3f35ab88233db02452982348d277dc3235d130b55a7b31cf3b0eb7b9",
+    "data/goldset/labeling_guidelines.md": "7ec18629716b954ade47716ebdc8092fa43c45987e4b7d7b0fa7181c9dc83a41",
+    "data/goldset/golden_clauses.json": "595e32ed27888b9874eaa7836c67ad2f6a6c989df18a493f6718c7f83fcb4ee5",
+    "data/goldset/A1_integrated_validation_report.json": "63616f2e20dd1df1fc1bcb8ed185ba5f62f29f3e078fa155251575a9ab3ca680",
+    "data/goldset/deposit_return_review.json": "b61403fdad9200f153cff655a38b31e355066be81ca7d94653c1db04c48d86df",
+    "data/goldset/A1_final_readiness_report.json": "41c6c6dc629521432ea3ca481793fb941c466171a41a50ee2509c3751d704c25",
+    "data/goldset/A1_deposit_review_revalidation.json": "4b92fb60c7a1fb3bedd194c0b297fa4741a054e2da43b050e8e38e140994e454",
+    "data/goldset/contract_termination_review.json": "ef5f16c998ee0503e34bdafcd9275c38a7c796b72cd69a39f46e9c323334a6c3",
+    "data/goldset/repair_cost_review.json": "4db7b9b2ab1ac4db4b012bbb9b06883007e5bc8a3afa9230f798d5e3c03db494",
+    "data/ocr/normalization_policy.md": "3bae323db4c9f61304720fc3237fa00272714433bfbb2dbe86a8ff0c6fd7db7f",
+    "data/ocr/human_review.md": "e4ccb71a00de90f44c6e2b07e328c9ce23a4c9594c3c0deaf3c75d817d281b1d",
+    "data/ocr/extraction_review.json": "9201567134fa055299d29756d5b1e565dd9ca6ccd01726d1779af61db8558a9d",
+    "data/ocr/sample_contract.json": "5dbdd568dcf7efbd707ad8213ecf865cdf763bff546ce52a9703d894cb53a50e",
+    "data/legal/주택임대차보호법(법률)(제21065호)(20260102).pdf": "5ac940f4a28fe6c00da446b979928dc5ba7c55ac4c50643a323593c7d0044203",
+    "data/legal/legal_rules_review.json": "6b2898275e6ec01c6d1d7c33f9741caa3fd83cc0320fe8defd08d4b58bbb276a",
+    "data/legal/legal_rules.json": "30ec81c9b3b4396c670dece62bd9f307795ddbaff470c7e9cdb5f8334fda2f23",
+    "data/legal/주택임대차보호법 시행령(대통령령)(제36423호)(20260701).pdf": "abc92b140a8a55e76afc70bc608dec296ec599b0c359c588884f5c868debc842",
+    "data/legal/legal_basis_supplement_review.json": "b8b21131822d13a09db32031fa9dbdb4c6d2ae496455cade1a37c1031bc7753f",
+    "data/legal/민법(법률)(제21454호)(20260317).pdf": "f6bff577791b7eba3b733153bf5ef3398905a424fc9541c013b9bfe0de99aa81",
+    "data/metadata/document_manifest.json": "410a44143f7ce09ff5c11aa4771108971bc82229a9e59eac6b33d41be3d4da26"
+  }
+}

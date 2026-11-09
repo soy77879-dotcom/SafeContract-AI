@@ -1,0 +1,198 @@
+{
+  "scope": "문구상 위험 신호 검토 후보. 법적 무효·위법·개별 사건 적용의 승인 아님. 기존 legal_basis 및 라벨 변경 없음.",
+  "review_date": "2026-11-09",
+  "source_check": {
+    "method": "제공된 PDF를 PDFKit으로 다시 추출하여 등록 조문 source_spans와 실제 페이지 텍스트 비교",
+    "matched_law_ids": [
+      "LAW-002",
+      "LAW-003",
+      "LAW-004",
+      "LAW-005",
+      "LAW-006",
+      "LAW-022",
+      "LAW-023",
+      "LAW-024",
+      "LAW-025",
+      "LAW-027"
+    ],
+    "additional_article": "민법 제398조 PDF 33~34페이지 텍스트 확인",
+    "limitations": [
+      "전체 조문 시각 대조 및 현행성·판례 검토 미완료",
+      "주택임대차보호법 적용 범위와 민법의 보충 적용은 개별 계약에서 확인 필요",
+      "시행령에서 위약금·해지권·갱신요구에 직접 대응하는 조문을 이번 후보로 선정하지 않음"
+    ]
+  },
+  "items": [
+    {
+      "case_id": "SC-G003",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "상당한 기간의 최고 및 이행 거절 예외를 둔 쌍방 채무불이행 조항으로 명시적 일방 불이익이 없어 유지.",
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-003",
+        "LAW-006"
+      ],
+      "legal_issues": "제544조는 이행지체에 따른 해제이고 제551조는 손해배상 청구와의 관계이다. 이 조항을 모든 임대차 해지 상황에 그대로 적용하지 않는다.",
+      "additional_review_needed": "이행기·최고 기간과 미이행 여부, 계약 진행 단계, 거절 의사, 실제 해제권 발생 요건 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G022",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "아무 사유 없는 즉시 종료와 당일 퇴거는 거주 지속과 대응 시간을 중대하게 제한하므로 유지.",
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-022",
+        "LAW-023",
+        "LAW-024",
+        "LAW-027"
+      ],
+      "legal_issues": "제543조는 해지권을 새로 부여하는 규정이 아니다. 주택임대차 특례의 적용 대상·기간·갱신 상태를 확인해야 하며 제6조의2의 임차인 통지를 임대인의 즉시 종료권으로 해석하지 않는다.",
+      "additional_review_needed": "주거용 여부, 일시사용 여부, 기간과 유보 해지권, 종료 경위 및 법정 갱신 상태 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G023",
+      "current_label": "risk",
+      "recommended_label": "risk",
+      "review_reason": "임대인의 전면 불이행에도 임차인의 해지를 일률 차단하는 권리 제한이 명시되어 유지.",
+      "legal_basis_candidates": [
+        "LAW-002",
+        "LAW-005",
+        "LAW-006"
+      ],
+      "legal_issues": "해지는 장래 효력 소멸, 해제는 원상회복 문제와 구분한다. 제544조를 해지권의 보편적 직접 근거로 연결하지 않는다. 구체적 의무 위반에 따른 해지 근거와 적용 법리 보완 필요.",
+      "additional_review_needed": "불이행 의무, 이행 촉구, 사용 가능성, 임대차 목적 달성 여부 및 판례 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G024",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "잔여 월세 전액의 위약금은 부담 신호이나 잔여 기간·해지 사유·손해 및 약정 성격에 따라 정도가 달라져 유지.",
+      "legal_basis_candidates": [
+        "LAW-006"
+      ],
+      "legal_issues": "제551조만으로 위약금 액수의 적정성을 판단할 수 없다. 제398조의 손해배상 예정과 별도 위약벌 여부를 구분한다.",
+      "additional_review_needed": "잔여 기간·금액, 귀책, 재임대와 손해, 중복 청구, 특례상 적법 해지 여부 및 약정 성격 확인.",
+      "missing_legal_basis": [
+        {
+          "law_name": "민법",
+          "article": "제398조",
+          "article_title": "배상액의 예정",
+          "source_file": "data/legal/민법(법률)(제21454호)(20260317).pdf",
+          "pdf_pages": [
+            33,
+            34
+          ],
+          "reason": "손해배상 예정, 과다한 예정액 감액 및 위약금 추정 규정. 위약벌과 구분하고 자동 감액·무효로 판단하지 않음.",
+          "verification_status": "needs_review"
+        }
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G025",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "임대인의 추가 조건 전부 수용을 요구하지만 조건 내용과 갱신 유형이 없어 위험 정도 확인이 필요하여 유지.",
+      "legal_basis_candidates": [
+        "LAW-023",
+        "LAW-025",
+        "LAW-027"
+      ],
+      "legal_issues": "묵시적 갱신, 법정 갱신요구, 합의 갱신을 구분한다. 제6조의3은 행사 시기·횟수·거절 사유 등 조건이 있으며 모든 합의 갱신에 자동 적용하지 않는다. 제10조로 불리한 모든 조건을 일괄 무효화하지 않는다.",
+      "additional_review_needed": "주택임대차법 적용 범위, 요구 시기·횟수, 거절 사유 및 구체적 추가 조건 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G026",
+      "current_label": "potential_risk",
+      "recommended_label": "potential_risk",
+      "review_reason": "보증금 절반의 위약금은 큰 부담 가능성이 있으나 금액·사유·손해 및 약정 성격에 따라 평가가 달라져 유지.",
+      "legal_basis_candidates": [
+        "LAW-006"
+      ],
+      "legal_issues": "고정 비율만으로 위법·무효를 확정하지 않는다. 제398조에 따른 예정액인지 별도 위약벌인지 및 구체적 사실 확인 필요.",
+      "additional_review_needed": "보증금과 월세, 해지 사유, 실제 손해, 산정 근거 및 다른 배상과 중복 여부 확인.",
+      "missing_legal_basis": [
+        {
+          "law_name": "민법",
+          "article": "제398조",
+          "article_title": "배상액의 예정",
+          "source_file": "data/legal/민법(법률)(제21454호)(20260317).pdf",
+          "pdf_pages": [
+            33,
+            34
+          ],
+          "reason": "손해배상 예정, 과다한 예정액 감액 및 위약금 추정 규정. 위약벌과 구분하고 자동 감액·무효로 판단하지 않음.",
+          "verification_status": "needs_review"
+        }
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G027",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "쌍방 서면 합의 종료와 위약금 미부과는 문구상 일방적 불이익 신호가 없어 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "합의 종료는 일방적 법정·약정 해지권 행사와 구분하며 제543조를 직접적인 합의 종료 근거로 연결하지 않는다. 위약금 없음이 보증금·다른 채무 정산 완료를 뜻하지 않는다.",
+      "additional_review_needed": "자유로운 합의 여부, 합의 당사자, 종료일·인도·보증금 반환 및 잔여 채무 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G028",
+      "current_label": "ok",
+      "recommended_label": "ok",
+      "review_reason": "쌍방이 확인한 서면으로 협의 내용을 남긴다는 절차 자체에는 불이익 신호가 없어 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "서면화 자체와 실제 갱신 조건의 적법성은 별개이다. 법정 갱신요구권 행사와 합의 갱신의 성립을 서면 유무만으로 판단하지 않는다.",
+      "additional_review_needed": "서면의 실제 내용, 조건 변경, 확인·동의의 의미 및 갱신 유형 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G029",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "위약금의 핵심 조건이 별첨에만 있어 판단할 수 없으므로 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "별첨이 없는 상태에서 제551조를 위약금 근거로 확정하지 않는다. 제398조를 추가하더라도 구체적 약정과 손해 확인이 우선이다.",
+      "additional_review_needed": "별첨 원문, 산식·금액·상한, 적용 사유, 손해배상 예정 또는 위약벌 여부 확인.",
+      "missing_legal_basis": [
+        {
+          "law_name": "민법",
+          "article": "제398조",
+          "article_title": "배상액의 예정",
+          "source_file": "data/legal/민법(법률)(제21454호)(20260317).pdf",
+          "pdf_pages": [
+            33,
+            34
+          ],
+          "reason": "손해배상 예정, 과다한 예정액 감액 및 위약금 추정 규정. 위약벌과 구분하고 자동 감액·무효로 판단하지 않음.",
+          "verification_status": "needs_review"
+        }
+      ],
+      "review_status": "needs_review"
+    },
+    {
+      "case_id": "SC-G030",
+      "current_label": "unknown",
+      "recommended_label": "unknown",
+      "review_reason": "갱신 조건이 추후 기재로 남아 핵심 내용을 판단할 수 없으므로 유지.",
+      "legal_basis_candidates": [],
+      "legal_issues": "조건 미기재만으로 법정 갱신요구권 부존재나 계약 무효를 추정하지 않는다. 법정 요구와 합의 갱신 여부도 아직 불명확하다.",
+      "additional_review_needed": "실제 갱신 조건, 갱신 유형, 법 적용 범위, 행사 시기·횟수 및 거절 사유 확인.",
+      "missing_legal_basis": [],
+      "review_status": "needs_review"
+    }
+  ]
+}

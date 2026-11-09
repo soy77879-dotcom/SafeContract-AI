@@ -1,0 +1,43 @@
+{
+  "status": "development_demo_candidate_only",
+  "source": "test_candidate_ai_legal_preliminary_review.json",
+  "development_source": "golden_clauses.json",
+  "output_file": "test_clauses_codex_free.json",
+  "counts": {
+    "development": 30,
+    "test_candidates": 12,
+    "by_risk_type": {
+      "deposit_return": 4,
+      "repair_cost": 4,
+      "contract_termination": 4
+    },
+    "by_provisional_label": {
+      "risk": 3,
+      "potential_risk": 3,
+      "ok": 3,
+      "unknown": 3
+    }
+  },
+  "checks": {
+    "json_parse": true,
+    "unique_candidate_ids": true,
+    "unchanged_candidate_text_type_source": true,
+    "no_id_overlap_with_dev": true,
+    "no_normalized_text_overlap_with_dev": true,
+    "all_gold_labels_null": true,
+    "all_evaluation_eligible_false": true,
+    "all_review_status_ai_preliminary_review": true
+  },
+  "limitations": {
+    "semantic_duplicate_check": "not_verified",
+    "external_development_prompt_usage": "not_verified",
+    "independent_human_review": "not_performed",
+    "independent_performance_evaluation": "not_allowed"
+  },
+  "sha256": {
+    "input_ai_review": "6f6d83f92083d4ff3d95b4a7b9738845f06fade37dfb040d30782106d38f6030",
+    "input_development_goldset": "37837b8fc1e3bf01a0557e334444aa5460e7e52c35fd7e9ae6b19f36a4ad4bde",
+    "output": "82695673a8dba0f2fb3d4959faa60e369df25c9f7a5d3ff761fd04f7fff6f380"
+  },
+  "note": "No original user files were modified. Test candidate labels are AI preliminary assessments, not independent human gold labels."
+}
